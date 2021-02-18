@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40104A4D25DEE5FF003489DC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40104A4C25DEE5FF003489DC /* HomeViewController.swift */; };
+		40944ECB25DEC35900447BA3 /* fotoblank.png in Resources */ = {isa = PBXBuildFile; fileRef = 40944EC425DEC35900447BA3 /* fotoblank.png */; };
+		40944ECC25DEC35900447BA3 /* kotak absen masuk.png in Resources */ = {isa = PBXBuildFile; fileRef = 40944EC525DEC35900447BA3 /* kotak absen masuk.png */; };
+		40944ECD25DEC35900447BA3 /* kalender.png in Resources */ = {isa = PBXBuildFile; fileRef = 40944EC625DEC35900447BA3 /* kalender.png */; };
+		40944ECE25DEC35900447BA3 /* kotak izin.png in Resources */ = {isa = PBXBuildFile; fileRef = 40944EC725DEC35900447BA3 /* kotak izin.png */; };
+		40944ECF25DEC35900447BA3 /* map pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 40944EC825DEC35900447BA3 /* map pin.png */; };
+		40944ED025DEC35900447BA3 /* bg izin.png in Resources */ = {isa = PBXBuildFile; fileRef = 40944EC925DEC35900447BA3 /* bg izin.png */; };
+		40944ED125DEC35900447BA3 /* kotakabsen.png in Resources */ = {isa = PBXBuildFile; fileRef = 40944ECA25DEC35900447BA3 /* kotakabsen.png */; };
+		40944ED425DEC3A000447BA3 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 40944ED325DEC3A000447BA3 /* background.png */; };
+		40944ED725DEC4C500447BA3 /* garispetahome.png in Resources */ = {isa = PBXBuildFile; fileRef = 40944ED625DEC4C500447BA3 /* garispetahome.png */; };
+		40944EDA25DEC71800447BA3 /* latarizin.png in Resources */ = {isa = PBXBuildFile; fileRef = 40944ED925DEC71800447BA3 /* latarizin.png */; };
 		40F4E83725DE7B7600BAC0D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F4E83625DE7B7600BAC0D2 /* AppDelegate.swift */; };
 		40F4E83925DE7B7600BAC0D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F4E83825DE7B7600BAC0D2 /* SceneDelegate.swift */; };
 		40F4E83B25DE7B7600BAC0D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F4E83A25DE7B7600BAC0D2 /* ViewController.swift */; };
@@ -29,6 +40,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40104A4C25DEE5FF003489DC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		40944EC425DEC35900447BA3 /* fotoblank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fotoblank.png; path = ../../../../Export/fotoblank.png; sourceTree = "<group>"; };
+		40944EC525DEC35900447BA3 /* kotak absen masuk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "kotak absen masuk.png"; path = "../../../../Export/kotak absen masuk.png"; sourceTree = "<group>"; };
+		40944EC625DEC35900447BA3 /* kalender.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kalender.png; path = ../../../../Export/kalender.png; sourceTree = "<group>"; };
+		40944EC725DEC35900447BA3 /* kotak izin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "kotak izin.png"; path = "../../../../Export/kotak izin.png"; sourceTree = "<group>"; };
+		40944EC825DEC35900447BA3 /* map pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "map pin.png"; path = "../../../../Export/map pin.png"; sourceTree = "<group>"; };
+		40944EC925DEC35900447BA3 /* bg izin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg izin.png"; path = "../../../../Export/bg izin.png"; sourceTree = "<group>"; };
+		40944ECA25DEC35900447BA3 /* kotakabsen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kotakabsen.png; path = ../../../../Export/kotakabsen.png; sourceTree = "<group>"; };
+		40944ED325DEC3A000447BA3 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = ../../../../Export/background.png; sourceTree = "<group>"; };
+		40944ED625DEC4C500447BA3 /* garispetahome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = garispetahome.png; path = ../../../../Export/garispetahome.png; sourceTree = "<group>"; };
+		40944ED925DEC71800447BA3 /* latarizin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = latarizin.png; path = ../../../../Export/latarizin.png; sourceTree = "<group>"; };
 		40F4E83325DE7B7600BAC0D2 /* SAMPolibatam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAMPolibatam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40F4E83625DE7B7600BAC0D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40F4E83825DE7B7600BAC0D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +85,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40944EC325DEC34100447BA3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				40944ED325DEC3A000447BA3 /* background.png */,
+				40944ED925DEC71800447BA3 /* latarizin.png */,
+				40944EC925DEC35900447BA3 /* bg izin.png */,
+				40944EC425DEC35900447BA3 /* fotoblank.png */,
+				40944ED625DEC4C500447BA3 /* garispetahome.png */,
+				40944EC625DEC35900447BA3 /* kalender.png */,
+				40944EC525DEC35900447BA3 /* kotak absen masuk.png */,
+				40944EC725DEC35900447BA3 /* kotak izin.png */,
+				40944ECA25DEC35900447BA3 /* kotakabsen.png */,
+				40944EC825DEC35900447BA3 /* map pin.png */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		40F4E82A25DE7B7600BAC0D2 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +124,7 @@
 				40F4E83625DE7B7600BAC0D2 /* AppDelegate.swift */,
 				40F4E83825DE7B7600BAC0D2 /* SceneDelegate.swift */,
 				40F4E83A25DE7B7600BAC0D2 /* ViewController.swift */,
+				40104A4C25DEE5FF003489DC /* HomeViewController.swift */,
 				40F4E83C25DE7B7600BAC0D2 /* Main.storyboard */,
 				40F4E84225DE7B7700BAC0D2 /* Assets.xcassets */,
 				40F4E85225DE7C3300BAC0D2 /* Gambar */,
@@ -100,6 +140,7 @@
 			children = (
 				40F4E85B25DE7D0500BAC0D2 /* Login */,
 				40F4E87025DE883200BAC0D2 /* TabBar */,
+				40944EC325DEC34100447BA3 /* Home */,
 			);
 			path = Gambar;
 			sourceTree = "<group>";
@@ -187,21 +228,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40944ECB25DEC35900447BA3 /* fotoblank.png in Resources */,
 				40F4E86525DE7D3800BAC0D2 /* Kampus-Polibatam1.jpg in Resources */,
 				40F4E84625DE7B7700BAC0D2 /* LaunchScreen.storyboard in Resources */,
 				40F4E86E25DE841C00BAC0D2 /* Logo-Polibatam.png in Resources */,
 				40F4E86225DE7D3000BAC0D2 /* bt_bg_primary.png in Resources */,
+				40944ECD25DEC35900447BA3 /* kalender.png in Resources */,
 				40F4E84325DE7B7700BAC0D2 /* Assets.xcassets in Resources */,
 				40F4E86825DE7DF200BAC0D2 /* Rectanglepoltek.png in Resources */,
+				40944ED125DEC35900447BA3 /* kotakabsen.png in Resources */,
+				40944ECE25DEC35900447BA3 /* kotak izin.png in Resources */,
 				40F4E87F25DE8E8500BAC0D2 /* history.png in Resources */,
 				40F4E87425DE88CD00BAC0D2 /* home1.png in Resources */,
 				40F4E86B25DE7EAA00BAC0D2 /* textarea.png in Resources */,
+				40944ED725DEC4C500447BA3 /* garispetahome.png in Resources */,
+				40944EDA25DEC71800447BA3 /* latarizin.png in Resources */,
 				40F4E86125DE7D3000BAC0D2 /* Rectangle 11.png in Resources */,
 				40F4E87525DE88CD00BAC0D2 /* profile1.png in Resources */,
 				40F4E87E25DE8E8500BAC0D2 /* home.png in Resources */,
+				40944ECF25DEC35900447BA3 /* map pin.png in Resources */,
 				40F4E87625DE88CD00BAC0D2 /* history1.png in Resources */,
 				40F4E88025DE8E8500BAC0D2 /* profile.png in Resources */,
 				40F4E83E25DE7B7600BAC0D2 /* Main.storyboard in Resources */,
+				40944ECC25DEC35900447BA3 /* kotak absen masuk.png in Resources */,
+				40944ED025DEC35900447BA3 /* bg izin.png in Resources */,
+				40944ED425DEC3A000447BA3 /* background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40104A4D25DEE5FF003489DC /* HomeViewController.swift in Sources */,
 				40F4E83B25DE7B7600BAC0D2 /* ViewController.swift in Sources */,
 				40F4E83725DE7B7600BAC0D2 /* AppDelegate.swift in Sources */,
 				40F4E83925DE7B7600BAC0D2 /* SceneDelegate.swift in Sources */,
