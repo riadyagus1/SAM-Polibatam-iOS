@@ -14,6 +14,18 @@
 		40F4E84125DE7B7600BAC0D2 /* SAMPolibatam.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 40F4E83F25DE7B7600BAC0D2 /* SAMPolibatam.xcdatamodeld */; };
 		40F4E84325DE7B7700BAC0D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40F4E84225DE7B7700BAC0D2 /* Assets.xcassets */; };
 		40F4E84625DE7B7700BAC0D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40F4E84425DE7B7700BAC0D2 /* LaunchScreen.storyboard */; };
+		40F4E86125DE7D3000BAC0D2 /* Rectangle 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 40F4E85F25DE7D3000BAC0D2 /* Rectangle 11.png */; };
+		40F4E86225DE7D3000BAC0D2 /* bt_bg_primary.png in Resources */ = {isa = PBXBuildFile; fileRef = 40F4E86025DE7D3000BAC0D2 /* bt_bg_primary.png */; };
+		40F4E86525DE7D3800BAC0D2 /* Kampus-Polibatam1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 40F4E86425DE7D3800BAC0D2 /* Kampus-Polibatam1.jpg */; };
+		40F4E86825DE7DF200BAC0D2 /* Rectanglepoltek.png in Resources */ = {isa = PBXBuildFile; fileRef = 40F4E86725DE7DF200BAC0D2 /* Rectanglepoltek.png */; };
+		40F4E86B25DE7EAA00BAC0D2 /* textarea.png in Resources */ = {isa = PBXBuildFile; fileRef = 40F4E86A25DE7EAA00BAC0D2 /* textarea.png */; };
+		40F4E86E25DE841C00BAC0D2 /* Logo-Polibatam.png in Resources */ = {isa = PBXBuildFile; fileRef = 40F4E86D25DE841C00BAC0D2 /* Logo-Polibatam.png */; };
+		40F4E87425DE88CD00BAC0D2 /* home1.png in Resources */ = {isa = PBXBuildFile; fileRef = 40F4E87125DE88CD00BAC0D2 /* home1.png */; };
+		40F4E87525DE88CD00BAC0D2 /* profile1.png in Resources */ = {isa = PBXBuildFile; fileRef = 40F4E87225DE88CD00BAC0D2 /* profile1.png */; };
+		40F4E87625DE88CD00BAC0D2 /* history1.png in Resources */ = {isa = PBXBuildFile; fileRef = 40F4E87325DE88CD00BAC0D2 /* history1.png */; };
+		40F4E87E25DE8E8500BAC0D2 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 40F4E87B25DE8E8500BAC0D2 /* home.png */; };
+		40F4E87F25DE8E8500BAC0D2 /* history.png in Resources */ = {isa = PBXBuildFile; fileRef = 40F4E87C25DE8E8500BAC0D2 /* history.png */; };
+		40F4E88025DE8E8500BAC0D2 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 40F4E87D25DE8E8500BAC0D2 /* profile.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +38,18 @@
 		40F4E84225DE7B7700BAC0D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40F4E84525DE7B7700BAC0D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40F4E84725DE7B7700BAC0D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40F4E85F25DE7D3000BAC0D2 /* Rectangle 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Rectangle 11.png"; path = "../../../../Export/Rectangle 11.png"; sourceTree = "<group>"; };
+		40F4E86025DE7D3000BAC0D2 /* bt_bg_primary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bt_bg_primary.png; path = ../../../../Export/bt_bg_primary.png; sourceTree = "<group>"; };
+		40F4E86425DE7D3800BAC0D2 /* Kampus-Polibatam1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Kampus-Polibatam1.jpg"; path = "../../../../Poltek/Kampus-Polibatam1.jpg"; sourceTree = "<group>"; };
+		40F4E86725DE7DF200BAC0D2 /* Rectanglepoltek.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Rectanglepoltek.png; path = ../../../../Export/Rectanglepoltek.png; sourceTree = "<group>"; };
+		40F4E86A25DE7EAA00BAC0D2 /* textarea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = textarea.png; path = ../../../../Export/textarea.png; sourceTree = "<group>"; };
+		40F4E86D25DE841C00BAC0D2 /* Logo-Polibatam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Logo-Polibatam.png"; path = "../../../../Poltek/Logo/Logo-Polibatam.png"; sourceTree = "<group>"; };
+		40F4E87125DE88CD00BAC0D2 /* home1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home1.png; path = ../../../../Export/home1.png; sourceTree = "<group>"; };
+		40F4E87225DE88CD00BAC0D2 /* profile1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = profile1.png; path = ../../../../Export/profile1.png; sourceTree = "<group>"; };
+		40F4E87325DE88CD00BAC0D2 /* history1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = history1.png; path = ../../../../Export/history1.png; sourceTree = "<group>"; };
+		40F4E87B25DE8E8500BAC0D2 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = ../../../../Export/home.png; sourceTree = "<group>"; };
+		40F4E87C25DE8E8500BAC0D2 /* history.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = history.png; path = ../../../../Export/history.png; sourceTree = "<group>"; };
+		40F4E87D25DE8E8500BAC0D2 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = profile.png; path = ../../../../Export/profile.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +87,47 @@
 				40F4E83A25DE7B7600BAC0D2 /* ViewController.swift */,
 				40F4E83C25DE7B7600BAC0D2 /* Main.storyboard */,
 				40F4E84225DE7B7700BAC0D2 /* Assets.xcassets */,
+				40F4E85225DE7C3300BAC0D2 /* Gambar */,
 				40F4E84425DE7B7700BAC0D2 /* LaunchScreen.storyboard */,
 				40F4E84725DE7B7700BAC0D2 /* Info.plist */,
 				40F4E83F25DE7B7600BAC0D2 /* SAMPolibatam.xcdatamodeld */,
 			);
 			path = SAMPolibatam;
+			sourceTree = "<group>";
+		};
+		40F4E85225DE7C3300BAC0D2 /* Gambar */ = {
+			isa = PBXGroup;
+			children = (
+				40F4E85B25DE7D0500BAC0D2 /* Login */,
+				40F4E87025DE883200BAC0D2 /* TabBar */,
+			);
+			path = Gambar;
+			sourceTree = "<group>";
+		};
+		40F4E85B25DE7D0500BAC0D2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				40F4E86425DE7D3800BAC0D2 /* Kampus-Polibatam1.jpg */,
+				40F4E86D25DE841C00BAC0D2 /* Logo-Polibatam.png */,
+				40F4E86725DE7DF200BAC0D2 /* Rectanglepoltek.png */,
+				40F4E86025DE7D3000BAC0D2 /* bt_bg_primary.png */,
+				40F4E85F25DE7D3000BAC0D2 /* Rectangle 11.png */,
+				40F4E86A25DE7EAA00BAC0D2 /* textarea.png */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		40F4E87025DE883200BAC0D2 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				40F4E87325DE88CD00BAC0D2 /* history1.png */,
+				40F4E87125DE88CD00BAC0D2 /* home1.png */,
+				40F4E87225DE88CD00BAC0D2 /* profile1.png */,
+				40F4E87C25DE8E8500BAC0D2 /* history.png */,
+				40F4E87B25DE8E8500BAC0D2 /* home.png */,
+				40F4E87D25DE8E8500BAC0D2 /* profile.png */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,8 +187,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40F4E86525DE7D3800BAC0D2 /* Kampus-Polibatam1.jpg in Resources */,
 				40F4E84625DE7B7700BAC0D2 /* LaunchScreen.storyboard in Resources */,
+				40F4E86E25DE841C00BAC0D2 /* Logo-Polibatam.png in Resources */,
+				40F4E86225DE7D3000BAC0D2 /* bt_bg_primary.png in Resources */,
 				40F4E84325DE7B7700BAC0D2 /* Assets.xcassets in Resources */,
+				40F4E86825DE7DF200BAC0D2 /* Rectanglepoltek.png in Resources */,
+				40F4E87F25DE8E8500BAC0D2 /* history.png in Resources */,
+				40F4E87425DE88CD00BAC0D2 /* home1.png in Resources */,
+				40F4E86B25DE7EAA00BAC0D2 /* textarea.png in Resources */,
+				40F4E86125DE7D3000BAC0D2 /* Rectangle 11.png in Resources */,
+				40F4E87525DE88CD00BAC0D2 /* profile1.png in Resources */,
+				40F4E87E25DE8E8500BAC0D2 /* home.png in Resources */,
+				40F4E87625DE88CD00BAC0D2 /* history1.png in Resources */,
+				40F4E88025DE8E8500BAC0D2 /* profile.png in Resources */,
 				40F4E83E25DE7B7600BAC0D2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
