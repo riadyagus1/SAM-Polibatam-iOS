@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  ProfileViewController.swift
 //  SAMPolibatam
 //
 //  Created by Agus Riady on 19/02/21.
@@ -7,17 +7,12 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class ProfileViewController: UIViewController {
 
-    @IBOutlet weak var absenmasuk: UIButton!
-    @IBOutlet weak var absenkeluar: UIButton!
-    @IBOutlet weak var tmpFoto: UIImageView!
-    @IBOutlet weak var lblNama: UILabel!
-    @IBOutlet weak var lblPosisi: UILabel!
-    @IBOutlet weak var lblTanggal: UILabel!
-    @IBOutlet weak var lblLokasi: UILabel!
-    @IBOutlet weak var lblJam: UILabel!
-    @IBOutlet weak var lblKerjaLibur: UILabel!
+    @IBOutlet weak var kotakHadir: UIImageView!
+    @IBOutlet weak var kotakIzin: UIImageView!
+    @IBOutlet weak var kotakAlpha: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +20,9 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         //Start - membuat kotak menjadi melengkung
-        absenmasuk.layer.cornerRadius = 8.0
-        absenkeluar.layer.cornerRadius = 8.0
+        kotakHadir.layer.cornerRadius = 8.0
+        kotakIzin.layer.cornerRadius = 8.0
+        kotakAlpha.layer.cornerRadius = 8.0
         //End - membuat kotak menjadi melengkung
     }
     

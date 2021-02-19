@@ -18,6 +18,25 @@
 		40944ED425DEC3A000447BA3 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 40944ED325DEC3A000447BA3 /* background.png */; };
 		40944ED725DEC4C500447BA3 /* garispetahome.png in Resources */ = {isa = PBXBuildFile; fileRef = 40944ED625DEC4C500447BA3 /* garispetahome.png */; };
 		40944EDA25DEC71800447BA3 /* latarizin.png in Resources */ = {isa = PBXBuildFile; fileRef = 40944ED925DEC71800447BA3 /* latarizin.png */; };
+		40BECB7E25DF749000DBA655 /* boxjumlahizin.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BECB7725DF748F00DBA655 /* boxjumlahizin.png */; };
+		40BECB7F25DF749000DBA655 /* gantipassword.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BECB7825DF748F00DBA655 /* gantipassword.png */; };
+		40BECB8025DF749000DBA655 /* notif.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BECB7925DF748F00DBA655 /* notif.png */; };
+		40BECB8125DF749000DBA655 /* aboutus.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BECB7A25DF748F00DBA655 /* aboutus.png */; };
+		40BECB8225DF749000DBA655 /* boxjumlahaplha.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BECB7B25DF748F00DBA655 /* boxjumlahaplha.png */; };
+		40BECB8325DF749000DBA655 /* camlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BECB7C25DF748F00DBA655 /* camlogo.png */; };
+		40BECB8425DF749000DBA655 /* boxjumlahhadir.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BECB7D25DF748F00DBA655 /* boxjumlahhadir.png */; };
+		40BECB8725DF75D800DBA655 /* lokasiprof.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BECB8625DF75D800DBA655 /* lokasiprof.png */; };
+		40BECB8B25DF772900DBA655 /* kotakprofarrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BECB8925DF772900DBA655 /* kotakprofarrow.png */; };
+		40BECB8C25DF772900DBA655 /* kotakprofpolos.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BECB8A25DF772900DBA655 /* kotakprofpolos.png */; };
+		40BECB8F25DF7E5900DBA655 /* backarrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BECB8E25DF7E5900DBA655 /* backarrow.png */; };
+		40BECB9425DF80C300DBA655 /* LupaPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BECB9325DF80C300DBA655 /* LupaPassViewController.swift */; };
+		40BECB9925DF93A400DBA655 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BECB9825DF93A400DBA655 /* ProfileViewController.swift */; };
+		40BECBA425DFB0A400DBA655 /* kalender1.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BECBA025DFB0A300DBA655 /* kalender1.png */; };
+		40BECBA525DFB0A400DBA655 /* history.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BECBA125DFB0A400DBA655 /* history.png */; };
+		40BECBA625DFB0A400DBA655 /* kalender.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BECBA225DFB0A400DBA655 /* kalender.png */; };
+		40BECBA725DFB0A400DBA655 /* history1.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BECBA325DFB0A400DBA655 /* history1.png */; };
+		40BECBAA25DFB19C00DBA655 /* boxhistory.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BECBA925DFB19C00DBA655 /* boxhistory.png */; };
+		40BECBAD25DFB2EE00DBA655 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BECBAC25DFB2EE00DBA655 /* HistoryViewController.swift */; };
 		40F4E83725DE7B7600BAC0D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F4E83625DE7B7600BAC0D2 /* AppDelegate.swift */; };
 		40F4E83925DE7B7600BAC0D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F4E83825DE7B7600BAC0D2 /* SceneDelegate.swift */; };
 		40F4E83B25DE7B7600BAC0D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F4E83A25DE7B7600BAC0D2 /* ViewController.swift */; };
@@ -51,6 +70,26 @@
 		40944ED325DEC3A000447BA3 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = ../../../../Export/background.png; sourceTree = "<group>"; };
 		40944ED625DEC4C500447BA3 /* garispetahome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = garispetahome.png; path = ../../../../Export/garispetahome.png; sourceTree = "<group>"; };
 		40944ED925DEC71800447BA3 /* latarizin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = latarizin.png; path = ../../../../Export/latarizin.png; sourceTree = "<group>"; };
+		40BECB7725DF748F00DBA655 /* boxjumlahizin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = boxjumlahizin.png; path = ../../../../Export/boxjumlahizin.png; sourceTree = "<group>"; };
+		40BECB7825DF748F00DBA655 /* gantipassword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gantipassword.png; path = ../../../../Export/gantipassword.png; sourceTree = "<group>"; };
+		40BECB7925DF748F00DBA655 /* notif.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = notif.png; path = ../../../../Export/notif.png; sourceTree = "<group>"; };
+		40BECB7A25DF748F00DBA655 /* aboutus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aboutus.png; path = ../../../../Export/aboutus.png; sourceTree = "<group>"; };
+		40BECB7B25DF748F00DBA655 /* boxjumlahaplha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = boxjumlahaplha.png; path = ../../../../Export/boxjumlahaplha.png; sourceTree = "<group>"; };
+		40BECB7C25DF748F00DBA655 /* camlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = camlogo.png; path = ../../../../Export/camlogo.png; sourceTree = "<group>"; };
+		40BECB7D25DF748F00DBA655 /* boxjumlahhadir.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = boxjumlahhadir.png; path = ../../../../Export/boxjumlahhadir.png; sourceTree = "<group>"; };
+		40BECB8625DF75D800DBA655 /* lokasiprof.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lokasiprof.png; path = ../../../../Export/lokasiprof.png; sourceTree = "<group>"; };
+		40BECB8925DF772900DBA655 /* kotakprofarrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kotakprofarrow.png; path = ../../../../Export/kotakprofarrow.png; sourceTree = "<group>"; };
+		40BECB8A25DF772900DBA655 /* kotakprofpolos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kotakprofpolos.png; path = ../../../../Export/kotakprofpolos.png; sourceTree = "<group>"; };
+		40BECB8E25DF7E5900DBA655 /* backarrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backarrow.png; path = ../../../../Export/backarrow.png; sourceTree = "<group>"; };
+		40BECB9125DF7E6500DBA655 /* backarrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backarrow.png; sourceTree = "<group>"; };
+		40BECB9325DF80C300DBA655 /* LupaPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LupaPassViewController.swift; sourceTree = "<group>"; };
+		40BECB9825DF93A400DBA655 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		40BECBA025DFB0A300DBA655 /* kalender1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kalender1.png; path = ../../../../Export/kalender1.png; sourceTree = "<group>"; };
+		40BECBA125DFB0A400DBA655 /* history.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = history.png; path = ../../../../Export/history.png; sourceTree = "<group>"; };
+		40BECBA225DFB0A400DBA655 /* kalender.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kalender.png; path = ../../../../Export/kalender.png; sourceTree = "<group>"; };
+		40BECBA325DFB0A400DBA655 /* history1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = history1.png; path = ../../../../Export/history1.png; sourceTree = "<group>"; };
+		40BECBA925DFB19C00DBA655 /* boxhistory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = boxhistory.png; path = ../../../../Export/boxhistory.png; sourceTree = "<group>"; };
+		40BECBAC25DFB2EE00DBA655 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		40F4E83325DE7B7600BAC0D2 /* SAMPolibatam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAMPolibatam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40F4E83625DE7B7600BAC0D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40F4E83825DE7B7600BAC0D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +141,36 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		40BECB7525DF738500DBA655 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				40BECBA125DFB0A400DBA655 /* history.png */,
+				40BECBA325DFB0A400DBA655 /* history1.png */,
+				40BECBA225DFB0A400DBA655 /* kalender.png */,
+				40BECBA025DFB0A300DBA655 /* kalender1.png */,
+				40BECBA925DFB19C00DBA655 /* boxhistory.png */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		40BECB7625DF739100DBA655 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				40BECB8E25DF7E5900DBA655 /* backarrow.png */,
+				40BECB7A25DF748F00DBA655 /* aboutus.png */,
+				40BECB8925DF772900DBA655 /* kotakprofarrow.png */,
+				40BECB8A25DF772900DBA655 /* kotakprofpolos.png */,
+				40BECB8625DF75D800DBA655 /* lokasiprof.png */,
+				40BECB7B25DF748F00DBA655 /* boxjumlahaplha.png */,
+				40BECB7D25DF748F00DBA655 /* boxjumlahhadir.png */,
+				40BECB7725DF748F00DBA655 /* boxjumlahizin.png */,
+				40BECB7C25DF748F00DBA655 /* camlogo.png */,
+				40BECB7825DF748F00DBA655 /* gantipassword.png */,
+				40BECB7925DF748F00DBA655 /* notif.png */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		40F4E82A25DE7B7600BAC0D2 = {
 			isa = PBXGroup;
 			children = (
@@ -124,7 +193,10 @@
 				40F4E83625DE7B7600BAC0D2 /* AppDelegate.swift */,
 				40F4E83825DE7B7600BAC0D2 /* SceneDelegate.swift */,
 				40F4E83A25DE7B7600BAC0D2 /* ViewController.swift */,
+				40BECB9325DF80C300DBA655 /* LupaPassViewController.swift */,
 				40104A4C25DEE5FF003489DC /* HomeViewController.swift */,
+				40BECBAC25DFB2EE00DBA655 /* HistoryViewController.swift */,
+				40BECB9825DF93A400DBA655 /* ProfileViewController.swift */,
 				40F4E83C25DE7B7600BAC0D2 /* Main.storyboard */,
 				40F4E84225DE7B7700BAC0D2 /* Assets.xcassets */,
 				40F4E85225DE7C3300BAC0D2 /* Gambar */,
@@ -138,9 +210,12 @@
 		40F4E85225DE7C3300BAC0D2 /* Gambar */ = {
 			isa = PBXGroup;
 			children = (
+				40BECB9125DF7E6500DBA655 /* backarrow.png */,
 				40F4E85B25DE7D0500BAC0D2 /* Login */,
-				40F4E87025DE883200BAC0D2 /* TabBar */,
 				40944EC325DEC34100447BA3 /* Home */,
+				40F4E87025DE883200BAC0D2 /* TabBar */,
+				40BECB7525DF738500DBA655 /* History */,
+				40BECB7625DF739100DBA655 /* Profile */,
 			);
 			path = Gambar;
 			sourceTree = "<group>";
@@ -228,29 +303,45 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40BECBA425DFB0A400DBA655 /* kalender1.png in Resources */,
 				40944ECB25DEC35900447BA3 /* fotoblank.png in Resources */,
 				40F4E86525DE7D3800BAC0D2 /* Kampus-Polibatam1.jpg in Resources */,
 				40F4E84625DE7B7700BAC0D2 /* LaunchScreen.storyboard in Resources */,
 				40F4E86E25DE841C00BAC0D2 /* Logo-Polibatam.png in Resources */,
+				40BECBAA25DFB19C00DBA655 /* boxhistory.png in Resources */,
 				40F4E86225DE7D3000BAC0D2 /* bt_bg_primary.png in Resources */,
 				40944ECD25DEC35900447BA3 /* kalender.png in Resources */,
 				40F4E84325DE7B7700BAC0D2 /* Assets.xcassets in Resources */,
 				40F4E86825DE7DF200BAC0D2 /* Rectanglepoltek.png in Resources */,
 				40944ED125DEC35900447BA3 /* kotakabsen.png in Resources */,
+				40BECBA725DFB0A400DBA655 /* history1.png in Resources */,
+				40BECB8C25DF772900DBA655 /* kotakprofpolos.png in Resources */,
+				40BECB8725DF75D800DBA655 /* lokasiprof.png in Resources */,
 				40944ECE25DEC35900447BA3 /* kotak izin.png in Resources */,
+				40BECB7E25DF749000DBA655 /* boxjumlahizin.png in Resources */,
+				40BECB7F25DF749000DBA655 /* gantipassword.png in Resources */,
+				40BECB8025DF749000DBA655 /* notif.png in Resources */,
 				40F4E87F25DE8E8500BAC0D2 /* history.png in Resources */,
 				40F4E87425DE88CD00BAC0D2 /* home1.png in Resources */,
+				40BECBA525DFB0A400DBA655 /* history.png in Resources */,
 				40F4E86B25DE7EAA00BAC0D2 /* textarea.png in Resources */,
 				40944ED725DEC4C500447BA3 /* garispetahome.png in Resources */,
+				40BECB8325DF749000DBA655 /* camlogo.png in Resources */,
 				40944EDA25DEC71800447BA3 /* latarizin.png in Resources */,
 				40F4E86125DE7D3000BAC0D2 /* Rectangle 11.png in Resources */,
 				40F4E87525DE88CD00BAC0D2 /* profile1.png in Resources */,
 				40F4E87E25DE8E8500BAC0D2 /* home.png in Resources */,
+				40BECB8F25DF7E5900DBA655 /* backarrow.png in Resources */,
 				40944ECF25DEC35900447BA3 /* map pin.png in Resources */,
+				40BECB8425DF749000DBA655 /* boxjumlahhadir.png in Resources */,
+				40BECB8B25DF772900DBA655 /* kotakprofarrow.png in Resources */,
 				40F4E87625DE88CD00BAC0D2 /* history1.png in Resources */,
 				40F4E88025DE8E8500BAC0D2 /* profile.png in Resources */,
+				40BECBA625DFB0A400DBA655 /* kalender.png in Resources */,
 				40F4E83E25DE7B7600BAC0D2 /* Main.storyboard in Resources */,
+				40BECB8225DF749000DBA655 /* boxjumlahaplha.png in Resources */,
 				40944ECC25DEC35900447BA3 /* kotak absen masuk.png in Resources */,
+				40BECB8125DF749000DBA655 /* aboutus.png in Resources */,
 				40944ED025DEC35900447BA3 /* bg izin.png in Resources */,
 				40944ED425DEC3A000447BA3 /* background.png in Resources */,
 			);
@@ -266,7 +357,10 @@
 				40104A4D25DEE5FF003489DC /* HomeViewController.swift in Sources */,
 				40F4E83B25DE7B7600BAC0D2 /* ViewController.swift in Sources */,
 				40F4E83725DE7B7600BAC0D2 /* AppDelegate.swift in Sources */,
+				40BECB9425DF80C300DBA655 /* LupaPassViewController.swift in Sources */,
+				40BECB9925DF93A400DBA655 /* ProfileViewController.swift in Sources */,
 				40F4E83925DE7B7600BAC0D2 /* SceneDelegate.swift in Sources */,
+				40BECBAD25DFB2EE00DBA655 /* HistoryViewController.swift in Sources */,
 				40F4E84125DE7B7600BAC0D2 /* SAMPolibatam.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,7 +518,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.AgusRiady.SAMPolibatam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -443,7 +537,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.AgusRiady.SAMPolibatam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
