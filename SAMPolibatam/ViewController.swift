@@ -25,13 +25,21 @@ extension UIViewController{
 
 class ViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var usernameField: UITextField!
+    @IBOutlet weak var passField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-       
+        usernameField.text = ""
+        passField.text = ""
         self.HideKeyboard()
         
     }
+    
+
+    
+    
 }
 
 
