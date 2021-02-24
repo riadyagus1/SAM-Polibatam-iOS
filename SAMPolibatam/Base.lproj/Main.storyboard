@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DHi-pZ-wz5">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -79,6 +79,39 @@ Politeknik Negeri Batam </string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J2I-ER-Q04" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="682.60869565217399" y="554.46428571428567"/>
+        </scene>
+        <!--Onboarding View Controller-->
+        <scene sceneID="tZ5-1h-e2v">
+            <objects>
+                <viewController id="DHi-pZ-wz5" customClass="OnboardingViewController" customModule="SAMPolibatam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eDi-Pp-xVG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="otM-8r-DE7">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="784"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Cz8-24-a10"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="j7n-Ze-4Fw"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="Uxp-Aa-IeF">
+                                <rect key="frame" x="127" y="834" width="161" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dUC-u4-10Y"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="Uxp-Aa-IeF" id="2Ck-eM-RVc"/>
+                        <outlet property="scrollView" destination="otM-8r-DE7" id="kCo-hb-BSg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Ou-fV-hUa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="485.50724637681162" y="-1216.0714285714284"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -443,29 +476,6 @@ di SAM Polibatam</string>
             </objects>
             <point key="canvasLocation" x="3700.0000000000005" y="522.99107142857144"/>
         </scene>
-        <!--Title-->
-        <scene sceneID="2tR-X4-dsw">
-            <objects>
-                <viewController id="oap-BT-WPP" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QHj-V9-vZN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UHp-lX-ul3">
-                                <rect key="frame" x="0.0" y="164" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </navigationBar>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="osa-SL-oSx"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Title" id="CWr-K0-2Zz"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NWG-mE-Dha" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4696" y="418"/>
-        </scene>
         <!--Izin View Controller-->
         <scene sceneID="sg8-19-tXD">
             <objects>
@@ -486,19 +496,12 @@ di SAM Polibatam</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="backarrow.png"/>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Alasan" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XIX-aW-8oH">
-                                <rect key="frame" x="30" y="173" width="364" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="line" placeholder="Alasan" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XIX-aW-8oH">
+                                <rect key="frame" x="30" y="173" width="355" height="228"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2A-Q1-bc6">
-                                <rect key="frame" x="43" y="353" width="328" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Submit Izin" backgroundImage="bt_bg_primary.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Masukkan Alasan Ketidakhadiran" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ea-Dw-FIF">
                                 <rect key="frame" x="30" y="135" width="213" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -506,6 +509,13 @@ di SAM Polibatam</string>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2A-Q1-bc6">
+                                <rect key="frame" x="43" y="440" width="328" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Submit Izin" backgroundImage="bt_bg_primary.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pJy-18-hbX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -777,7 +787,7 @@ di SAM Polibatam</string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="bPT-go-qRd"/>
-        <segue reference="Khh-Hh-XLN"/>
+        <segue reference="QX9-lz-auP"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Kampus-Polibatam1.jpg" width="432" height="288"/>
