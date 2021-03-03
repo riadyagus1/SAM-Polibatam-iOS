@@ -46,6 +46,13 @@ class MapViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func backBtn(_ sender: UIButton) {
+        if let navController = self.navigationController {
+          navController.popViewController(animated: true)
+        }
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 
     
     let initialLocation = CLLocation(latitude: 1.1199904864817212, longitude: 104.04802137002713)

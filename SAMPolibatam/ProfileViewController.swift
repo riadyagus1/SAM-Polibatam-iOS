@@ -9,9 +9,13 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet weak var fotoProfile: UIImageView!
+    @IBOutlet weak var namaUser: UILabel!
+    @IBOutlet weak var posisiNIP: UILabel!
     @IBOutlet weak var kotakHadir: UIImageView!
     @IBOutlet weak var kotakIzin: UIImageView!
     @IBOutlet weak var kotakAlpha: UIImageView!
+    @IBOutlet weak var notifSwitch: UISwitch!
     
     
     override func viewDidLoad() {

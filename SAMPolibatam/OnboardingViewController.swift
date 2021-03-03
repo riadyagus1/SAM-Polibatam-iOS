@@ -11,7 +11,7 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate{
 
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
-
+    
     
     var Onboardings:[Onboarding] = [];
     
@@ -34,7 +34,7 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate{
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = false
     }
-    
+
     
     func createOnboardings() -> [Onboarding] {
 
@@ -125,9 +125,9 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate{
             }
         }
     
+    
     /*
     // MARK: - Navigation
-
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.

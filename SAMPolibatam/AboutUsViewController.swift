@@ -13,6 +13,13 @@ class AboutUsViewController: UIViewController, UIScrollViewDelegate{
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
     
+    @IBAction func backBtn(_ sender: UIButton) {
+        if let navController = self.navigationController {
+          navController.popViewController(animated: true)
+        }
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     var slides:[Slide] = [];
     
     override func viewDidLoad() {

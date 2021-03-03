@@ -1,34 +1,27 @@
 //
-//  LupaPassViewController.swift
+//  GantiPasswordViewController.swift
 //  SAMPolibatam
 //
-//  Created by Agus Riady on 19/02/21.
+//  Created by Agus Riady on 03/03/21.
 //
 
 import UIKit
 
-class LupaPassViewController: UIViewController {
+class GantiPasswordViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-    
     @IBAction func backBtn(_ sender: UIButton) {
         if let navController = self.navigationController {
           navController.popViewController(animated: true)
         }
         self.dismiss(animated: true, completion: nil)
     }
-    
-// Start - Href ke link helpdesk
-    @IBAction func btnLink(_ sender: UIButton) {
-        UIApplication.shared.open(URL(string: "https://helpdesk.polibatam.ac.id")! as URL, options: [:], completionHandler: nil)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
     }
-// End - Href ke link helpdesk
     
-    
+
     /*
     // MARK: - Navigation
 

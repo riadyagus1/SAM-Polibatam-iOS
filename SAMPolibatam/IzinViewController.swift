@@ -16,6 +16,12 @@ class IzinViewController: UIViewController {
         self.HideKeyboard()
     }
     
+    @IBAction func backBtn(_ sender: UIButton) {
+        if let navController = self.navigationController {
+          navController.popViewController(animated: true)
+        }
+        self.dismiss(animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation

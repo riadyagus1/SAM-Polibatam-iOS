@@ -1,13 +1,13 @@
 //
-//  LupaPassViewController.swift
+//  CamViewController.swift
 //  SAMPolibatam
 //
-//  Created by Agus Riady on 19/02/21.
+//  Created by Agus Riady on 03/03/21.
 //
 
 import UIKit
 
-class LupaPassViewController: UIViewController {
+class CamViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,14 +21,8 @@ class LupaPassViewController: UIViewController {
         }
         self.dismiss(animated: true, completion: nil)
     }
-    
-// Start - Href ke link helpdesk
-    @IBAction func btnLink(_ sender: UIButton) {
-        UIApplication.shared.open(URL(string: "https://helpdesk.polibatam.ac.id")! as URL, options: [:], completionHandler: nil)
-    }
-// End - Href ke link helpdesk
-    
-    
+
+
     /*
     // MARK: - Navigation
 
