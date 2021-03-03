@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Foundation
 
 class OnboardingViewController: UIViewController, UIScrollViewDelegate{
 
@@ -29,7 +30,6 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate{
 
         // Do any additional setup after loading the view.
     }
-
     
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = false

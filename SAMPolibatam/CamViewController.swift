@@ -8,21 +8,21 @@
 import UIKit
 
 class CamViewController: UIViewController {
-
+    
+    
+    @IBAction func bckBtn(_ sender: UIButton) {
+        if let navController = self.navigationController {
+          navController.popViewController(animated: true)
+        }
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func backBtn(_ sender: UIButton) {
-        if let navController = self.navigationController {
-          navController.popViewController(animated: true)
-        }
-        self.dismiss(animated: true, completion: nil)
-    }
-
-
     /*
     // MARK: - Navigation
 

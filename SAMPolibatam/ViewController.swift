@@ -37,6 +37,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        let firstTime = UserDefaults.standard.object(forKey: "first_time") as? Bool
+
+        // Show the intro collectionView
+        if firstTime == nil {
+            let view = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "OnboardingScreen") // Instatiates your pageView
+                    view.modalPresentationStyle = .fullScreen
+                    show(view, sender: self)
+            UserDefaults.standard.set(false, forKey: "first_time")
+        }
+    }
+    
 
     
     
