@@ -7,14 +7,35 @@
 
 import UIKit
 
-class IzinViewController: UIViewController {
+class IzinViewController: UIViewController, UITextFieldDelegate {
+    
+    @IBOutlet weak var izinBox: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         self.HideKeyboard()
+        //Memangil Fungsi Hide Keyboard Tap Anywhere(End)
+        
+        
+        //Memangil Fungsi Hide Keyboard dengan tombol selesai
+        izinBox.delegate = self
+        izinBox.returnKeyType = .done
+            
+        self.view.addSubview(izinBox)
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        izinBox.borderStyle = UITextField.BorderStyle.roundedRect
+    }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+    {
+        textField.resignFirstResponder()
+        return true
+    }
+    //Memangil Fungsi Hide Keyboard dengan tombol selesai (End)
     
     @IBAction func backBtn(_ sender: UIButton) {
         if let navController = self.navigationController {

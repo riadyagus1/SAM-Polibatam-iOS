@@ -9,6 +9,7 @@ import UIKit
 
 // Start - Hilangin keyboard setelah selesai diketik
 extension UIViewController{
+    
     func HideKeyboard() {
         let Tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(DismissKeyboard))
         
@@ -23,6 +24,8 @@ extension UIViewController{
 }
 // End - Hilangin keyboard setelah selesai diketik
 
+
+
 class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var usernameField: UITextField!
@@ -30,13 +33,62 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        
+        
+        //Text Field Naik saat Muncul Keyboard (1)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        //Text Field Naik saat Muncul Keyboard (1 end)
+
+
+        
+        //Memangil Fungsi Hide Keyboard Tap Anywhere
         usernameField.text = ""
         passField.text = ""
         self.HideKeyboard()
+        //Memangil Fungsi Hide Keyboard Tap Anywhere(End)
         
+        
+        //Memangil Fungsi Hide Keyboard dengan tombol selesai
+        usernameField.delegate = self
+        passField.delegate = self
+        
+        usernameField.returnKeyType = .done
+        passField.returnKeyType = .done
+            
+        self.view.addSubview(usernameField)
+        self.view.addSubview(passField)
     }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+    {
+        textField.resignFirstResponder()
+        return true
+    }
+    //Memangil Fungsi Hide Keyboard dengan tombol selesai (End)
     
+    
+    
+    //Text Field Naik saat Muncul Keyboard (2)
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+    }
+
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
+    //Text Field Naik saat Muncul Keyboard (2 end)
+    
+    
+    
+    //Onboarding Screen / First Time Run
     override func viewDidAppear(_ animated: Bool) {
         let firstTime = UserDefaults.standard.object(forKey: "first_time") as? Bool
 
@@ -48,9 +100,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             UserDefaults.standard.set(false, forKey: "first_time")
         }
     }
-    
-
-    
+    //Onboarding Screen / First Time Run (End)
     
 }
 
