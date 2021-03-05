@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -78,6 +78,7 @@
 		40F4E87E25DE8E8500BAC0D2 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 40F4E87B25DE8E8500BAC0D2 /* home.png */; };
 		40F4E87F25DE8E8500BAC0D2 /* history.png in Resources */ = {isa = PBXBuildFile; fileRef = 40F4E87C25DE8E8500BAC0D2 /* history.png */; };
 		40F4E88025DE8E8500BAC0D2 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 40F4E87D25DE8E8500BAC0D2 /* profile.png */; };
+		DE2383A55B634D51DB27DBAD /* Pods_SAMPolibatam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C394BC4AABA7CFD8BD5CEC4B /* Pods_SAMPolibatam.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -156,6 +157,9 @@
 		40F4E87B25DE8E8500BAC0D2 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = ../../../../Export/home.png; sourceTree = "<group>"; };
 		40F4E87C25DE8E8500BAC0D2 /* history.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = history.png; path = ../../../../Export/history.png; sourceTree = "<group>"; };
 		40F4E87D25DE8E8500BAC0D2 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = profile.png; path = ../../../../Export/profile.png; sourceTree = "<group>"; };
+		904FCBFB37F629E91EF3D84A /* Pods-SAMPolibatam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAMPolibatam.release.xcconfig"; path = "Target Support Files/Pods-SAMPolibatam/Pods-SAMPolibatam.release.xcconfig"; sourceTree = "<group>"; };
+		C394BC4AABA7CFD8BD5CEC4B /* Pods_SAMPolibatam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAMPolibatam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA96CC3EFA7281A67176437C /* Pods-SAMPolibatam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAMPolibatam.debug.xcconfig"; path = "Target Support Files/Pods-SAMPolibatam/Pods-SAMPolibatam.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,12 +167,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE2383A55B634D51DB27DBAD /* Pods_SAMPolibatam.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		271CCB88FEA491163FF216A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA96CC3EFA7281A67176437C /* Pods-SAMPolibatam.debug.xcconfig */,
+				904FCBFB37F629E91EF3D84A /* Pods-SAMPolibatam.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4041925925E4E38C0079461E /* Anggota */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +258,8 @@
 			children = (
 				40F4E83525DE7B7600BAC0D2 /* SAMPolibatam */,
 				40F4E83425DE7B7600BAC0D2 /* Products */,
+				271CCB88FEA491163FF216A2 /* Pods */,
+				59FA409D08DDF4637C3EAE85 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -330,6 +346,14 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		59FA409D08DDF4637C3EAE85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C394BC4AABA7CFD8BD5CEC4B /* Pods_SAMPolibatam.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -337,9 +361,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 40F4E84A25DE7B7700BAC0D2 /* Build configuration list for PBXNativeTarget "SAMPolibatam" */;
 			buildPhases = (
+				10AED5C5991DA024BAC8BA96 /* [CP] Check Pods Manifest.lock */,
 				40F4E82F25DE7B7600BAC0D2 /* Sources */,
 				40F4E83025DE7B7600BAC0D2 /* Frameworks */,
 				40F4E83125DE7B7600BAC0D2 /* Resources */,
+				11468A21780A0DCBCB0655CF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -446,6 +472,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10AED5C5991DA024BAC8BA96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SAMPolibatam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		11468A21780A0DCBCB0655CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SAMPolibatam/Pods-SAMPolibatam-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SAMPolibatam/Pods-SAMPolibatam-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SAMPolibatam/Pods-SAMPolibatam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		40F4E82F25DE7B7600BAC0D2 /* Sources */ = {
@@ -611,6 +679,7 @@
 		};
 		40F4E84B25DE7B7700BAC0D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA96CC3EFA7281A67176437C /* Pods-SAMPolibatam.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -630,6 +699,7 @@
 		};
 		40F4E84C25DE7B7700BAC0D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 904FCBFB37F629E91EF3D84A /* Pods-SAMPolibatam.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

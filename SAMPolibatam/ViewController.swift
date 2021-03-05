@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Alamofire
+
 
 // Start - Hilangin keyboard setelah selesai diketik
 extension UIViewController{
@@ -102,9 +104,48 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     //Onboarding Screen / First Time Run (End)
     
+    //Code Login Auth
+    
+    let link_request = "https://sid.polibatam.ac.id/apilogin/web/api/auth/login"
+    let tokenAPI = "imsLKICAxlFhEOkbxeO8bbQu2LE44zVf"
+    
+        @IBAction func loginBtn(_ sender: Any) {
+            if (usernameField.text=="" || passField.text=="") {
+                
+            }
+            else {
+                let configuration = URLSessionConfiguration.default
+                    configuration.requestCachePolicy = .reloadIgnoringLocalCacheData
+                let parameters: Parameters = ["request":"login",
+                                              "username":usernameField.text!,
+                                              "password":passField.text!,
+                                              "token":tokenAPI]
+                
+                Alamofire.request(link_request, method: .post, parameters: parameters).responseJSON
+                {
+                    response in
+                    print(response)
+                    
+                    if let result = response.result.value {
+                        let jsonData = result as! NSDictionary
+                        
+                        
+                        if (jsonData.value(forKey: "status") as! String == "success") {
+                            
+                            let userDefaultStore = UserDefaults.standard
+                            userDefaultStore.set(self.usernameField.text, forKey: "username")
+                            
+                            let storyBoard:UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                            let newViewController = storyBoard.instantiateViewController(withIdentifier: "TabbarViewController")
+                            newViewController.modalPresentationStyle = .fullScreen
+                            self.show(newViewController, sender: self)
+                        } else {
+                            
+                        }
+                    }
+                }
+            }
+        }
+    //Code Login Auth (End)
+    
 }
-
-
-
-
-

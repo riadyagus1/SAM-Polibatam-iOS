@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NXC-ET-Y3v">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -56,7 +56,7 @@ Politeknik Negeri Batam </string>
                                 <state key="normal" image="backarrow.png"/>
                                 <connections>
                                     <action selector="backBtn:" destination="F7x-Za-tlr" eventType="touchUpInside" id="v8F-8s-otv"/>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="YTH-Ta-iLD"/>
+                                    <segue destination="NXC-ET-Y3v" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="YTH-Ta-iLD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLh-4F-7dw">
@@ -66,7 +66,7 @@ Politeknik Negeri Batam </string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="QX9-lz-auP"/>
+                                    <segue destination="NXC-ET-Y3v" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="QX9-lz-auP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -117,7 +117,7 @@ Politeknik Negeri Batam </string>
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="k81-SA-kfN"/>
+                                    <segue destination="NXC-ET-Y3v" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="k81-SA-kfN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -160,7 +160,7 @@ Politeknik Negeri Batam </string>
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="svS-ts-jY6" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="8bG-df-LVm"/>
+                                    <action selector="loginBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E8x-Co-Ypx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQ8-tk-K2t">
@@ -217,6 +217,7 @@ di SAM Polibatam</string>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="2fg-Uh-Yqw"/>
                     <connections>
                         <outlet property="passField" destination="KkS-7j-ilg" id="UTw-fF-mq1"/>
                         <outlet property="usernameField" destination="AhY-07-fnr" id="Jx6-aO-zGR"/>
@@ -224,7 +225,7 @@ di SAM Polibatam</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="684" y="-176"/>
+            <point key="canvasLocation" x="683" y="-176"/>
         </scene>
         <!--History-->
         <scene sceneID="IkS-SD-2Iy">
@@ -265,7 +266,7 @@ di SAM Polibatam</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uKx-Rd-Bne" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2889.8550724637685" y="-176.11607142857142"/>
+            <point key="canvasLocation" x="2890" y="-176"/>
         </scene>
         <!--Profile-->
         <scene sceneID="am6-Cy-QkA">
@@ -399,7 +400,7 @@ di SAM Polibatam</string>
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="Khh-Hh-XLN"/>
+                                    <segue destination="NXC-ET-Y3v" kind="presentation" modalPresentationStyle="fullScreen" id="Khh-Hh-XLN"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hadir" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwe-iv-htU">
@@ -444,7 +445,7 @@ di SAM Polibatam</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FRn-2B-Owg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2889.8550724637685" y="516.96428571428567"/>
+            <point key="canvasLocation" x="2890" y="554"/>
         </scene>
         <!--About Us View Controller-->
         <scene sceneID="jah-fx-htB">
@@ -493,7 +494,7 @@ di SAM Polibatam</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pGt-J1-jl8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3700.0000000000005" y="522.99107142857144"/>
+            <point key="canvasLocation" x="3774" y="554"/>
         </scene>
         <!--Izin View Controller-->
         <scene sceneID="sg8-19-tXD">
@@ -795,7 +796,7 @@ di SAM Polibatam</string>
         <!--Tab Bar Controller-->
         <scene sceneID="Ed2-nu-b7H">
             <objects>
-                <tabBarController id="svS-ts-jY6" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabbarViewController" id="svS-ts-jY6" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="VaF-Yj-UJl"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Igu-5u-PNj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -810,7 +811,7 @@ di SAM Polibatam</string>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wzt-cW-9ek" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1722" y="-176"/>
+            <point key="canvasLocation" x="1681" y="-176"/>
         </scene>
         <!--Ganti Password View Controller-->
         <scene sceneID="3XK-Zz-BDc">
@@ -895,9 +896,26 @@ di SAM Polibatam</string>
             </objects>
             <point key="canvasLocation" x="2889.8550724637685" y="1228.7946428571429"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iFu-nm-fmH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="NXC-ET-Y3v" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="WxG-oK-dub">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="AZh-Hn-W1w"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0A5-qS-9iS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-714" y="-176"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="k81-SA-kfN"/>
+        <segue reference="Khh-Hh-XLN"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Kampus-Polibatam1.jpg" width="432" height="288"/>

@@ -28,6 +28,13 @@ class HomeViewController: UIViewController {
         absenmasuk.layer.cornerRadius = 8.0
         absenkeluar.layer.cornerRadius = 8.0
         //End - membuat kotak menjadi melengkung
+        
+        let userDefault = UserDefaults.standard
+        
+        lblNama.text = userDefault.string(forKey: "username")
+        lblNama.isUserInteractionEnabled = false
+        lblPosisi.text = userDefault.string(forKey: "jabatan")
+        lblNama.isUserInteractionEnabled = false
     }
     
 
