@@ -400,7 +400,7 @@ di SAM Polibatam</string>
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="NXC-ET-Y3v" kind="presentation" modalPresentationStyle="fullScreen" id="Khh-Hh-XLN"/>
+                                    <action selector="logOutButton:" destination="Brx-WX-qyS" eventType="touchUpInside" id="xJ2-4f-4tN"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hadir" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwe-iv-htU">
@@ -915,7 +915,7 @@ di SAM Polibatam</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Khh-Hh-XLN"/>
+        <segue reference="QX9-lz-auP"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Kampus-Polibatam1.jpg" width="432" height="288"/>

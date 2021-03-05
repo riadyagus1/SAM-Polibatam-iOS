@@ -30,7 +30,15 @@ class ProfileViewController: UIViewController {
         //End - membuat kotak menjadi melengkung
     }
     
-
+    // Log Out
+    @IBAction func logOutButton(_ sender: Any) {
+        let storyBoard:UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "LoginScreen") as! ViewController
+        newViewController.modalPresentationStyle = .fullScreen
+        self.show(newViewController, sender: self)
+    }
+    // Log Out (End)
+    
     /*
     // MARK: - Navigation
 

@@ -29,12 +29,14 @@ class HomeViewController: UIViewController {
         absenkeluar.layer.cornerRadius = 8.0
         //End - membuat kotak menjadi melengkung
         
+        // Ambil data dari Login Screen - TextField
         let userDefault = UserDefaults.standard
         
         lblNama.text = userDefault.string(forKey: "username")
         lblNama.isUserInteractionEnabled = false
         lblPosisi.text = userDefault.string(forKey: "jabatan")
         lblNama.isUserInteractionEnabled = false
+        // Ambil data dari Login Screen - TextField (End)
     }
     
 
