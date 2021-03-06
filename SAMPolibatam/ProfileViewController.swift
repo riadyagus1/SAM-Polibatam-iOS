@@ -32,10 +32,23 @@ class ProfileViewController: UIViewController {
     
     // Log Out
     @IBAction func logOutButton(_ sender: Any) {
-        let storyBoard:UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        let newViewController = storyBoard.instantiateViewController(withIdentifier: "LoginScreen") as! ViewController
-        newViewController.modalPresentationStyle = .fullScreen
-        self.show(newViewController, sender: self)
+        // Create new Alert
+        let dialogMessage = UIAlertController(title: "Log Out Berhasil", message: "\n Terima kasih sudah menggunakan aplikasi kami", preferredStyle: .alert)
+        
+        // Create OK button with action handler
+        let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
+            print("Log Out Success")
+            let storyBoard:UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let newViewController = storyBoard.instantiateViewController(withIdentifier: "LoginScreen") as! ViewController
+            newViewController.modalPresentationStyle = .fullScreen
+            self.show(newViewController, sender: self)
+         })
+        
+        //Add OK button to a dialog message
+        dialogMessage.addAction(ok)
+        
+        // Present Alert to
+        self.present(dialogMessage, animated: true, completion: nil)
     }
     // Log Out (End)
     

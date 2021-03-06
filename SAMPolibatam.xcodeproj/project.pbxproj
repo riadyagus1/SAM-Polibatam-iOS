@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		40104A4D25DEE5FF003489DC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40104A4C25DEE5FF003489DC /* HomeViewController.swift */; };
-		401D57C725F29A7C0007D2FB /* PopUpWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401D57C625F29A7C0007D2FB /* PopUpWindow.swift */; };
 		4031126025E387AE004DCFCF /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4031125F25E387AE004DCFCF /* MapViewController.swift */; };
 		4041924C25E4D8A30079461E /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4041924B25E4D8A30079461E /* AboutUsViewController.swift */; };
 		4041925025E4DA6A0079461E /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4041924F25E4DA6A0079461E /* Slide.swift */; };
@@ -84,7 +83,6 @@
 
 /* Begin PBXFileReference section */
 		40104A4C25DEE5FF003489DC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		401D57C625F29A7C0007D2FB /* PopUpWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpWindow.swift; sourceTree = "<group>"; };
 		4031125F25E387AE004DCFCF /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		4041924B25E4D8A30079461E /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		4041924F25E4DA6A0079461E /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
@@ -280,7 +278,6 @@
 				40F4E83825DE7B7600BAC0D2 /* SceneDelegate.swift */,
 				40EA5DE625E6465E00B11B28 /* OnboardingViewController.swift */,
 				40F4E83A25DE7B7600BAC0D2 /* ViewController.swift */,
-				401D57C625F29A7C0007D2FB /* PopUpWindow.swift */,
 				40BECB9325DF80C300DBA655 /* LupaPassViewController.swift */,
 				40104A4C25DEE5FF003489DC /* HomeViewController.swift */,
 				4031125F25E387AE004DCFCF /* MapViewController.swift */,
@@ -535,7 +532,6 @@
 				407E8E5D25EFB94000F3D345 /* GantiPasswordViewController.swift in Sources */,
 				40EA5DCC25E63A1600B11B28 /* Onboarding.swift in Sources */,
 				40F4E83925DE7B7600BAC0D2 /* SceneDelegate.swift in Sources */,
-				401D57C725F29A7C0007D2FB /* PopUpWindow.swift in Sources */,
 				40BECBAD25DFB2EE00DBA655 /* HistoryViewController.swift in Sources */,
 				40EA5DE725E6465E00B11B28 /* OnboardingViewController.swift in Sources */,
 				4041924C25E4D8A30079461E /* AboutUsViewController.swift in Sources */,

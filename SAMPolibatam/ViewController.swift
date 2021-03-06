@@ -111,9 +111,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
         @IBAction func loginBtn(_ sender: Any) {
             if (usernameField.text=="" || passField.text=="") {
-                var popUpWindow: PopUpWindow!
-                popUpWindow = PopUpWindow(title: "Error", text: "Username atau Password tidak boleh kosong, Silahkan coba lagi!", buttontext: "Kembali")
-                self.present(popUpWindow, animated: true, completion: nil)
+                // Create new Alert
+                let dialogMessage = UIAlertController(title: "Login Gagal", message: "\n Username / Password tidak boleh kosong! Silahkan coba lagi!", preferredStyle: .alert)
+                
+                // Create OK button with action handler
+                let ok = UIAlertAction(title: "Kembali", style: .default, handler: { (action) -> Void in
+                    print("Field kosong button Kembali tapped")
+                 })
+                
+                //Add OK button to a dialog message
+                dialogMessage.addAction(ok)
+                // Present Alert to
+                self.present(dialogMessage, animated: true, completion: nil)
             }
             else {
                 let configuration = URLSessionConfiguration.default
@@ -142,9 +151,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
                             newViewController.modalPresentationStyle = .fullScreen
                             self.show(newViewController, sender: self)
                         } else {
-                            var popUpWindow: PopUpWindow!
-                            popUpWindow = PopUpWindow(title: "Login Gagal", text: "Username atau Password yang anda masukkan salah, Silahkan coba lagi!", buttontext: "Kembali")
-                            self.present(popUpWindow, animated: true, completion: nil)
+                            // Create new Alert
+                            let dialogMessage = UIAlertController(title: "Login Gagal", message: "\n Username / Password salah! Silahkan coba lagi!", preferredStyle: .alert)
+                            
+                            // Create OK button with action handler
+                            let ok = UIAlertAction(title: "Kembali", style: .default, handler: { (action) -> Void in
+                                print("Password salah Ok button tapped")
+                             })
+                            
+                            //Add OK button to a dialog message
+                            dialogMessage.addAction(ok)
+                            // Present Alert to
+                            self.present(dialogMessage, animated: true, completion: nil)
                         }
                     }
                 }
