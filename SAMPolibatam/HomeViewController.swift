@@ -8,12 +8,15 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
 
     @IBOutlet weak var absenmasuk: UIButton!
     @IBOutlet weak var absenkeluar: UIButton!
+    
     @IBOutlet weak var tmpFoto: UIImageView!
     @IBOutlet weak var lblNama: UILabel!
     @IBOutlet weak var lblPosisi: UILabel!
+    
     @IBOutlet weak var lblTanggal: UILabel!
     @IBOutlet weak var lblLokasi: UILabel!
     @IBOutlet weak var lblJam: UILabel!
@@ -31,15 +34,16 @@ class HomeViewController: UIViewController {
         
         // Ambil data dari Login Screen - TextField
         let userDefault = UserDefaults.standard
+            
+        lblNama.text = userDefault.string(forKey: "name")
+        lblNama.isUserInteractionEnabled = false
         
-        lblNama.text = userDefault.string(forKey: "username")
-        lblNama.isUserInteractionEnabled = false
         lblPosisi.text = userDefault.string(forKey: "jabatan")
-        lblNama.isUserInteractionEnabled = false
+        lblPosisi.isUserInteractionEnabled = false
         // Ambil data dari Login Screen - TextField (End)
+    
     }
     
-
     /*
     // MARK: - Navigation
 

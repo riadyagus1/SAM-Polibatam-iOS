@@ -28,6 +28,16 @@ class ProfileViewController: UIViewController {
         kotakIzin.layer.cornerRadius = 8.0
         kotakAlpha.layer.cornerRadius = 8.0
         //End - membuat kotak menjadi melengkung
+        
+        // Ambil data dari Login Screen
+        let userDefault = UserDefaults.standard
+            
+        namaUser.text = userDefault.string(forKey: "name")
+        namaUser.isUserInteractionEnabled = false
+        
+        posisiNIP.text = "\(userDefault.string(forKey: "nim") ?? "nim") / \(userDefault.string(forKey: "jabatan") ?? "Jabatan")"
+        posisiNIP.isUserInteractionEnabled = false
+        // Ambil data dari Login Screen(End)
     }
     
     // Log Out

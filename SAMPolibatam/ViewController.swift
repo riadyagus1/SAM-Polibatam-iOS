@@ -137,19 +137,27 @@ class ViewController: UIViewController, UITextFieldDelegate {
                     response in
                     print(response)
                     
+                    
                     if let result = response.result.value {
                         let jsonData = result as! NSDictionary
-                        
+                        let myStringDict = jsonData.value(forKey: "data") as? [String:AnyObject]
                         
                         if (jsonData.value(forKey: "status") as! String == "success") {
                             
+                            
+                            // User Default
                             let userDefaultStore = UserDefaults.standard
                             userDefaultStore.set(self.usernameField.text, forKey: "username")
+                            userDefaultStore.set(myStringDict?["name"], forKey: "name")
+                            userDefaultStore.set(myStringDict?["jabatan"], forKey: "jabatan")
+                            userDefaultStore.set(myStringDict?["nim_nik_unit"], forKey: "nim")
+                            // User Default (End)
                             
                             let storyBoard:UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
                             let newViewController = storyBoard.instantiateViewController(withIdentifier: "TabbarViewController")
                             newViewController.modalPresentationStyle = .fullScreen
                             self.show(newViewController, sender: self)
+                            
                         } else {
                             // Create new Alert
                             let dialogMessage = UIAlertController(title: "Login Gagal", message: "\n Username / Password salah! Silahkan coba lagi!", preferredStyle: .alert)
@@ -170,4 +178,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     //Code Login Auth (End)
     
+    struct Identitas: Codable {
+        var username: String
+        var id: Int
+        var email: String
+        var jabatan: String
+        var name: String
+        var nim_nik_unit: Int
+    }
+
 }

@@ -20,6 +20,7 @@
 		40469DC925E40809000BFF22 /* IzinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40469DC825E40809000BFF22 /* IzinViewController.swift */; };
 		407E8E5D25EFB94000F3D345 /* GantiPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E8E5C25EFB94000F3D345 /* GantiPasswordViewController.swift */; };
 		407E8E6225EFC06900F3D345 /* CamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E8E6125EFC06900F3D345 /* CamViewController.swift */; };
+		40929BE525F3AE32009533D7 /* tabbarHistoryBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 40929BE425F3AE32009533D7 /* tabbarHistoryBG.png */; };
 		40944ECB25DEC35900447BA3 /* fotoblank.png in Resources */ = {isa = PBXBuildFile; fileRef = 40944EC425DEC35900447BA3 /* fotoblank.png */; };
 		40944ECC25DEC35900447BA3 /* kotak absen masuk.png in Resources */ = {isa = PBXBuildFile; fileRef = 40944EC525DEC35900447BA3 /* kotak absen masuk.png */; };
 		40944ECD25DEC35900447BA3 /* kalender.png in Resources */ = {isa = PBXBuildFile; fileRef = 40944EC625DEC35900447BA3 /* kalender.png */; };
@@ -95,6 +96,7 @@
 		40469DC825E40809000BFF22 /* IzinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IzinViewController.swift; sourceTree = "<group>"; };
 		407E8E5C25EFB94000F3D345 /* GantiPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GantiPasswordViewController.swift; sourceTree = "<group>"; };
 		407E8E6125EFC06900F3D345 /* CamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamViewController.swift; sourceTree = "<group>"; };
+		40929BE425F3AE32009533D7 /* tabbarHistoryBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbarHistoryBG.png; path = ../../../Export/tabbarHistoryBG.png; sourceTree = "<group>"; };
 		40944EC425DEC35900447BA3 /* fotoblank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fotoblank.png; path = ../../../../Export/fotoblank.png; sourceTree = "<group>"; };
 		40944EC525DEC35900447BA3 /* kotak absen masuk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "kotak absen masuk.png"; path = "../../../../Export/kotak absen masuk.png"; sourceTree = "<group>"; };
 		40944EC625DEC35900447BA3 /* kalender.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kalender.png; path = ../../../../Export/kalender.png; sourceTree = "<group>"; };
@@ -304,6 +306,7 @@
 		40F4E85225DE7C3300BAC0D2 /* Gambar */ = {
 			isa = PBXGroup;
 			children = (
+				40929BE425F3AE32009533D7 /* tabbarHistoryBG.png */,
 				40BECB9125DF7E6500DBA655 /* backarrow.png */,
 				40EA5DD325E6424900B11B28 /* background.png */,
 				40EA5DF025E654FD00B11B28 /* backgroundNew.png */,
@@ -450,6 +453,7 @@
 				40BECB8325DF749000DBA655 /* camlogo.png in Resources */,
 				40944EDA25DEC71800447BA3 /* latarizin.png in Resources */,
 				40F4E86125DE7D3000BAC0D2 /* Rectangle 11.png in Resources */,
+				40929BE525F3AE32009533D7 /* tabbarHistoryBG.png in Resources */,
 				40F4E87525DE88CD00BAC0D2 /* profile1.png in Resources */,
 				40F4E87E25DE8E8500BAC0D2 /* home.png in Resources */,
 				40EA5DCF25E63A2300B11B28 /* Onboarding.xib in Resources */,
@@ -686,6 +690,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5GZXGAQ3YM;
 				INFOPLIST_FILE = SAMPolibatam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -706,6 +711,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5GZXGAQ3YM;
 				INFOPLIST_FILE = SAMPolibatam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
