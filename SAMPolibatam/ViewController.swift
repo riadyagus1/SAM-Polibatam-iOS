@@ -9,7 +9,7 @@ import UIKit
 import Alamofire
 
 
-// Start - Hilangin keyboard setelah selesai diketik
+//MARK: Hilangin keyboard setelah selesai diketik
 extension UIViewController{
     
     func HideKeyboard() {
@@ -38,21 +38,21 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         
         
-        //Text Field Naik saat Muncul Keyboard (1)
+        //MARK: Text Field Naik saat Muncul Keyboard (1)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         //Text Field Naik saat Muncul Keyboard (1 end)
 
 
         
-        //Memangil Fungsi Hide Keyboard Tap Anywhere
+        //MARK: Memangil Fungsi Hide Keyboard Tap Anywhere
         usernameField.text = ""
         passField.text = ""
         self.HideKeyboard()
         //Memangil Fungsi Hide Keyboard Tap Anywhere(End)
         
         
-        //Memangil Fungsi Hide Keyboard dengan tombol selesai
+        //MARK:Memangil Fungsi Hide Keyboard dengan tombol selesai
         usernameField.delegate = self
         passField.delegate = self
         
@@ -72,7 +72,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     
     
-    //Text Field Naik saat Muncul Keyboard (2)
+    //MARK: Text Field Naik saat Muncul Keyboard (2)
     @objc func keyboardWillShow(notification: NSNotification) {
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             if self.view.frame.origin.y == 0 {
@@ -90,7 +90,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     
     
-    //Onboarding Screen / First Time Run
+    //MARK: Onboarding Screen / First Time Run
     override func viewDidAppear(_ animated: Bool) {
         let firstTime = UserDefaults.standard.object(forKey: "first_time") as? Bool
 
@@ -104,14 +104,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     //Onboarding Screen / First Time Run (End)
     
-    //Code Login Auth
+    //MARK: Code Login Auth
     
     let link_request = "https://sid.polibatam.ac.id/apilogin/web/api/auth/login"
     let tokenAPI = "imsLKICAxlFhEOkbxeO8bbQu2LE44zVf"
     
         @IBAction func loginBtn(_ sender: Any) {
             if (usernameField.text=="" || passField.text=="") {
-                // Create new Alert
+                //MARK: Alert Field Kosong
                 let dialogMessage = UIAlertController(title: "Login Gagal", message: "\n Username / Password tidak boleh kosong! Silahkan coba lagi!", preferredStyle: .alert)
                 
                 // Create OK button with action handler
@@ -145,7 +145,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                         if (jsonData.value(forKey: "status") as! String == "success") {
                             
                             
-                            // User Default
+                            //MARK: User Default
                             let userDefaultStore = UserDefaults.standard
                             userDefaultStore.set(self.usernameField.text, forKey: "username")
                             userDefaultStore.set(myStringDict?["name"], forKey: "name")
@@ -159,7 +159,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                             self.show(newViewController, sender: self)
                             
                         } else {
-                            // Create new Alert
+                            //MARK: Alert Salah Username/Pas
                             let dialogMessage = UIAlertController(title: "Login Gagal", message: "\n Username / Password salah! Silahkan coba lagi!", preferredStyle: .alert)
                             
                             // Create OK button with action handler
@@ -178,13 +178,4 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     //Code Login Auth (End)
     
-    struct Identitas: Codable {
-        var username: String
-        var id: Int
-        var email: String
-        var jabatan: String
-        var name: String
-        var nim_nik_unit: Int
-    }
-
 }

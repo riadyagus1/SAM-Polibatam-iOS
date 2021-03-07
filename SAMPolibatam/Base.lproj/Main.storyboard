@@ -51,15 +51,6 @@ Politeknik Negeri Batam </string>
                                     <action selector="btnLink:" destination="F7x-Za-tlr" eventType="touchUpInside" id="HR8-2q-0Yg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOe-n6-voQ">
-                                <rect key="frame" x="30" y="71" width="18" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="backarrow.png"/>
-                                <connections>
-                                    <action selector="backBtn:" destination="F7x-Za-tlr" eventType="touchUpInside" id="v8F-8s-otv"/>
-                                    <segue destination="NXC-ET-Y3v" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="YTH-Ta-iLD"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kLh-4F-7dw">
                                 <rect key="frame" x="42" y="411" width="328" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -68,6 +59,15 @@ Politeknik Negeri Batam </string>
                                 </state>
                                 <connections>
                                     <segue destination="NXC-ET-Y3v" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="QX9-lz-auP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOe-n6-voQ">
+                                <rect key="frame" x="0.0" y="57" width="70" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="backarrow.png"/>
+                                <connections>
+                                    <action selector="backBtn:" destination="F7x-Za-tlr" eventType="touchUpInside" id="v8F-8s-otv"/>
+                                    <segue destination="NXC-ET-Y3v" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="YTH-Ta-iLD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -323,6 +323,9 @@ di SAM Polibatam</string>
                                 <rect key="frame" x="237" y="166" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="camlogo.png"/>
+                                <connections>
+                                    <action selector="buttonHandlerGallery:" destination="Brx-WX-qyS" eventType="touchUpInside" id="SiC-HM-HgY"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wsz-fF-VK8">
                                 <rect key="frame" x="279" y="325" width="98" height="82"/>
@@ -435,7 +438,7 @@ di SAM Polibatam</string>
                     </view>
                     <tabBarItem key="tabBarItem" tag="3" title="Profile" image="profile.png" selectedImage="profile1.png" id="T3g-nv-FWk"/>
                     <connections>
-                        <outlet property="fotoProfile" destination="kET-sX-Hni" id="YCm-Lg-3ml"/>
+                        <outlet property="imageViewPic" destination="kET-sX-Hni" id="fyV-9l-dCI"/>
                         <outlet property="kotakAlpha" destination="Wsz-fF-VK8" id="tKc-fT-OhW"/>
                         <outlet property="kotakHadir" destination="Irb-ue-23i" id="mNi-NZ-3Ki"/>
                         <outlet property="kotakIzin" destination="8Mq-Jc-nWO" id="6eh-Ix-UnX"/>
@@ -476,7 +479,7 @@ di SAM Polibatam</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bnv-Df-rTI">
-                                <rect key="frame" x="30" y="71" width="18" height="22"/>
+                                <rect key="frame" x="0.0" y="55" width="72" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="backarrow.png"/>
                                 <connections>
@@ -495,7 +498,7 @@ di SAM Polibatam</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pGt-J1-jl8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3774" y="554"/>
+            <point key="canvasLocation" x="3773.913043478261" y="553.125"/>
         </scene>
         <!--Izin View Controller-->
         <scene sceneID="sg8-19-tXD">
@@ -512,14 +515,6 @@ di SAM Polibatam</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgN-av-w0B">
-                                <rect key="frame" x="30" y="71" width="18" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="backarrow.png"/>
-                                <connections>
-                                    <action selector="backBtn:" destination="uwm-QQ-lHq" eventType="touchUpInside" id="lpD-yg-2dc"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="top" borderStyle="line" placeholder="Alasan" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XIX-aW-8oH">
                                 <rect key="frame" x="30" y="173" width="355" height="228"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -539,6 +534,14 @@ di SAM Polibatam</string>
                                 <state key="normal" title="Submit Izin" backgroundImage="bt_bg_primary.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgN-av-w0B">
+                                <rect key="frame" x="0.0" y="56" width="69" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="backarrow.png"/>
+                                <connections>
+                                    <action selector="backBtn:" destination="uwm-QQ-lHq" eventType="touchUpInside" id="lpD-yg-2dc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pJy-18-hbX"/>
@@ -661,7 +664,7 @@ di SAM Polibatam</string>
                                 <rect key="frame" x="74" y="236" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nama" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSU-Xh-u4P">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nama" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSU-Xh-u4P">
                                 <rect key="frame" x="136" y="75" width="256" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
@@ -725,7 +728,7 @@ di SAM Polibatam</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JoC-PM-2rh">
-                                <rect key="frame" x="30" y="71" width="18" height="22"/>
+                                <rect key="frame" x="0.0" y="54" width="70" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="backarrow.png"/>
                                 <connections>
@@ -767,17 +770,17 @@ di SAM Polibatam</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L48-S9-e82">
+                                <rect key="frame" x="169" y="817" width="76" height="30"/>
+                                <state key="normal" title="Take Photo"/>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Wd-qP-Odw">
-                                <rect key="frame" x="30" y="71" width="18" height="22"/>
+                                <rect key="frame" x="0.0" y="52" width="72" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="backarrow.png"/>
                                 <connections>
                                     <action selector="bckBtn:" destination="uHH-xe-aFP" eventType="touchUpInside" id="GtH-th-4nZ"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L48-S9-e82">
-                                <rect key="frame" x="169" y="817" width="76" height="30"/>
-                                <state key="normal" title="Take Photo"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1LL-hf-dKx"/>
@@ -829,14 +832,6 @@ di SAM Polibatam</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHf-jS-0GI">
-                                <rect key="frame" x="30" y="71" width="18" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="backarrow.png"/>
-                                <connections>
-                                    <action selector="backBtn:" destination="hVI-ym-URD" eventType="touchUpInside" id="rPl-2I-nll"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password Lama" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z8V-fn-DpQ">
                                 <rect key="frame" x="30" y="144" width="355" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -883,6 +878,14 @@ di SAM Polibatam</string>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHf-jS-0GI">
+                                <rect key="frame" x="0.0" y="57" width="69" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="backarrow.png"/>
+                                <connections>
+                                    <action selector="backBtn:" destination="hVI-ym-URD" eventType="touchUpInside" id="rPl-2I-nll"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZD9-dO-9XG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

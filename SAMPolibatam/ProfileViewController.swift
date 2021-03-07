@@ -7,16 +7,25 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+extension UIImageView {
+    func makePhotoRounded() {
+        self.layer.borderWidth = 1
+        self.layer.masksToBounds = false
+        self.layer.borderColor = UIColor.white.cgColor
+        self.layer.cornerRadius = self.frame.height / 2
+        self.clipsToBounds = true
+    }
+}
 
-    @IBOutlet weak var fotoProfile: UIImageView!
+class ProfileViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
+
+    @IBOutlet var imageViewPic: UIImageView!
     @IBOutlet weak var namaUser: UILabel!
     @IBOutlet weak var posisiNIP: UILabel!
     @IBOutlet weak var kotakHadir: UIImageView!
     @IBOutlet weak var kotakIzin: UIImageView!
     @IBOutlet weak var kotakAlpha: UIImageView!
     @IBOutlet weak var notifSwitch: UISwitch!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,9 +36,10 @@ class ProfileViewController: UIViewController {
         kotakHadir.layer.cornerRadius = 8.0
         kotakIzin.layer.cornerRadius = 8.0
         kotakAlpha.layer.cornerRadius = 8.0
+        imageViewPic.makePhotoRounded()
         //End - membuat kotak menjadi melengkung
         
-        // Ambil data dari Login Screen
+        //MARK: Ambil data dari Login Screen
         let userDefault = UserDefaults.standard
             
         namaUser.text = userDefault.string(forKey: "name")
@@ -38,9 +48,15 @@ class ProfileViewController: UIViewController {
         posisiNIP.text = "\(userDefault.string(forKey: "nim") ?? "nim") / \(userDefault.string(forKey: "jabatan") ?? "Jabatan")"
         posisiNIP.isUserInteractionEnabled = false
         // Ambil data dari Login Screen(End)
+        
+        // Ganti Foto Profil
+        imagePicker.delegate = self
+        imagePicker.sourceType = .savedPhotosAlbum
+        imagePicker.allowsEditing = true
+        // Ganti Foto Profil
     }
     
-    // Log Out
+    //MARK: Log Out
     @IBAction func logOutButton(_ sender: Any) {
         // Create new Alert
         let dialogMessage = UIAlertController(title: "Log Out Berhasil", message: "\n Terima kasih sudah menggunakan aplikasi kami", preferredStyle: .alert)
@@ -62,14 +78,25 @@ class ProfileViewController: UIViewController {
     }
     // Log Out (End)
     
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //MARK: Ganti Foto Profil
+    var imagePicker = UIImagePickerController()
+    
+    @IBAction func buttonHandlerGallery(_ sender: Any) {
+        if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum){
+                    print("Button capture")
+
+                    imagePicker.delegate = self
+                    imagePicker.sourceType = .savedPhotosAlbum
+                    imagePicker.allowsEditing = true
+
+                    present(imagePicker, animated: true, completion: nil)
+                }
     }
-    */
-
+    
+       func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+           imageViewPic.image = info[.editedImage] as? UIImage
+           dismiss(animated: true)
+       }
+    // Ganti Foto Profil (end)
 }

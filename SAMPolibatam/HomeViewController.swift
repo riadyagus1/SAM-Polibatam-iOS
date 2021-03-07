@@ -32,7 +32,7 @@ class HomeViewController: UIViewController {
         absenkeluar.layer.cornerRadius = 8.0
         //End - membuat kotak menjadi melengkung
         
-        // Ambil data dari Login Screen - TextField
+        //MARK: Ambil data dari Login Screen - TextField
         let userDefault = UserDefaults.standard
             
         lblNama.text = userDefault.string(forKey: "name")
@@ -41,18 +41,10 @@ class HomeViewController: UIViewController {
         
         lblPosisi.text = userDefault.string(forKey: "jabatan")
         lblPosisi.isUserInteractionEnabled = false
+        
+        tmpFoto.makePhotoRounded()
         // Ambil data dari Login Screen - TextField (End)
     
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
