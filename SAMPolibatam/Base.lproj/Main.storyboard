@@ -308,8 +308,8 @@ di SAM Polibatam</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fotoblank.png" translatesAutoresizingMaskIntoConstraints="NO" id="kET-sX-Hni">
-                                <rect key="frame" x="146" y="75" width="125" height="125"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profile-red.png" translatesAutoresizingMaskIntoConstraints="NO" id="kET-sX-Hni">
+                                <rect key="frame" x="144" y="78" width="125" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nama" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEd-km-7lE">
@@ -320,7 +320,7 @@ di SAM Polibatam</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vE-Lj-mA3">
-                                <rect key="frame" x="239" y="163" width="32" height="32"/>
+                                <rect key="frame" x="237" y="166" width="32" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="camlogo.png"/>
                             </button>
@@ -422,7 +422,7 @@ di SAM Polibatam</string>
                                 <rect key="frame" x="312" y="537" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Posisi / NIP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8K-jh-OJB">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NIM / Posisi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8K-jh-OJB">
                                 <rect key="frame" x="38" y="265" width="337" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -564,8 +564,8 @@ di SAM Polibatam</string>
                                 <rect key="frame" x="-33" y="0.0" width="481" height="884"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fotoblank.png" translatesAutoresizingMaskIntoConstraints="NO" id="dNq-oi-BfC">
-                                <rect key="frame" x="50" y="77" width="76" height="75"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profile-red.png" translatesAutoresizingMaskIntoConstraints="NO" id="dNq-oi-BfC">
+                                <rect key="frame" x="40" y="77" width="76" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kotakabsen.png" translatesAutoresizingMaskIntoConstraints="NO" id="kxD-p3-qhd">
@@ -661,15 +661,15 @@ di SAM Polibatam</string>
                                 <rect key="frame" x="74" y="236" width="28" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nama" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSU-Xh-u4P">
-                                <rect key="frame" x="143" y="83" width="225" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nama" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSU-Xh-u4P">
+                                <rect key="frame" x="136" y="75" width="256" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Posisi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gj-Bx-09v">
-                                <rect key="frame" x="143" y="123" width="225" height="22"/>
+                                <rect key="frame" x="136" y="121" width="256" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -930,7 +930,6 @@ di SAM Polibatam</string>
         <image name="boxhistory.png" width="343" height="646"/>
         <image name="bt_bg_primary.png" width="328" height="48"/>
         <image name="camlogo.png" width="32" height="32"/>
-        <image name="fotoblank.png" width="58" height="58"/>
         <image name="gantipassword.png" width="26" height="27"/>
         <image name="garispetahome.png" width="346" height="2"/>
         <image name="history.png" width="20" height="24"/>
@@ -945,6 +944,7 @@ di SAM Polibatam</string>
         <image name="kotakprofpolos.png" width="335" height="64"/>
         <image name="map pin.png" width="18" height="31"/>
         <image name="notif.png" width="23" height="24"/>
+        <image name="profile-red.png" width="475" height="473"/>
         <image name="profile.png" width="26" height="26"/>
         <image name="profile1.png" width="26" height="26"/>
         <image name="textarea.png" width="311" height="48"/>

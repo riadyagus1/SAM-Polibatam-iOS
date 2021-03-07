@@ -31,6 +31,7 @@
 		40944ED425DEC3A000447BA3 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 40944ED325DEC3A000447BA3 /* background.png */; };
 		40944ED725DEC4C500447BA3 /* garispetahome.png in Resources */ = {isa = PBXBuildFile; fileRef = 40944ED625DEC4C500447BA3 /* garispetahome.png */; };
 		40944EDA25DEC71800447BA3 /* latarizin.png in Resources */ = {isa = PBXBuildFile; fileRef = 40944ED925DEC71800447BA3 /* latarizin.png */; };
+		40A663F025F4B14600E33083 /* profile-red.png in Resources */ = {isa = PBXBuildFile; fileRef = 40A663EF25F4B14600E33083 /* profile-red.png */; };
 		40BECB7E25DF749000DBA655 /* boxjumlahizin.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BECB7725DF748F00DBA655 /* boxjumlahizin.png */; };
 		40BECB7F25DF749000DBA655 /* gantipassword.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BECB7825DF748F00DBA655 /* gantipassword.png */; };
 		40BECB8025DF749000DBA655 /* notif.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BECB7925DF748F00DBA655 /* notif.png */; };
@@ -107,6 +108,7 @@
 		40944ED325DEC3A000447BA3 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = background.png; path = ../../../../Export/background.png; sourceTree = "<group>"; };
 		40944ED625DEC4C500447BA3 /* garispetahome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = garispetahome.png; path = ../../../../Export/garispetahome.png; sourceTree = "<group>"; };
 		40944ED925DEC71800447BA3 /* latarizin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = latarizin.png; path = ../../../../Export/latarizin.png; sourceTree = "<group>"; };
+		40A663EF25F4B14600E33083 /* profile-red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "profile-red.png"; path = "../../../../Downloads/colorful-pack-silhouette-avatars/profile-red.png"; sourceTree = "<group>"; };
 		40BECB7725DF748F00DBA655 /* boxjumlahizin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = boxjumlahizin.png; path = ../../../../Export/boxjumlahizin.png; sourceTree = "<group>"; };
 		40BECB7825DF748F00DBA655 /* gantipassword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gantipassword.png; path = ../../../../Export/gantipassword.png; sourceTree = "<group>"; };
 		40BECB7925DF748F00DBA655 /* notif.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = notif.png; path = ../../../../Export/notif.png; sourceTree = "<group>"; };
@@ -306,6 +308,7 @@
 		40F4E85225DE7C3300BAC0D2 /* Gambar */ = {
 			isa = PBXGroup;
 			children = (
+				40A663EF25F4B14600E33083 /* profile-red.png */,
 				40929BE425F3AE32009533D7 /* tabbarHistoryBG.png */,
 				40BECB9125DF7E6500DBA655 /* backarrow.png */,
 				40EA5DD325E6424900B11B28 /* background.png */,
@@ -458,6 +461,7 @@
 				40F4E87E25DE8E8500BAC0D2 /* home.png in Resources */,
 				40EA5DCF25E63A2300B11B28 /* Onboarding.xib in Resources */,
 				40BECB8F25DF7E5900DBA655 /* backarrow.png in Resources */,
+				40A663F025F4B14600E33083 /* profile-red.png in Resources */,
 				40EA5DEE25E650D300B11B28 /* logo1.png in Resources */,
 				40944ECF25DEC35900447BA3 /* map pin.png in Resources */,
 				40BECB8425DF749000DBA655 /* boxjumlahhadir.png in Resources */,

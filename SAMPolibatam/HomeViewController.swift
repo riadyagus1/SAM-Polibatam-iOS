@@ -37,6 +37,7 @@ class HomeViewController: UIViewController {
             
         lblNama.text = userDefault.string(forKey: "name")
         lblNama.isUserInteractionEnabled = false
+        lblNama.adjustsFontSizeToFitWidth = true
         
         lblPosisi.text = userDefault.string(forKey: "jabatan")
         lblPosisi.isUserInteractionEnabled = false
