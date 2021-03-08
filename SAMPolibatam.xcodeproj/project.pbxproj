@@ -18,6 +18,7 @@
 		4041926125E4E3AB0079461E /* Agus.png in Resources */ = {isa = PBXBuildFile; fileRef = 4041925D25E4E3AB0079461E /* Agus.png */; };
 		4041926825E4EE760079461E /* Rizky.png in Resources */ = {isa = PBXBuildFile; fileRef = 4041926725E4EE760079461E /* Rizky.png */; };
 		40469DC925E40809000BFF22 /* IzinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40469DC825E40809000BFF22 /* IzinViewController.swift */; };
+		4070CD2D25F667A800CC9059 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4070CD2C25F667A800CC9059 /* CoreLocation.framework */; };
 		407E8E5D25EFB94000F3D345 /* GantiPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E8E5C25EFB94000F3D345 /* GantiPasswordViewController.swift */; };
 		407E8E6225EFC06900F3D345 /* CamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E8E6125EFC06900F3D345 /* CamViewController.swift */; };
 		40929BE525F3AE32009533D7 /* tabbarHistoryBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 40929BE425F3AE32009533D7 /* tabbarHistoryBG.png */; };
@@ -95,6 +96,7 @@
 		4041925D25E4E3AB0079461E /* Agus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Agus.png; path = "../../../../PBL-IF006/Foto Kelompok/Agus.png"; sourceTree = "<group>"; };
 		4041926725E4EE760079461E /* Rizky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Rizky.png; path = "../../../../PBL-IF006/Foto Kelompok/Rizky.png"; sourceTree = "<group>"; };
 		40469DC825E40809000BFF22 /* IzinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IzinViewController.swift; sourceTree = "<group>"; };
+		4070CD2C25F667A800CC9059 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		407E8E5C25EFB94000F3D345 /* GantiPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GantiPasswordViewController.swift; sourceTree = "<group>"; };
 		407E8E6125EFC06900F3D345 /* CamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamViewController.swift; sourceTree = "<group>"; };
 		40929BE425F3AE32009533D7 /* tabbarHistoryBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbarHistoryBG.png; path = ../../../Export/tabbarHistoryBG.png; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4070CD2D25F667A800CC9059 /* CoreLocation.framework in Frameworks */,
 				DE2383A55B634D51DB27DBAD /* Pods_SAMPolibatam.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,6 +358,7 @@
 		59FA409D08DDF4637C3EAE85 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4070CD2C25F667A800CC9059 /* CoreLocation.framework */,
 				C394BC4AABA7CFD8BD5CEC4B /* Pods_SAMPolibatam.framework */,
 			);
 			name = Frameworks;

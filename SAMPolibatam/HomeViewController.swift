@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import CoreLocation
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, CLLocationManagerDelegate {
     
 
     @IBOutlet weak var absenmasuk: UIButton!
@@ -41,10 +42,59 @@ class HomeViewController: UIViewController {
         
         lblPosisi.text = userDefault.string(forKey: "jabatan")
         lblPosisi.isUserInteractionEnabled = false
-        
-        tmpFoto.makePhotoRounded()
         // Ambil data dari Login Screen - TextField (End)
-    
+        
+        // Buat Foto Profile Bulat
+        tmpFoto.makePhotoRounded()
+
+        // Current Location
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+        // Current Location (End)
     }
     
+    //MARK: Current Location
+    let locationManager = CLLocationManager()
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        CLGeocoder().reverseGeocodeLocation(manager.location!, completionHandler: {(placemarks, error)->Void in
+            
+            if (error != nil) {
+                print("Reverse geocoder failed with error" + (error?.localizedDescription)!)
+                return
+            }
+            
+            if (placemarks?.count)! > 0 {
+                let pm = placemarks?[0]
+                self.displayLocationInfo(pm)
+            } else {
+                print("Problem with the data received from geocoder")
+            }
+        })
+    }
+    
+    func displayLocationInfo(_ placemark: CLPlacemark?) {
+        if let containsPlacemark = placemark {
+            let name = (containsPlacemark.name != nil) ? containsPlacemark.name : ""
+            let locality = (containsPlacemark.locality != nil) ? containsPlacemark.locality : ""
+            let administrativeArea = (containsPlacemark.administrativeArea != nil) ? containsPlacemark.administrativeArea : ""
+            let country = (containsPlacemark.country != nil) ? containsPlacemark.country : ""
+            
+            lblLokasi.text = "\(name ?? "name"), \(locality ?? "locality"), \(administrativeArea ?? "administrativeArea"), \(country ?? "country")"
+        }
+
+    }
+    
+ 
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+          print("Error while updating location " + error.localizedDescription)
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    // Current Location (End)
 }
