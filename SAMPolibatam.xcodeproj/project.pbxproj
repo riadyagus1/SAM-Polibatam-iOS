@@ -20,7 +20,7 @@
 		40469DC925E40809000BFF22 /* IzinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40469DC825E40809000BFF22 /* IzinViewController.swift */; };
 		406F7BA825F8C86600C6D45D /* GantiLokasiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406F7BA725F8C86600C6D45D /* GantiLokasiViewController.swift */; };
 		4070CD2D25F667A800CC9059 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4070CD2C25F667A800CC9059 /* CoreLocation.framework */; };
-		407E8E6225EFC06900F3D345 /* CamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E8E6125EFC06900F3D345 /* CamViewController.swift */; };
+		408DD7C625F912CC00ACEDFA /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408DD7C525F912CC00ACEDFA /* ConfirmViewController.swift */; };
 		40929BE525F3AE32009533D7 /* tabbarHistoryBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 40929BE425F3AE32009533D7 /* tabbarHistoryBG.png */; };
 		40944ECB25DEC35900447BA3 /* fotoblank.png in Resources */ = {isa = PBXBuildFile; fileRef = 40944EC425DEC35900447BA3 /* fotoblank.png */; };
 		40944ECC25DEC35900447BA3 /* kotak absen masuk.png in Resources */ = {isa = PBXBuildFile; fileRef = 40944EC525DEC35900447BA3 /* kotak absen masuk.png */; };
@@ -84,6 +84,19 @@
 		DE2383A55B634D51DB27DBAD /* Pods_SAMPolibatam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C394BC4AABA7CFD8BD5CEC4B /* Pods_SAMPolibatam.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		408DD7C025F912A000ACEDFA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		40104A4C25DEE5FF003489DC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4031125F25E387AE004DCFCF /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -98,7 +111,7 @@
 		40469DC825E40809000BFF22 /* IzinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IzinViewController.swift; sourceTree = "<group>"; };
 		406F7BA725F8C86600C6D45D /* GantiLokasiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GantiLokasiViewController.swift; sourceTree = "<group>"; };
 		4070CD2C25F667A800CC9059 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		407E8E6125EFC06900F3D345 /* CamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CamViewController.swift; sourceTree = "<group>"; };
+		408DD7C525F912CC00ACEDFA /* ConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
 		40929BE425F3AE32009533D7 /* tabbarHistoryBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbarHistoryBG.png; path = ../../../Export/tabbarHistoryBG.png; sourceTree = "<group>"; };
 		40944EC425DEC35900447BA3 /* fotoblank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fotoblank.png; path = ../../../../Export/fotoblank.png; sourceTree = "<group>"; };
 		40944EC525DEC35900447BA3 /* kotak absen masuk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "kotak absen masuk.png"; path = "../../../../Export/kotak absen masuk.png"; sourceTree = "<group>"; };
@@ -288,7 +301,7 @@
 				40BECB9325DF80C300DBA655 /* LupaPassViewController.swift */,
 				40104A4C25DEE5FF003489DC /* HomeViewController.swift */,
 				4031125F25E387AE004DCFCF /* MapViewController.swift */,
-				407E8E6125EFC06900F3D345 /* CamViewController.swift */,
+				408DD7C525F912CC00ACEDFA /* ConfirmViewController.swift */,
 				40469DC825E40809000BFF22 /* IzinViewController.swift */,
 				40BECBAC25DFB2EE00DBA655 /* HistoryViewController.swift */,
 				40BECB9825DF93A400DBA655 /* ProfileViewController.swift */,
@@ -376,6 +389,7 @@
 				40F4E83025DE7B7600BAC0D2 /* Frameworks */,
 				40F4E83125DE7B7600BAC0D2 /* Resources */,
 				11468A21780A0DCBCB0655CF /* [CP] Embed Pods Frameworks */,
+				408DD7C025F912A000ACEDFA /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -534,8 +548,8 @@
 			files = (
 				40469DC925E40809000BFF22 /* IzinViewController.swift in Sources */,
 				40104A4D25DEE5FF003489DC /* HomeViewController.swift in Sources */,
-				407E8E6225EFC06900F3D345 /* CamViewController.swift in Sources */,
 				40F4E83B25DE7B7600BAC0D2 /* ViewController.swift in Sources */,
+				408DD7C625F912CC00ACEDFA /* ConfirmViewController.swift in Sources */,
 				4041925025E4DA6A0079461E /* Slide.swift in Sources */,
 				4031126025E387AE004DCFCF /* MapViewController.swift in Sources */,
 				40F4E83725DE7B7600BAC0D2 /* AppDelegate.swift in Sources */,

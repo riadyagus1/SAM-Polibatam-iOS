@@ -21,7 +21,7 @@ private extension MKMapView {
   }
 }
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     
@@ -41,8 +41,6 @@ class MapViewController: UIViewController {
         
         let zoomRange = MKMapView.CameraZoomRange(maxCenterCoordinateDistance: 200000)
         mapView.setCameraZoomRange(zoomRange, animated: true)
-
-
         // Do any additional setup after loading the view.
     }
     
@@ -52,19 +50,28 @@ class MapViewController: UIViewController {
         }
         self.dismiss(animated: true, completion: nil)
     }
-    
 
-    
     let initialLocation = CLLocation(latitude: 1.1199904864817212, longitude: 104.04802137002713)
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
+    var selectedImage: UIImage?
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "gotoConfirm" {
+            let destinationVC = segue.destination as! ConfirmViewController
+            if let image = selectedImage {
+                destinationVC.selectedImage = image
+            }
+        }
     }
-    */
-
+    
+    var imagePicker =  UIImagePickerController()
+    
+    @IBAction func camBtn(_ sender: UIButton) {
+        let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = UIImagePickerController.SourceType.camera
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated: true, completion: nil)
+    }
 }

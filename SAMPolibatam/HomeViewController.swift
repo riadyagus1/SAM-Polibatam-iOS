@@ -14,7 +14,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var absenmasuk: UIButton!
     @IBOutlet weak var absenkeluar: UIButton!
     
-    @IBOutlet weak var tmpFoto: UIImageView!
+    @IBOutlet weak var selectedImage: UIImageView!
     @IBOutlet weak var lblNama: UILabel!
     @IBOutlet weak var lblPosisi: UILabel!
     
@@ -45,7 +45,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         // Ambil data dari Login Screen - TextField (End)
         
         // Buat Foto Profile Bulat
-        tmpFoto.makePhotoRounded()
+        selectedImage.makePhotoRounded()
 
         // Current Location
         locationManager.delegate = self
@@ -53,6 +53,10 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         // Current Location (End)
+        
+        //Segue Foto Profile
+        //tmpFoto.image = 
+        //Segue Foto Profile (End)
     }
     
     //MARK: Current Location

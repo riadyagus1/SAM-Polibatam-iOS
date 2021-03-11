@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="svS-ts-jY6">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -693,7 +693,7 @@ di SAM Polibatam</string>
                         <outlet property="lblNama" destination="qSU-Xh-u4P" id="LQ3-Vz-e8O"/>
                         <outlet property="lblPosisi" destination="9gj-Bx-09v" id="Ulu-dW-5dE"/>
                         <outlet property="lblTanggal" destination="7s8-BY-y0Z" id="KfW-Sx-6FA"/>
-                        <outlet property="tmpFoto" destination="dNq-oi-BfC" id="Ivc-v0-eCs"/>
+                        <outlet property="selectedImage" destination="dNq-oi-BfC" id="kji-Ep-uPp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4eM-iG-N6Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -703,7 +703,7 @@ di SAM Polibatam</string>
         <!--Map View Controller-->
         <scene sceneID="01X-lR-yLX">
             <objects>
-                <viewController id="CPW-Oe-9Pe" customClass="MapViewController" customModule="SAMPolibatam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapScreen" id="CPW-Oe-9Pe" customClass="MapViewController" customModule="SAMPolibatam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L2F-4f-Jnu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -722,9 +722,13 @@ di SAM Polibatam</string>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="faX-YB-4aQ">
                                 <rect key="frame" x="43" y="808" width="328" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" backgroundImage="bt_bg_primary.png"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Lanjut" backgroundImage="bt_bg_primary.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <segue destination="uHH-xe-aFP" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="BeQ-7C-7jQ"/>
+                                    <action selector="camBtn:" destination="CPW-Oe-9Pe" eventType="touchUpInside" id="Ivl-zz-PkW"/>
+                                    <segue destination="zcG-mu-cZc" kind="presentation" identifier="gotoConfirm" modalPresentationStyle="fullScreen" id="9qZ-WV-o93"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JoC-PM-2rh">
@@ -747,55 +751,56 @@ di SAM Polibatam</string>
             </objects>
             <point key="canvasLocation" x="3773.913043478261" y="-830.35714285714278"/>
         </scene>
-        <!--Cam View Controller-->
-        <scene sceneID="LTw-vD-Sha">
+        <!--Confirm View Controller-->
+        <scene sceneID="PBb-un-tDe">
             <objects>
-                <viewController id="uHH-xe-aFP" customClass="CamViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Q16-T4-Y46">
+                <viewController storyboardIdentifier="ConfirmScreen" id="zcG-mu-cZc" customClass="ConfirmViewController" customModule="SAMPolibatam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fOm-A3-ceF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6hd-qz-peH">
-                                <rect key="frame" x="0.0" y="768" width="414" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="S15-dJ-iR5">
+                                <rect key="frame" x="-47" y="0.0" width="508" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FAD-a5-LiE">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="770"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o3h-iQ-vsA">
+                                <rect key="frame" x="20" y="135" width="374" height="436"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ABSEN MASUK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LN6-d5-H0n">
-                                <rect key="frame" x="69" y="72" width="112" height="20"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wI9-gL-3SP">
+                                <rect key="frame" x="43" y="719" width="328" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L48-S9-e82">
-                                <rect key="frame" x="169" y="817" width="76" height="30"/>
-                                <state key="normal" title="Take Photo"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Wd-qP-Odw">
-                                <rect key="frame" x="0.0" y="52" width="72" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="backarrow.png"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Kembali" backgroundImage="bt_bg_primary.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <action selector="bckBtn:" destination="uHH-xe-aFP" eventType="touchUpInside" id="GtH-th-4nZ"/>
+                                    <action selector="backBtn:" destination="zcG-mu-cZc" eventType="touchUpInside" id="gZ1-o7-hww"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MuS-nN-QAy">
+                                <rect key="frame" x="43" y="637" width="328" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Submit Absen" backgroundImage="bt_bg_primary.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="confirmBtn:" destination="zcG-mu-cZc" eventType="touchUpInside" id="kpu-gU-6yp"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="1LL-hf-dKx"/>
+                        <viewLayoutGuide key="safeArea" id="aPk-Xe-L7t"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="L48-S9-e82" firstAttribute="centerX" secondItem="FAD-a5-LiE" secondAttribute="centerX" id="IoA-jM-nao"/>
-                            <constraint firstItem="L48-S9-e82" firstAttribute="top" secondItem="FAD-a5-LiE" secondAttribute="bottom" constant="59" id="LGx-jn-cDg"/>
-                            <constraint firstItem="1LL-hf-dKx" firstAttribute="bottom" secondItem="L48-S9-e82" secondAttribute="bottom" constant="23" id="Tqa-PK-RLl"/>
-                            <constraint firstItem="L48-S9-e82" firstAttribute="centerX" secondItem="Q16-T4-Y46" secondAttribute="centerX" id="wFD-Ej-2zn"/>
-                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="8tE-rX-AEg"/>
+                    <connections>
+                        <outlet property="imageView" destination="o3h-iQ-vsA" id="StD-ML-9Rx"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="51k-Yy-EnD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P1n-Gp-eGY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4652.1739130434789" y="-830.35714285714278"/>
+            <point key="canvasLocation" x="4642.0289855072469" y="-830.35714285714278"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Ed2-nu-b7H">
@@ -808,9 +813,9 @@ di SAM Polibatam</string>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Fqn-U5-EKc" kind="relationship" relationship="viewControllers" id="abP-cg-c9W"/>
+                        <segue destination="Fqn-U5-EKc" kind="relationship" relationship="viewControllers" destinationCreationSelector="Home" id="abP-cg-c9W"/>
                         <segue destination="2QY-go-rrO" kind="relationship" relationship="viewControllers" id="wpL-5J-gHH"/>
-                        <segue destination="Brx-WX-qyS" kind="relationship" relationship="viewControllers" id="y09-uv-NLM"/>
+                        <segue destination="Brx-WX-qyS" kind="relationship" relationship="viewControllers" destinationCreationSelector="Profile" id="y09-uv-NLM"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wzt-cW-9ek" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
