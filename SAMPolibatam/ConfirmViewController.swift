@@ -10,7 +10,6 @@ import UIKit
 class ConfirmViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     
     @IBOutlet weak var imageView: UIImageView!
-    var selectedImage: UIImage!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,23 +31,36 @@ class ConfirmViewController: UIViewController, UIImagePickerControllerDelegate &
     }
     
     @IBAction func confirmBtn(_ sender: UIButton) {
-        let dialogMessage = UIAlertController(title: "Absen Berhasil", message: "\n Absen telah berhasil disimpan. Terima kasih", preferredStyle: .alert)
-        
-        // Create OK button with action handler
-        let ok = UIAlertAction(title: "Selesai", style: .default, handler: { (action) -> Void in
-            print("Absen Berhasil Tapped")
-            let storyBoard:UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-            let newViewController = storyBoard.instantiateViewController(withIdentifier: "TabbarViewController")
-            newViewController.modalPresentationStyle = .fullScreen
-            self.show(newViewController, sender: self)
-         })
-        
-        //Add OK button to a dialog message
-        dialogMessage.addAction(ok)
-        
-        // Present Alert to
-        self.present(dialogMessage, animated: true, completion: nil)
-        
+        if (imageView.image==nil){
+            let dialogMessage = UIAlertController(title: "Login Gagal", message: "\n Foto Kehadiran boleh kosong! Silahkan ambil foto terlebih dahulu!", preferredStyle: .alert)
+            
+            // Create OK button with action handler
+            let ok = UIAlertAction(title: "Kembali", style: .default, handler: { (action) -> Void in
+                print("Field kosong button Kembali tapped")
+             })
+            
+            //Add OK button to a dialog message
+            dialogMessage.addAction(ok)
+            // Present Alert to
+            self.present(dialogMessage, animated: true, completion: nil)
+        } else {
+            let dialogMessage = UIAlertController(title: "Absen Berhasil", message: "\n Absen telah berhasil disimpan. Terima kasih", preferredStyle: .alert)
+            
+            // Create OK button with action handler
+            let ok = UIAlertAction(title: "Selesai", style: .default, handler: { (action) -> Void in
+                print("Absen Berhasil Tapped")
+                let storyBoard:UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                let newViewController = storyBoard.instantiateViewController(withIdentifier: "TabbarViewController")
+                newViewController.modalPresentationStyle = .fullScreen
+                self.show(newViewController, sender: self)
+             })
+            
+            //Add OK button to a dialog message
+            dialogMessage.addAction(ok)
+            
+            // Present Alert to
+            self.present(dialogMessage, animated: true, completion: nil)
+        }
     }
     
     @IBAction func backBtn(_ sender: UIButton) {

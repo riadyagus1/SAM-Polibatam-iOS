@@ -775,7 +775,11 @@ di SAM Polibatam</string>
                                     <action selector="confirmBtn:" destination="zcG-mu-cZc" eventType="touchUpInside" id="2S0-MI-bME"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BGFotoAbsen.png" translatesAutoresizingMaskIntoConstraints="NO" id="o3h-iQ-vsA">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BGFotoAbsen.png" translatesAutoresizingMaskIntoConstraints="NO" id="NFp-cM-8rF">
+                                <rect key="frame" x="57" y="179" width="300" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o3h-iQ-vsA">
                                 <rect key="frame" x="57" y="179" width="300" height="400"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -786,6 +790,15 @@ di SAM Polibatam</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5f0-Yu-d93">
+                                <rect key="frame" x="0.0" y="56" width="69" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="back-white.png"/>
+                                <connections>
+                                    <action selector="backBtn:" destination="uwm-QQ-lHq" eventType="touchUpInside" id="ZBS-ZQ-U3W"/>
+                                    <action selector="backBtn:" destination="zcG-mu-cZc" eventType="touchUpInside" id="pqU-zN-Z8A"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MuS-nN-QAy">
                                 <rect key="frame" x="43" y="718" width="328" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -795,15 +808,6 @@ di SAM Polibatam</string>
                                 </state>
                                 <connections>
                                     <action selector="confirmBtn:" destination="zcG-mu-cZc" eventType="touchUpInside" id="kpu-gU-6yp"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5f0-Yu-d93">
-                                <rect key="frame" x="0.0" y="56" width="69" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="back-white.png"/>
-                                <connections>
-                                    <action selector="backBtn:" destination="uwm-QQ-lHq" eventType="touchUpInside" id="ZBS-ZQ-U3W"/>
-                                    <action selector="backBtn:" destination="zcG-mu-cZc" eventType="touchUpInside" id="pqU-zN-Z8A"/>
                                 </connections>
                             </button>
                         </subviews>
