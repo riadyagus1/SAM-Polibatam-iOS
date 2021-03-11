@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="svS-ts-jY6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -269,7 +269,7 @@ di SAM Polibatam</string>
             </objects>
             <point key="canvasLocation" x="2890" y="-176"/>
         </scene>
-        <!--Profile-->
+        <!--Item-->
         <scene sceneID="am6-Cy-QkA">
             <objects>
                 <viewController storyboardIdentifier="ProfileScreen" id="Brx-WX-qyS" customClass="ProfileViewController" customModule="SAMPolibatam" customModuleProvider="target" sceneMemberID="viewController">
@@ -436,7 +436,8 @@ di SAM Polibatam</string>
                         <viewLayoutGuide key="safeArea" id="bre-OV-2ns"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="3" title="Profile" image="profile.png" selectedImage="profile1.png" id="T3g-nv-FWk"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="profile.png" selectedImage="profile1.png" id="X3P-Zq-eB1"/>
+                    <navigationItem key="navigationItem" id="Wks-6g-hTq"/>
                     <connections>
                         <outlet property="imageViewPic" destination="kET-sX-Hni" id="fyV-9l-dCI"/>
                         <outlet property="kotakAlpha" destination="Wsz-fF-VK8" id="tKc-fT-OhW"/>
@@ -449,7 +450,7 @@ di SAM Polibatam</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FRn-2B-Owg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2889.8550724637685" y="553.125"/>
+            <point key="canvasLocation" x="2890" y="514"/>
         </scene>
         <!--About Us View Controller-->
         <scene sceneID="jah-fx-htB">
@@ -498,7 +499,7 @@ di SAM Polibatam</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pGt-J1-jl8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3773.913043478261" y="553.125"/>
+            <point key="canvasLocation" x="3774" y="514"/>
         </scene>
         <!--Izin View Controller-->
         <scene sceneID="sg8-19-tXD">
@@ -558,7 +559,7 @@ di SAM Polibatam</string>
         <!--Home-->
         <scene sceneID="d5M-1U-7gl">
             <objects>
-                <viewController id="Fqn-U5-EKc" customClass="HomeViewController" customModule="SAMPolibatam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeScreen" id="Fqn-U5-EKc" customClass="HomeViewController" customModule="SAMPolibatam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="51C-Jo-rsz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -727,8 +728,7 @@ di SAM Polibatam</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="camBtn:" destination="CPW-Oe-9Pe" eventType="touchUpInside" id="Ivl-zz-PkW"/>
-                                    <segue destination="zcG-mu-cZc" kind="presentation" identifier="gotoConfirm" modalPresentationStyle="fullScreen" id="9qZ-WV-o93"/>
+                                    <segue destination="zcG-mu-cZc" kind="presentation" modalPresentationStyle="fullScreen" id="qVh-Sg-WV8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JoC-PM-2rh">
@@ -763,23 +763,31 @@ di SAM Polibatam</string>
                                 <rect key="frame" x="-47" y="0.0" width="508" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o3h-iQ-vsA">
-                                <rect key="frame" x="20" y="135" width="374" height="436"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wI9-gL-3SP">
-                                <rect key="frame" x="43" y="719" width="328" height="48"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ud-c2-7hF">
+                                <rect key="frame" x="43" y="638" width="328" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Kembali" backgroundImage="bt_bg_primary.png">
+                                <state key="normal" title="Ambil Foto" backgroundImage="bt_bg_primary.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="backBtn:" destination="zcG-mu-cZc" eventType="touchUpInside" id="gZ1-o7-hww"/>
+                                    <action selector="camBtn:" destination="zcG-mu-cZc" eventType="touchUpInside" id="SkJ-pY-HLx"/>
+                                    <action selector="confirmBtn:" destination="zcG-mu-cZc" eventType="touchUpInside" id="2S0-MI-bME"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BGFotoAbsen.png" translatesAutoresizingMaskIntoConstraints="NO" id="o3h-iQ-vsA">
+                                <rect key="frame" x="57" y="179" width="300" height="400"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ABSEN MASUK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMS-A1-GGm">
+                                <rect key="frame" x="69" y="72" width="112" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MuS-nN-QAy">
-                                <rect key="frame" x="43" y="637" width="328" height="48"/>
+                                <rect key="frame" x="43" y="718" width="328" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" title="Submit Absen" backgroundImage="bt_bg_primary.png">
@@ -787,6 +795,15 @@ di SAM Polibatam</string>
                                 </state>
                                 <connections>
                                     <action selector="confirmBtn:" destination="zcG-mu-cZc" eventType="touchUpInside" id="kpu-gU-6yp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5f0-Yu-d93">
+                                <rect key="frame" x="0.0" y="56" width="69" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="back-white.png"/>
+                                <connections>
+                                    <action selector="backBtn:" destination="uwm-QQ-lHq" eventType="touchUpInside" id="ZBS-ZQ-U3W"/>
+                                    <action selector="backBtn:" destination="zcG-mu-cZc" eventType="touchUpInside" id="pqU-zN-Z8A"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -815,7 +832,7 @@ di SAM Polibatam</string>
                     <connections>
                         <segue destination="Fqn-U5-EKc" kind="relationship" relationship="viewControllers" destinationCreationSelector="Home" id="abP-cg-c9W"/>
                         <segue destination="2QY-go-rrO" kind="relationship" relationship="viewControllers" id="wpL-5J-gHH"/>
-                        <segue destination="Brx-WX-qyS" kind="relationship" relationship="viewControllers" destinationCreationSelector="Profile" id="y09-uv-NLM"/>
+                        <segue destination="Brx-WX-qyS" kind="relationship" relationship="viewControllers" id="Pfv-wU-Kou"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wzt-cW-9ek" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -893,11 +910,13 @@ di SAM Polibatam</string>
         <segue reference="QX9-lz-auP"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="BGFotoAbsen.png" width="1200" height="1600"/>
         <image name="Kampus-Polibatam1.jpg" width="432" height="288"/>
         <image name="Logo-Polibatam.png" width="2432.25" height="2214.75"/>
         <image name="Rectangle 11.png" width="750" height="1000"/>
         <image name="Rectanglepoltek.png" width="375" height="339"/>
         <image name="aboutus.png" width="20" height="20"/>
+        <image name="back-white.png" width="18" height="14"/>
         <image name="backarrow.png" width="18" height="14"/>
         <image name="background.png" width="375" height="771"/>
         <image name="bg izin.png" width="346" height="153"/>

@@ -132,15 +132,15 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate &
         self.present(imagePicker, animated: true, completion: nil)
     }
     
-    var selectedImage: UIImage!
-    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
         picker .dismiss(animated: true, completion: nil)
-        let fotoProfil = info[.editedImage] as? UIImage
+        let fotoProfil = info[.editedImage] as! UIImage
         imageViewPic.image = fotoProfil
+        
+        let vc = storyboard?.instantiateViewController(identifier: "HomeScreen") as? HomeViewController
+        vc?.image = fotoProfil
     }
-
     
     // Ganti Foto Profil (end)
 }

@@ -23,6 +23,8 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var lblJam: UILabel!
     @IBOutlet weak var lblKerjaLibur: UILabel!
     
+    var image = UIImage()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -54,9 +56,9 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.startUpdatingLocation()
         // Current Location (End)
         
-        //Segue Foto Profile
-        //tmpFoto.image = 
-        //Segue Foto Profile (End)
+        //Pass Foto Profile
+        selectedImage.image = image
+        //Pass Foto Profile (End)
     }
     
     //MARK: Current Location

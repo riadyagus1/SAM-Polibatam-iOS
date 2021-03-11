@@ -8,14 +8,27 @@
 import UIKit
 
 class ConfirmViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
-
+    
     @IBOutlet weak var imageView: UIImageView!
     var selectedImage: UIImage!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        imageView.image = selectedImage
+        imageView.layer.borderColor = UIColor.white.cgColor
+    }
+    @IBAction func camBtn(_ sender: UIButton) {
+        let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = UIImagePickerController.SourceType.camera
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        picker .dismiss(animated: true, completion: nil)
+        imageView.image = (info[.originalImage] as! UIImage)
     }
     
     @IBAction func confirmBtn(_ sender: UIButton) {

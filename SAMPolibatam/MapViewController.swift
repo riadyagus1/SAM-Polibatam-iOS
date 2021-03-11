@@ -54,24 +54,4 @@ class MapViewController: UIViewController, UIImagePickerControllerDelegate & UIN
     let initialLocation = CLLocation(latitude: 1.1199904864817212, longitude: 104.04802137002713)
     
     
-    var selectedImage: UIImage?
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "gotoConfirm" {
-            let destinationVC = segue.destination as! ConfirmViewController
-            if let image = selectedImage {
-                destinationVC.selectedImage = image
-            }
-        }
-    }
-    
-    var imagePicker =  UIImagePickerController()
-    
-    @IBAction func camBtn(_ sender: UIButton) {
-        let imagePicker = UIImagePickerController()
-            imagePicker.delegate = self
-            imagePicker.sourceType = UIImagePickerController.SourceType.camera
-            imagePicker.allowsEditing = false
-            self.present(imagePicker, animated: true, completion: nil)
-    }
 }

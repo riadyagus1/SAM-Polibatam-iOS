@@ -18,6 +18,8 @@
 		4041926125E4E3AB0079461E /* Agus.png in Resources */ = {isa = PBXBuildFile; fileRef = 4041925D25E4E3AB0079461E /* Agus.png */; };
 		4041926825E4EE760079461E /* Rizky.png in Resources */ = {isa = PBXBuildFile; fileRef = 4041926725E4EE760079461E /* Rizky.png */; };
 		40469DC925E40809000BFF22 /* IzinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40469DC825E40809000BFF22 /* IzinViewController.swift */; };
+		4055D41A25FA6FC800CB48C6 /* BGFotoAbsen.png in Resources */ = {isa = PBXBuildFile; fileRef = 4055D41925FA6FC800CB48C6 /* BGFotoAbsen.png */; };
+		4055D42025FA716600CB48C6 /* back-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 4055D41F25FA716600CB48C6 /* back-white.png */; };
 		406F7BA825F8C86600C6D45D /* GantiLokasiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406F7BA725F8C86600C6D45D /* GantiLokasiViewController.swift */; };
 		4070CD2D25F667A800CC9059 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4070CD2C25F667A800CC9059 /* CoreLocation.framework */; };
 		408DD7C625F912CC00ACEDFA /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408DD7C525F912CC00ACEDFA /* ConfirmViewController.swift */; };
@@ -109,6 +111,8 @@
 		4041925D25E4E3AB0079461E /* Agus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Agus.png; path = "../../../../PBL-IF006/Foto Kelompok/Agus.png"; sourceTree = "<group>"; };
 		4041926725E4EE760079461E /* Rizky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Rizky.png; path = "../../../../PBL-IF006/Foto Kelompok/Rizky.png"; sourceTree = "<group>"; };
 		40469DC825E40809000BFF22 /* IzinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IzinViewController.swift; sourceTree = "<group>"; };
+		4055D41925FA6FC800CB48C6 /* BGFotoAbsen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BGFotoAbsen.png; path = ../../../Export/BGFotoAbsen.png; sourceTree = "<group>"; };
+		4055D41F25FA716600CB48C6 /* back-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "back-white.png"; path = "../../../Export/back-white.png"; sourceTree = "<group>"; };
 		406F7BA725F8C86600C6D45D /* GantiLokasiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GantiLokasiViewController.swift; sourceTree = "<group>"; };
 		4070CD2C25F667A800CC9059 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		408DD7C525F912CC00ACEDFA /* ConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
@@ -324,9 +328,11 @@
 		40F4E85225DE7C3300BAC0D2 /* Gambar */ = {
 			isa = PBXGroup;
 			children = (
+				4055D41925FA6FC800CB48C6 /* BGFotoAbsen.png */,
 				40A663EF25F4B14600E33083 /* profile-red.png */,
 				40929BE425F3AE32009533D7 /* tabbarHistoryBG.png */,
 				40BECB9125DF7E6500DBA655 /* backarrow.png */,
+				4055D41F25FA716600CB48C6 /* back-white.png */,
 				40EA5DD325E6424900B11B28 /* background.png */,
 				40EA5DF025E654FD00B11B28 /* backgroundNew.png */,
 				40EA5DEA25E64DBE00B11B28 /* logo.png */,
@@ -461,6 +467,7 @@
 				40BECB7E25DF749000DBA655 /* boxjumlahizin.png in Resources */,
 				40BECB7F25DF749000DBA655 /* gantipassword.png in Resources */,
 				4041925425E4DA870079461E /* Slide.xib in Resources */,
+				4055D42025FA716600CB48C6 /* back-white.png in Resources */,
 				40EA5DF125E654FD00B11B28 /* backgroundNew.png in Resources */,
 				40BECB8025DF749000DBA655 /* notif.png in Resources */,
 				40F4E87F25DE8E8500BAC0D2 /* history.png in Resources */,
@@ -471,6 +478,7 @@
 				4041926025E4E3AB0079461E /* Tasya.png in Resources */,
 				40944ED725DEC4C500447BA3 /* garispetahome.png in Resources */,
 				4041925F25E4E3AB0079461E /* Kevin.png in Resources */,
+				4055D41A25FA6FC800CB48C6 /* BGFotoAbsen.png in Resources */,
 				40BECB8325DF749000DBA655 /* camlogo.png in Resources */,
 				40944EDA25DEC71800447BA3 /* latarizin.png in Resources */,
 				40F4E86125DE7D3000BAC0D2 /* Rectangle 11.png in Resources */,
