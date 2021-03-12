@@ -59,7 +59,40 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         //MARK: Pass Foto Profile
         selectedImage.image = image
         //Pass Foto Profile (End)
+        
+        //MARK: Call Data Label Jam Kerja
+        lblTanggal.text = getFullDate()
+        lblJam.text = getDay()
+        // Call Data Label Jam Kerja (End)
     }
+    
+    //MARK: Data Label Jam Kerja
+    //Tanggal Hari Ini
+    func getFullDate() -> String {
+        let formatter = DateFormatter()
+        formatter.timeZone = TimeZone.current
+        formatter.locale = Locale.init(identifier: "id")
+        formatter.dateStyle = .full
+        let stringDate = formatter.string(from: Date())
+        lblTanggal.text = stringDate
+        return "\(stringDate)"
+    }
+    
+    //Jam Kerja Menurut Hari
+    func getDay() -> String {
+    let dateFormatter = DateFormatter()
+    dateFormatter.setLocalizedDateFormatFromTemplate("EEE")
+    let day = dateFormatter.string(from: Date())
+    print(dateFormatter.string(from: Date()))
+    
+        if(day=="Sat" || day=="Sun") {
+            lblKerjaLibur.text = "Libur"
+        } else {
+            lblKerjaLibur.text = "Jam Kerja"
+        }
+        return "08.00 - 17.00"
+    }
+    // Data Label Jam Kerja(End)
     
     //MARK: Current Location
     let locationManager = CLLocationManager()
