@@ -45,12 +45,14 @@ class AboutUsViewController: UIViewController, UIScrollViewDelegate{
     
     func createSlides() -> [Slide] {
 
+        //MARK: Slide 1
             let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
             slide1.imageView.image = UIImage(named: "Logo-Polibatam.png")
             slide1.imageViewApp.image = UIImage(named: "logo1.png")
             slide1.lblTitle.text = "APA ITU SAM POLIBATAM ?"
             slide1.lblDesc.text = "SAM Polibatam (Sistem Absensi Mobile)  merupakan sebuah aplikasi yg berfungsi bagi  para karyawan Politeknik Negeri Batam untuk  melakukan absensi. \n \n Dimana SAM dapat memudahkan karyawan Politeknik Negeri Batam untuk absen ataupun izin  hanya melalui ponsel masing-masing karyawan. Kami berharap SAM dapat berjalan sesuai keinginan."
             
+        //MARK: Slide 2
             let slide2:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
             slide2.imageHamdani.image = UIImage(named: "Pak Hamdani.png")
             slide2.lblNama.text = "Hamdani Arif, S.Pd., M.Sc."

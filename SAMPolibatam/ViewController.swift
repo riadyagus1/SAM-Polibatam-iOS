@@ -72,7 +72,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     
     
-    //MARK: Text Field Naik saat Muncul Keyboard (2)
+    //MARK: Layar / Text Field Naik saat Muncul Keyboard (2)
     @objc func keyboardWillShow(notification: NSNotification) {
         if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             if self.view.frame.origin.y == 0 {
@@ -86,7 +86,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             self.view.frame.origin.y = 0
         }
     }
-    //Text Field Naik saat Muncul Keyboard (2 end)
+    // Layar / Text Field Naik saat Muncul Keyboard (2 end)
     
     
     
@@ -123,6 +123,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 dialogMessage.addAction(ok)
                 // Present Alert to
                 self.present(dialogMessage, animated: true, completion: nil)
+                // Alert Field Kosong (End)
             }
             else {
                 let configuration = URLSessionConfiguration.default

@@ -15,11 +15,13 @@ class IzinViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        //MARK: Memangil Fungsi Hide Keyboard Tap Anywhere
         self.HideKeyboard()
         //Memangil Fungsi Hide Keyboard Tap Anywhere(End)
         
         
-        //Memangil Fungsi Hide Keyboard dengan tombol selesai
+        //MARK: Memangil Fungsi Hide Keyboard dengan tombol selesai
         izinBox.delegate = self
         izinBox.returnKeyType = .done
             
@@ -37,21 +39,13 @@ class IzinViewController: UIViewController, UITextFieldDelegate {
     }
     //Memangil Fungsi Hide Keyboard dengan tombol selesai (End)
     
+    //MARK: Back Button
     @IBAction func backBtn(_ sender: UIButton) {
         if let navController = self.navigationController {
           navController.popViewController(animated: true)
         }
         self.dismiss(animated: true, completion: nil)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    // Back Button
+    
 }

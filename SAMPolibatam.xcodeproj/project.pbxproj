@@ -113,6 +113,7 @@
 		40469DC825E40809000BFF22 /* IzinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IzinViewController.swift; sourceTree = "<group>"; };
 		4055D41925FA6FC800CB48C6 /* BGFotoAbsen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BGFotoAbsen.png; path = ../../../Export/BGFotoAbsen.png; sourceTree = "<group>"; };
 		4055D41F25FA716600CB48C6 /* back-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "back-white.png"; path = "../../../Export/back-white.png"; sourceTree = "<group>"; };
+		4055D42325FA792400CB48C6 /* SAMPolibatam.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SAMPolibatam.entitlements; sourceTree = "<group>"; };
 		406F7BA725F8C86600C6D45D /* GantiLokasiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GantiLokasiViewController.swift; sourceTree = "<group>"; };
 		4070CD2C25F667A800CC9059 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		408DD7C525F912CC00ACEDFA /* ConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
@@ -298,6 +299,7 @@
 		40F4E83525DE7B7600BAC0D2 /* SAMPolibatam */ = {
 			isa = PBXGroup;
 			children = (
+				4055D42325FA792400CB48C6 /* SAMPolibatam.entitlements */,
 				40F4E83625DE7B7600BAC0D2 /* AppDelegate.swift */,
 				40F4E83825DE7B7600BAC0D2 /* SceneDelegate.swift */,
 				40EA5DE625E6465E00B11B28 /* OnboardingViewController.swift */,
@@ -309,9 +311,9 @@
 				40469DC825E40809000BFF22 /* IzinViewController.swift */,
 				40BECBAC25DFB2EE00DBA655 /* HistoryViewController.swift */,
 				40BECB9825DF93A400DBA655 /* ProfileViewController.swift */,
+				406F7BA725F8C86600C6D45D /* GantiLokasiViewController.swift */,
 				4041924B25E4D8A30079461E /* AboutUsViewController.swift */,
 				40F4E83C25DE7B7600BAC0D2 /* Main.storyboard */,
-				406F7BA725F8C86600C6D45D /* GantiLokasiViewController.swift */,
 				40F4E84225DE7B7700BAC0D2 /* Assets.xcassets */,
 				40F4E85225DE7C3300BAC0D2 /* Gambar */,
 				40F4E84425DE7B7700BAC0D2 /* LaunchScreen.storyboard */,
@@ -717,6 +719,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SAMPolibatam/SAMPolibatam.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5GZXGAQ3YM;
 				INFOPLIST_FILE = SAMPolibatam/Info.plist;
@@ -738,6 +741,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SAMPolibatam/SAMPolibatam.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5GZXGAQ3YM;
 				INFOPLIST_FILE = SAMPolibatam/Info.plist;

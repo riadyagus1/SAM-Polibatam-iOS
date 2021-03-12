@@ -30,10 +30,10 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
 
         // Do any additional setup after loading the view.
         
-        //Start - membuat kotak menjadi melengkung
+        //MARK: Membuat kotak menjadi melengkung
         absenmasuk.layer.cornerRadius = 8.0
         absenkeluar.layer.cornerRadius = 8.0
-        //End - membuat kotak menjadi melengkung
+        //Membuat kotak menjadi melengkung (End)
         
         //MARK: Ambil data dari Login Screen - TextField
         let userDefault = UserDefaults.standard
@@ -46,17 +46,17 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         lblPosisi.isUserInteractionEnabled = false
         // Ambil data dari Login Screen - TextField (End)
         
-        // Buat Foto Profile Bulat
+        //MARK: Buat Foto Profile Bulat
         selectedImage.makePhotoRounded()
 
-        // Current Location
+        //MARK: Current Location
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         // Current Location (End)
         
-        //Pass Foto Profile
+        //MARK: Pass Foto Profile
         selectedImage.image = image
         //Pass Foto Profile (End)
     }

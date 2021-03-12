@@ -16,6 +16,7 @@ class ConfirmViewController: UIViewController, UIImagePickerControllerDelegate &
         
         imageView.layer.borderColor = UIColor.white.cgColor
     }
+    //MARK: Tombol Camera
     @IBAction func camBtn(_ sender: UIButton) {
         let imagePicker = UIImagePickerController()
             imagePicker.delegate = self
@@ -23,13 +24,17 @@ class ConfirmViewController: UIViewController, UIImagePickerControllerDelegate &
             imagePicker.allowsEditing = false
             self.present(imagePicker, animated: true, completion: nil)
     }
+    // Tombol Camera (End)
     
+    //MARK: Pass Foto Dari Camera Ke ImageView
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
         picker .dismiss(animated: true, completion: nil)
         imageView.image = (info[.originalImage] as! UIImage)
     }
+    // Pass Foto Dari Camera Ke ImageView
     
+    //MARK: Confirm Button = Error When No Photo
     @IBAction func confirmBtn(_ sender: UIButton) {
         if (imageView.image==nil){
             let dialogMessage = UIAlertController(title: "Login Gagal", message: "\n Foto Kehadiran boleh kosong! Silahkan ambil foto terlebih dahulu!", preferredStyle: .alert)
@@ -62,23 +67,15 @@ class ConfirmViewController: UIViewController, UIImagePickerControllerDelegate &
             self.present(dialogMessage, animated: true, completion: nil)
         }
     }
+    // Confirm Button = Error When No Photo (End)
     
+    //MARK: Back Button
     @IBAction func backBtn(_ sender: UIButton) {
         if let navController = self.navigationController {
           navController.popViewController(animated: true)
         }
         self.dismiss(animated: true, completion: nil)
     }
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    // Back Button (End)
 
 }

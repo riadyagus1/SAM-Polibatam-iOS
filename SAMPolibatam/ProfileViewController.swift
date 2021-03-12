@@ -7,6 +7,7 @@
 
 import UIKit
 
+// MARK: Extentsion Untuk Photo Jadi Bulat
 extension UIImageView {
     func makePhotoRounded() {
         self.layer.borderWidth = 1
@@ -16,6 +17,7 @@ extension UIImageView {
         self.clipsToBounds = true
     }
 }
+// Extentsion Untuk Photo Jadi Bulat (End)
 
 class ProfileViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
 
@@ -32,12 +34,12 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate &
 
         // Do any additional setup after loading the view.
         
-        //Start - membuat kotak menjadi melengkung
+        //MARK: Membuat kotak menjadi melengkung
         kotakHadir.layer.cornerRadius = 8.0
         kotakIzin.layer.cornerRadius = 8.0
         kotakAlpha.layer.cornerRadius = 8.0
         imageViewPic.makePhotoRounded()
-        //End - membuat kotak menjadi melengkung
+        // Membuat kotak menjadi melengkung (End)
         
         //MARK: Ambil data dari Login Screen
         let userDefault = UserDefaults.standard
@@ -49,11 +51,11 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate &
         posisiNIP.isUserInteractionEnabled = false
         // Ambil data dari Login Screen(End)
         
-        // Ganti Foto Profil
+        //MARK: Ganti Foto Profil
         imagePicker.delegate = self
         imagePicker.sourceType = .savedPhotosAlbum
         imagePicker.allowsEditing = true
-        // Ganti Foto Profil
+        // Ganti Foto Profil (End)
     }
     
     //MARK: Log Out
@@ -79,7 +81,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate &
     // Log Out (End)
     
 
-    //MARK: Ganti Foto Profil
+    //MARK: Ganti Foto Profil Dari Camera & Galerry
     var imagePicker = UIImagePickerController()
     
     @IBAction func buttonHandlerGallery(_ sender: Any) {

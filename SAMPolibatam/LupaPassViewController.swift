@@ -15,12 +15,14 @@ class LupaPassViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    //MARK:  BACK Button
     @IBAction func backBtn(_ sender: UIButton) {
         if let navController = self.navigationController {
           navController.popViewController(animated: true)
         }
         self.dismiss(animated: true, completion: nil)
     }
+    // BACK Button
     
     //MARK: Href ke link helpdesk
     @IBAction func btnLink(_ sender: UIButton) {
