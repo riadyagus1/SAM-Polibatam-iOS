@@ -64,6 +64,10 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         lblTanggal.text = getFullDate()
         lblJam.text = getDay()
         // Call Data Label Jam Kerja (End)
+        
+        //MARK: Call Absen Keluar Disable
+        AbsenKeluarDisable()
+        // Absen Keluar Disable (End)
     }
     
     //MARK: Data Label Jam Kerja
@@ -136,4 +140,17 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         // Dispose of any resources that can be recreated.
     }
     // Current Location (End)
+    
+    //MARK: Absen Keluar Disable
+    func AbsenKeluarDisable() {
+        if absenmasuk.currentTitle == "Absen Masuk" {
+            absenkeluar.isEnabled = false
+            absenkeluar.backgroundColor = .gray
+        } else {
+            absenkeluar.isEnabled = true
+        }
+    }
+    // Absen Keluar Disable
+    
+    
 }

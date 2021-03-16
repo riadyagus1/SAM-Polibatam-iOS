@@ -20,6 +20,9 @@
 		40469DC925E40809000BFF22 /* IzinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40469DC825E40809000BFF22 /* IzinViewController.swift */; };
 		4055D41A25FA6FC800CB48C6 /* BGFotoAbsen.png in Resources */ = {isa = PBXBuildFile; fileRef = 4055D41925FA6FC800CB48C6 /* BGFotoAbsen.png */; };
 		4055D42025FA716600CB48C6 /* back-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 4055D41F25FA716600CB48C6 /* back-white.png */; };
+		4066783D2600F74500F5E8A9 /* Dark BG- History.png in Resources */ = {isa = PBXBuildFile; fileRef = 4066783A2600F74500F5E8A9 /* Dark BG- History.png */; };
+		4066783E2600F74500F5E8A9 /* coming-soon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4066783B2600F74500F5E8A9 /* coming-soon.png */; };
+		4066783F2600F74500F5E8A9 /* popupcomingsoon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4066783C2600F74500F5E8A9 /* popupcomingsoon.png */; };
 		406F7BA825F8C86600C6D45D /* GantiLokasiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406F7BA725F8C86600C6D45D /* GantiLokasiViewController.swift */; };
 		4070CD2D25F667A800CC9059 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4070CD2C25F667A800CC9059 /* CoreLocation.framework */; };
 		408DD7C625F912CC00ACEDFA /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408DD7C525F912CC00ACEDFA /* ConfirmViewController.swift */; };
@@ -114,6 +117,9 @@
 		4055D41925FA6FC800CB48C6 /* BGFotoAbsen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BGFotoAbsen.png; path = ../../../Export/BGFotoAbsen.png; sourceTree = "<group>"; };
 		4055D41F25FA716600CB48C6 /* back-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "back-white.png"; path = "../../../Export/back-white.png"; sourceTree = "<group>"; };
 		4055D42325FA792400CB48C6 /* SAMPolibatam.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SAMPolibatam.entitlements; sourceTree = "<group>"; };
+		4066783A2600F74500F5E8A9 /* Dark BG- History.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dark BG- History.png"; path = "../../../../../Export/Dark BG- History.png"; sourceTree = "<group>"; };
+		4066783B2600F74500F5E8A9 /* coming-soon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "coming-soon.png"; path = "../../../../../Export/coming-soon.png"; sourceTree = "<group>"; };
+		4066783C2600F74500F5E8A9 /* popupcomingsoon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = popupcomingsoon.png; path = ../../../../../Export/popupcomingsoon.png; sourceTree = "<group>"; };
 		406F7BA725F8C86600C6D45D /* GantiLokasiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GantiLokasiViewController.swift; sourceTree = "<group>"; };
 		4070CD2C25F667A800CC9059 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		408DD7C525F912CC00ACEDFA /* ConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
@@ -220,6 +226,16 @@
 			path = Anggota;
 			sourceTree = "<group>";
 		};
+		406678392600F70000F5E8A9 /* Coming Soon */ = {
+			isa = PBXGroup;
+			children = (
+				4066783B2600F74500F5E8A9 /* coming-soon.png */,
+				4066783A2600F74500F5E8A9 /* Dark BG- History.png */,
+				4066783C2600F74500F5E8A9 /* popupcomingsoon.png */,
+			);
+			path = "Coming Soon";
+			sourceTree = "<group>";
+		};
 		40944EC325DEC34100447BA3 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,6 +256,7 @@
 		40BECB7525DF738500DBA655 /* History */ = {
 			isa = PBXGroup;
 			children = (
+				406678392600F70000F5E8A9 /* Coming Soon */,
 				40BECBA125DFB0A400DBA655 /* history.png */,
 				40BECBA325DFB0A400DBA655 /* history1.png */,
 				40BECBA225DFB0A400DBA655 /* kalender.png */,
@@ -454,6 +471,7 @@
 				40F4E86E25DE841C00BAC0D2 /* Logo-Polibatam.png in Resources */,
 				4041926125E4E3AB0079461E /* Agus.png in Resources */,
 				4041926825E4EE760079461E /* Rizky.png in Resources */,
+				4066783E2600F74500F5E8A9 /* coming-soon.png in Resources */,
 				40BECBAA25DFB19C00DBA655 /* boxhistory.png in Resources */,
 				40F4E86225DE7D3000BAC0D2 /* bt_bg_primary.png in Resources */,
 				40944ECD25DEC35900447BA3 /* kalender.png in Resources */,
@@ -462,7 +480,9 @@
 				40944ED125DEC35900447BA3 /* kotakabsen.png in Resources */,
 				40BECBA725DFB0A400DBA655 /* history1.png in Resources */,
 				40EA5DDE25E6428700B11B28 /* onboarding2.png in Resources */,
+				4066783D2600F74500F5E8A9 /* Dark BG- History.png in Resources */,
 				40BECB8C25DF772900DBA655 /* kotakprofpolos.png in Resources */,
+				4066783F2600F74500F5E8A9 /* popupcomingsoon.png in Resources */,
 				4041925E25E4E3AB0079461E /* Pak Hamdani.png in Resources */,
 				40BECB8725DF75D800DBA655 /* lokasiprof.png in Resources */,
 				40944ECE25DEC35900447BA3 /* kotak izin.png in Resources */,

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="svS-ts-jY6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -214,10 +214,6 @@ di SAM Polibatam</string>
                                 <rect key="frame" x="166" y="491" width="82" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="ovu-qz-Ssq">
-                                <rect key="frame" x="175" y="416" width="64" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -263,6 +259,35 @@ di SAM Polibatam</string>
                                     <tabBarItem title="Kalender" image="kalender.png" selectedImage="kalender1.png" id="hPo-aP-qHt"/>
                                 </items>
                             </tabBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dark BG- History.png" translatesAutoresizingMaskIntoConstraints="NO" id="ABO-f5-K7z">
+                                <rect key="frame" x="-6" y="-44" width="426" height="868"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="popupcomingsoon.png" translatesAutoresizingMaskIntoConstraints="NO" id="MQ1-wh-mpf">
+                                <rect key="frame" x="36" y="215" width="343" height="467"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coming-soon.png" translatesAutoresizingMaskIntoConstraints="NO" id="tzV-8q-mfg">
+                                <rect key="frame" x="87" y="239" width="240" height="212"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZQ-JU-zXM">
+                                <rect key="frame" x="81" y="548" width="252" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Fitur ini belum tersedia saat ini.
+Kami akan segera menghadirkan 
+fitur ini secepat mungkin.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Segera Hadir" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="psf-GM-8Yo">
+                                <rect key="frame" x="125" y="476" width="165" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Aw5-T7-Nlc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -271,7 +296,7 @@ di SAM Polibatam</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uKx-Rd-Bne" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2890" y="-176"/>
+            <point key="canvasLocation" x="2889.8550724637685" y="-176.11607142857142"/>
         </scene>
         <!--Item-->
         <scene sceneID="am6-Cy-QkA">
@@ -539,6 +564,9 @@ di SAM Polibatam</string>
                                 <state key="normal" title="Submit Izin" backgroundImage="bt_bg_primary.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="confirmButton:" destination="uwm-QQ-lHq" eventType="touchUpInside" id="4oz-SS-be5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgN-av-w0B">
                                 <rect key="frame" x="0.0" y="56" width="69" height="53"/>
@@ -850,7 +878,7 @@ di SAM Polibatam</string>
         <!--Ganti Lokasi View Controller-->
         <scene sceneID="3XK-Zz-BDc">
             <objects>
-                <viewController id="hVI-ym-URD" customClass="GantiLokasiViewController" customModule="SAMPolibatam" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LokasiRumah" id="hVI-ym-URD" customClass="GantiLokasiViewController" customModule="SAMPolibatam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sLh-xb-mdw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -881,7 +909,7 @@ di SAM Polibatam</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="backBtn:" destination="hVI-ym-URD" eventType="touchUpInside" id="NE0-9u-Jvd"/>
+                                    <action selector="gantiLokasi:" destination="hVI-ym-URD" eventType="touchUpInside" id="b5K-UZ-5fx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -919,6 +947,7 @@ di SAM Polibatam</string>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="BGFotoAbsen.png" width="1200" height="1600"/>
+        <image name="Dark BG- History.png" width="434" height="866"/>
         <image name="Kampus-Polibatam1.jpg" width="432" height="288"/>
         <image name="Logo-Polibatam.png" width="2432.25" height="2214.75"/>
         <image name="Rectangle 11.png" width="750" height="1000"/>
@@ -931,6 +960,7 @@ di SAM Polibatam</string>
         <image name="boxhistory.png" width="343" height="646"/>
         <image name="bt_bg_primary.png" width="328" height="48"/>
         <image name="camlogo.png" width="32" height="32"/>
+        <image name="coming-soon.png" width="491.51998901367188" height="491.51998901367188"/>
         <image name="gantipassword.png" width="26" height="27"/>
         <image name="garispetahome.png" width="346" height="2"/>
         <image name="history.png" width="20" height="24"/>
@@ -945,6 +975,7 @@ di SAM Polibatam</string>
         <image name="kotakprofpolos.png" width="335" height="64"/>
         <image name="map pin.png" width="18" height="31"/>
         <image name="notif.png" width="23" height="24"/>
+        <image name="popupcomingsoon.png" width="343" height="467"/>
         <image name="profile-red.png" width="475" height="473"/>
         <image name="profile.png" width="26" height="26"/>
         <image name="profile1.png" width="26" height="26"/>

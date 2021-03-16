@@ -36,13 +36,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
         //MARK: Text Field Naik saat Muncul Keyboard (1)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         //Text Field Naik saat Muncul Keyboard (1 end)
-
 
         
         //MARK: Memangil Fungsi Hide Keyboard Tap Anywhere
@@ -113,7 +110,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
             if (usernameField.text=="" || passField.text=="") {
                 //MARK: Alert Field Kosong
                 let dialogMessage = UIAlertController(title: "Login Gagal", message: "\n Username / Password tidak boleh kosong! Silahkan coba lagi!", preferredStyle: .alert)
-                
                 // Create OK button with action handler
                 let ok = UIAlertAction(title: "Kembali", style: .default, handler: { (action) -> Void in
                     print("Field kosong button Kembali tapped")

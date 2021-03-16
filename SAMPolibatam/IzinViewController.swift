@@ -48,4 +48,39 @@ class IzinViewController: UIViewController, UITextFieldDelegate {
     }
     // Back Button
     
+    //MARK: Confirm Izin Button
+    @IBAction func confirmButton(_ sender: UIButton) {
+        if (izinBox.text==""){
+            let dialogMessage = UIAlertController(title: "Pengajuan Izin Gagal", message: "\n Alasan izin tidak boleh kosong! Silahkan isi alasan izin terlebih dahulu!", preferredStyle: .alert)
+            
+            // Create OK button with action handler
+            let ok = UIAlertAction(title: "Kembali", style: .default, handler: { (action) -> Void in
+                print("Field kosong button Kembali tapped")
+             })
+            
+            //Add OK button to a dialog message
+            dialogMessage.addAction(ok)
+            // Present Alert to
+            self.present(dialogMessage, animated: true, completion: nil)
+        } else {
+            let dialogMessage = UIAlertController(title: "Pengajuan Izin Berhasil", message: "\n Pengajuan izin telah berhasil disimpan. Izin anda akan segera diproses. Terima kasih", preferredStyle: .alert)
+            
+            // Create OK button with action handler
+            let ok = UIAlertAction(title: "Selesai", style: .default, handler: { (action) -> Void in
+                print("Izin Berhasil Tapped")
+                let storyBoard:UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                let newViewController = storyBoard.instantiateViewController(withIdentifier: "TabbarViewController")
+                newViewController.modalPresentationStyle = .fullScreen
+                self.show(newViewController, sender: self)
+             })
+            
+            //Add OK button to a dialog message
+            dialogMessage.addAction(ok)
+            
+            // Present Alert to
+            self.present(dialogMessage, animated: true, completion: nil)
+        }
+    }
+    
+    // Confirm Izin Button
 }

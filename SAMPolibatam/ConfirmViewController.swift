@@ -37,6 +37,7 @@ class ConfirmViewController: UIViewController, UIImagePickerControllerDelegate &
     //MARK: Confirm Button = Error When No Photo
     @IBAction func confirmBtn(_ sender: UIButton) {
         if (imageView.image==nil){
+            
             let dialogMessage = UIAlertController(title: "Login Gagal", message: "\n Foto Kehadiran boleh kosong! Silahkan ambil foto terlebih dahulu!", preferredStyle: .alert)
             
             // Create OK button with action handler
@@ -49,6 +50,7 @@ class ConfirmViewController: UIViewController, UIImagePickerControllerDelegate &
             // Present Alert to
             self.present(dialogMessage, animated: true, completion: nil)
         } else {
+            
             let dialogMessage = UIAlertController(title: "Absen Berhasil", message: "\n Absen telah berhasil disimpan. Terima kasih", preferredStyle: .alert)
             
             // Create OK button with action handler
@@ -57,6 +59,7 @@ class ConfirmViewController: UIViewController, UIImagePickerControllerDelegate &
                 let storyBoard:UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
                 let newViewController = storyBoard.instantiateViewController(withIdentifier: "TabbarViewController")
                 newViewController.modalPresentationStyle = .fullScreen
+                
                 self.show(newViewController, sender: self)
              })
             
