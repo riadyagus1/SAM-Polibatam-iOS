@@ -10,7 +10,7 @@ import GoogleMaps
 import GooglePlaces
 
 class MapViewController: UIViewController {
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,15 +20,8 @@ class MapViewController: UIViewController {
         let camera = GMSCameraPosition.camera(withLatitude: 1.11881, longitude: 104.04844, zoom: 16.5)
                 let mapView = GMSMapView.map(withFrame: self.view.frame, camera: camera)
                 self.view.addSubview(mapView)
+        mapView.isMyLocationEnabled = true
         // Posisi Camera (End)
-
-        //MARK: Marker Map
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: 1.11881, longitude: 104.04844)
-                marker.title = "Politeknik Negeri Batam"
-                marker.snippet = "Gedung Utama"
-                marker.map = mapView
-        // Marker Map (End
         
         //MARK: Circle Area Map
         let circleCenter = CLLocationCoordinate2D(latitude: 1.11881, longitude: 104.04844)
@@ -38,6 +31,9 @@ class MapViewController: UIViewController {
         circle.strokeColor = .lightGray
         circle.strokeWidth = 3
         // Circle Area Map (End)
+        
+        mapView.settings.compassButton = true
+        mapView.settings.myLocationButton = true
     }
     
     @IBAction func backBtn(_ sender: UIButton) {

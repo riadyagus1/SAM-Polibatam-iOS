@@ -7,6 +7,7 @@
 
 import UIKit
 import MapKit
+import GoogleMaps
 import GooglePlaces
 
 class GantiLokasiViewController: UIViewController, GMSAutocompleteResultsViewControllerDelegate {
@@ -21,8 +22,17 @@ class GantiLokasiViewController: UIViewController, GMSAutocompleteResultsViewCon
 
         setupSearchController()
         resultsViewController?.delegate = self
-        // Do any additional setup after loading the view.
+        
+        //MARK: Posisi Camera
+        let camera = GMSCameraPosition.camera(withLatitude: 1.0719559465415636, longitude: 104.01874326930952, zoom: 11.0)
+                let mapView = GMSMapView.map(withFrame: self.view.frame, camera: camera)
+                self.view.addSubview(mapView)
+        mapView.isMyLocationEnabled = true
+        mapView.settings.myLocationButton = true
+        mapView.settings.compassButton = true
+        // Posisi Camera (End)
     }
+
     
     //MARK: Back Button
     @IBAction func backBtn(_ sender: UIButton) {

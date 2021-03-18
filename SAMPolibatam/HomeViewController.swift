@@ -36,6 +36,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         placesClient = GMSPlacesClient.shared()
         locationManager.requestWhenInUseAuthorization()
         locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
         locationManager.startUpdatingLocation()
     // Current Location (End)
         
@@ -53,6 +54,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         
         lblPosisi.text = userDefault.string(forKey: "jabatan")
         lblPosisi.isUserInteractionEnabled = false
+        lblTempat.adjustsFontSizeToFitWidth = true
         lblAlamat.adjustsFontSizeToFitWidth = true
         // Ambil data dari Login Screen - TextField (End)
         
