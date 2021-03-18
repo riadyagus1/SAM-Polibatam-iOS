@@ -415,6 +415,7 @@
 				40F4E83125DE7B7600BAC0D2 /* Resources */,
 				11468A21780A0DCBCB0655CF /* [CP] Embed Pods Frameworks */,
 				408DD7C025F912A000ACEDFA /* Embed App Extensions */,
+				77F67981E125EDF4BEE7C31E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -567,6 +568,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SAMPolibatam/Pods-SAMPolibatam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77F67981E125EDF4BEE7C31E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SAMPolibatam/Pods-SAMPolibatam-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SAMPolibatam/Pods-SAMPolibatam-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SAMPolibatam/Pods-SAMPolibatam-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

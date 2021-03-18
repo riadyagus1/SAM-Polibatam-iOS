@@ -6,8 +6,8 @@
 //
 
 import UIKit
-import UserNotifications
 import CoreData
+import GooglePlaces
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          }else{
                     //Navigate to rootviewcontroller
          }
+        
+        //MARK: API Google Map
+        GMSPlacesClient.provideAPIKey("AIzaSyD8dMKNyt1-T5TNRz9t-GYZxEw1krHzXvQ")
+        // API Google Map (End)
         
         // Override point for customization after application launch.
         return true

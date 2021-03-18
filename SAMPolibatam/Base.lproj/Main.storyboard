@@ -298,7 +298,7 @@ fitur ini secepat mungkin.</string>
             </objects>
             <point key="canvasLocation" x="2889.8550724637685" y="-176.11607142857142"/>
         </scene>
-        <!--Item-->
+        <!--Profile-->
         <scene sceneID="am6-Cy-QkA">
             <objects>
                 <viewController storyboardIdentifier="ProfileScreen" id="Brx-WX-qyS" customClass="ProfileViewController" customModule="SAMPolibatam" customModuleProvider="target" sceneMemberID="viewController">
@@ -385,7 +385,7 @@ fitur ini secepat mungkin.</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="kotakprofarrow.png"/>
                                 <connections>
-                                    <segue destination="hVI-ym-URD" kind="presentation" modalPresentationStyle="fullScreen" id="7Zn-al-kfE"/>
+                                    <segue destination="nnf-Kg-fGf" kind="presentation" modalPresentationStyle="fullScreen" id="7Zn-al-kfE"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kotakprofpolos.png" translatesAutoresizingMaskIntoConstraints="NO" id="meC-Lt-WcK">
@@ -465,7 +465,7 @@ fitur ini secepat mungkin.</string>
                         <viewLayoutGuide key="safeArea" id="bre-OV-2ns"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="profile.png" selectedImage="profile1.png" id="X3P-Zq-eB1"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile.png" selectedImage="profile1.png" id="X3P-Zq-eB1"/>
                     <navigationItem key="navigationItem" id="Wks-6g-hTq"/>
                     <connections>
                         <outlet property="imageViewPic" destination="kET-sX-Hni" id="fyV-9l-dCI"/>
@@ -888,14 +888,14 @@ fitur ini secepat mungkin.</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GANTI LOKASI RUMAH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mL-EX-44H">
-                                <rect key="frame" x="69" y="72" width="168" height="20"/>
+                                <rect key="frame" x="69" y="132" width="168" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHf-jS-0GI">
-                                <rect key="frame" x="0.0" y="57" width="69" height="50"/>
+                                <rect key="frame" x="0.0" y="117" width="69" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="backarrow.png"/>
                                 <connections>
@@ -916,13 +916,14 @@ fitur ini secepat mungkin.</string>
                         <viewLayoutGuide key="safeArea" id="ZD9-dO-9XG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="CTC-NG-Xrz"/>
                     <connections>
                         <outlet property="mapView" destination="kgu-qv-O4J" id="EZn-Kx-3ts"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fIN-tO-jbd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2889.8550724637685" y="1228.7946428571429"/>
+            <point key="canvasLocation" x="3800.0000000000005" y="1228.7946428571429"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iFu-nm-fmH">
@@ -940,6 +941,24 @@ fitur ini secepat mungkin.</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0A5-qS-9iS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-714" y="-176"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Fih-VL-k0q">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nnf-Kg-fGf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rYJ-6t-7DN">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hVI-ym-URD" kind="relationship" relationship="rootViewController" id="aOu-Ya-dgi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gbr-PV-8x7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2889.8550724637685" y="1228.7946428571429"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

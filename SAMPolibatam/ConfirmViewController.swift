@@ -38,7 +38,7 @@ class ConfirmViewController: UIViewController, UIImagePickerControllerDelegate &
     @IBAction func confirmBtn(_ sender: UIButton) {
         if (imageView.image==nil){
             
-            let dialogMessage = UIAlertController(title: "Login Gagal", message: "\n Foto Kehadiran boleh kosong! Silahkan ambil foto terlebih dahulu!", preferredStyle: .alert)
+            let dialogMessage = UIAlertController(title: "Absen Gagal", message: "\n Foto Kehadiran tidak boleh kosong! Silahkan ambil foto terlebih dahulu!", preferredStyle: .alert)
             
             // Create OK button with action handler
             let ok = UIAlertAction(title: "Kembali", style: .default, handler: { (action) -> Void in

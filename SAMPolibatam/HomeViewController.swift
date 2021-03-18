@@ -152,5 +152,28 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
     }
     // Absen Keluar Disable
     
+    //MARK: Absen Keluar Disable
+    func AbsenMasukDisable() {
+        if absenmasuk.currentTitle == "Time" {
+            absenmasuk.isEnabled = false
+            absenmasuk.backgroundColor = .gray
+        } else {
+            absenmasuk.isEnabled = true
+        }
+    }
+    // Absen Keluar Disable
+    
+    //MARK: Absen Keluar Disable
+    func AbsenMasukKeluarDisable() {
+        if absenmasuk.currentTitle == "Time" && absenkeluar.currentTitle == "" {
+            absenmasuk.isEnabled = false
+            absenmasuk.backgroundColor = .gray
+            absenkeluar.isEnabled = false
+            absenkeluar.backgroundColor = .gray
+        } else {
+            print("")
+        }
+    }
+    // Absen Keluar Disable
     
 }
