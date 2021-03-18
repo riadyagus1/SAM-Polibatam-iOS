@@ -2,14 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>LSApplicationCategoryType</key>
+	<key>LSApplicationQueriesSchemes</key>
 	<array>
-		<string>id</string>
+		<string>googlechromes</string>
+		<string>comgooglemaps</string>
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Aplikasi ini ingin mengakses lokasi anda.</string>
 	<key>NSCameraUsageDescription</key>
-	<string>Aplikasi ini ingin mengakses camera anda.</string>
+	<string>Aplikasi ini ingin mengakses kamera anda.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Aplikasi ini ingin mengakses galeri anda.</string>
 	<key>UIUserInterfaceStyle</key>

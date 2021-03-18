@@ -6,42 +6,38 @@
 //
 
 import UIKit
-import MapKit
+import GoogleMaps
+import GooglePlaces
 
-private extension MKMapView {
-  func centerToLocation(
-    _ location: CLLocation,
-    regionRadius: CLLocationDistance = 400
-  ) {
-    let coordinateRegion = MKCoordinateRegion(
-      center: location.coordinate,
-      latitudinalMeters: regionRadius,
-      longitudinalMeters: regionRadius)
-    setRegion(coordinateRegion, animated: true)
-  }
-}
-
-class MapViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
-
-    @IBOutlet weak var mapView: MKMapView!
+class MapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        mapView.centerToLocation(initialLocation)
+        //locationManager.requestAlwaysAuthorization()
         
-        let oahuCenter = CLLocation(latitude: 1.1199904864817212, longitude: 104.04802137002713)
-        let region = MKCoordinateRegion(
-          center: oahuCenter.coordinate,
-          latitudinalMeters: 50000,
-          longitudinalMeters: 60000)
-        mapView.setCameraBoundary(
-          MKMapView.CameraBoundary(coordinateRegion: region),
-          animated: true)
+        //MARK: Posisi Camera
+        let camera = GMSCameraPosition.camera(withLatitude: 1.11881, longitude: 104.04844, zoom: 16.5)
+                let mapView = GMSMapView.map(withFrame: self.view.frame, camera: camera)
+                self.view.addSubview(mapView)
+        // Posisi Camera (End)
+
+        //MARK: Marker Map
+        let marker = GMSMarker()
+        marker.position = CLLocationCoordinate2D(latitude: 1.11881, longitude: 104.04844)
+                marker.title = "Politeknik Negeri Batam"
+                marker.snippet = "Gedung Utama"
+                marker.map = mapView
+        // Marker Map (End
         
-        let zoomRange = MKMapView.CameraZoomRange(maxCenterCoordinateDistance: 200000)
-        mapView.setCameraZoomRange(zoomRange, animated: true)
-        // Do any additional setup after loading the view.
+        //MARK: Circle Area Map
+        let circleCenter = CLLocationCoordinate2D(latitude: 1.11881, longitude: 104.04844)
+        let circle = GMSCircle(position: circleCenter, radius: 150)
+        circle.map = mapView
+        circle.fillColor = UIColor.green.withAlphaComponent(0.3)
+        circle.strokeColor = .lightGray
+        circle.strokeWidth = 3
+        // Circle Area Map (End)
     }
     
     @IBAction func backBtn(_ sender: UIButton) {
@@ -50,8 +46,5 @@ class MapViewController: UIViewController, UIImagePickerControllerDelegate & UIN
         }
         self.dismiss(animated: true, completion: nil)
     }
-
-    let initialLocation = CLLocation(latitude: 1.1199904864817212, longitude: 104.04802137002713)
-    
     
 }

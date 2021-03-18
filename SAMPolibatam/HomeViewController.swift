@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreLocation
+import GooglePlaces
 
 class HomeViewController: UIViewController, CLLocationManagerDelegate {
     
@@ -19,16 +20,24 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var lblPosisi: UILabel!
     
     @IBOutlet weak var lblTanggal: UILabel!
-    @IBOutlet weak var lblLokasi: UILabel!
+    @IBOutlet weak var lblTempat: UILabel!
+    @IBOutlet weak var lblAlamat: UILabel!
     @IBOutlet weak var lblJam: UILabel!
     @IBOutlet weak var lblKerjaLibur: UILabel!
     
     var image = UIImage()
     
+    //MARK: Current Location Declare
+    private var placesClient: GMSPlacesClient!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        placesClient = GMSPlacesClient.shared()
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.delegate = self
+        locationManager.startUpdatingLocation()
+    // Current Location (End)
         
         //MARK: Membuat kotak menjadi melengkung
         absenmasuk.layer.cornerRadius = 8.0
@@ -44,18 +53,12 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         
         lblPosisi.text = userDefault.string(forKey: "jabatan")
         lblPosisi.isUserInteractionEnabled = false
+        lblAlamat.adjustsFontSizeToFitWidth = true
         // Ambil data dari Login Screen - TextField (End)
         
         //MARK: Buat Foto Profile Bulat
         selectedImage.makePhotoRounded()
-
-        //MARK: Current Location
-        locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
-        locationManager.requestWhenInUseAuthorization()
-        locationManager.startUpdatingLocation()
-        // Current Location (End)
-        
+       
         //MARK: Pass Foto Profile
         selectedImage.image = image
         //Pass Foto Profile (End)
@@ -71,74 +74,58 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     //MARK: Data Label Jam Kerja
-    //Tanggal Hari Ini
-    func getFullDate() -> String {
-        let formatter = DateFormatter()
-        formatter.timeZone = TimeZone.current
-        formatter.locale = Locale.init(identifier: "id")
-        formatter.dateStyle = .full
-        let stringDate = formatter.string(from: Date())
-        lblTanggal.text = stringDate
-        return "\(stringDate)"
-    }
-    
-    //Jam Kerja Menurut Hari
-    func getDay() -> String {
-    let dateFormatter = DateFormatter()
-    dateFormatter.setLocalizedDateFormatFromTemplate("EEE")
-    let day = dateFormatter.string(from: Date())
-    print(dateFormatter.string(from: Date()))
-    
-        if(day=="Sat" || day=="Sun") {
-            lblKerjaLibur.text = "Libur"
-        } else {
-            lblKerjaLibur.text = "Jam Kerja"
+        //Tanggal Hari Ini
+        func getFullDate() -> String {
+            let formatter = DateFormatter()
+            formatter.timeZone = TimeZone.current
+            formatter.locale = Locale.init(identifier: "id")
+            formatter.dateStyle = .full
+            let stringDate = formatter.string(from: Date())
+            lblTanggal.text = stringDate
+            return "\(stringDate)"
         }
-        return "08.00 - 17.00"
-    }
+        
+        //Jam Kerja Menurut Hari
+        func getDay() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.setLocalizedDateFormatFromTemplate("EEE")
+        let day = dateFormatter.string(from: Date())
+        print(dateFormatter.string(from: Date()))
+        
+            if(day=="Sat" || day=="Sun") {
+                lblKerjaLibur.text = "Libur"
+            } else {
+                lblKerjaLibur.text = "Jam Kerja"
+            }
+            return "08.00 - 17.00"
+        }
     // Data Label Jam Kerja(End)
     
     //MARK: Current Location
     let locationManager = CLLocationManager()
     
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        CLGeocoder().reverseGeocodeLocation(manager.location!, completionHandler: {(placemarks, error)->Void in
-            
-            if (error != nil) {
-                print("Reverse geocoder failed with error" + (error?.localizedDescription)!)
-                return
-            }
-            
-            if (placemarks?.count)! > 0 {
-                let pm = placemarks?[0]
-                self.displayLocationInfo(pm)
-            } else {
-                print("Problem with the data received from geocoder")
-            }
-        })
-    }
-    
-    func displayLocationInfo(_ placemark: CLPlacemark?) {
-        if let containsPlacemark = placemark {
-            let name = (containsPlacemark.name != nil) ? containsPlacemark.name : ""
-            let locality = (containsPlacemark.locality != nil) ? containsPlacemark.locality : ""
-            let administrativeArea = (containsPlacemark.administrativeArea != nil) ? containsPlacemark.administrativeArea : ""
-            let country = (containsPlacemark.country != nil) ? containsPlacemark.country : ""
-            
-            lblLokasi.text = "\(name ?? "name"), \(locality ?? "locality"), \(administrativeArea ?? "administrativeArea"), \(country ?? "country")"
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus)
+        {
+        let placeFields: GMSPlaceField = [.name, .formattedAddress]
+        placesClient.findPlaceLikelihoodsFromCurrentLocation(withPlaceFields: placeFields) { [weak self] (placeLikelihoods, error) in
+          guard let strongSelf = self else {
+            return
+          }
+
+          guard error == nil else {
+            print("Current place error: \(error?.localizedDescription ?? "")")
+            return
+          }
+
+          guard let place = placeLikelihoods?.first?.place else {
+            strongSelf.lblTempat.text = "No current place"
+            return
+          }
+
+            strongSelf.lblTempat.text = place.name
+            strongSelf.lblAlamat.text = place.formattedAddress
         }
-
-    }
-    
- 
-    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-          print("Error while updating location " + error.localizedDescription)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+        }
     // Current Location (End)
     
     //MARK: Absen Keluar Disable

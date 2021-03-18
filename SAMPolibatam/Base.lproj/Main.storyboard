@@ -608,6 +608,13 @@ fitur ini secepat mungkin.</string>
                                 <rect key="frame" x="34" y="186" width="346" height="342"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tanggal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdv-WX-CHc">
+                                <rect key="frame" x="136" y="204" width="217" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg izin.png" translatesAutoresizingMaskIntoConstraints="NO" id="KH0-s0-wFU">
                                 <rect key="frame" x="29" y="588" width="357" height="153"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -616,29 +623,22 @@ fitur ini secepat mungkin.</string>
                                 <rect key="frame" x="65" y="347" width="47" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tanggal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7s8-BY-y0Z">
-                                <rect key="frame" x="130" y="215" width="223" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alamat" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7s8-BY-y0Z">
+                                <rect key="frame" x="136" y="354" width="217" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="08.00 - 17.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qO1-uR-R1I">
-                                <rect key="frame" x="130" y="252" width="223" height="21"/>
+                                <rect key="frame" x="136" y="247" width="217" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Jam Kerja" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vcm-cR-qff">
-                                <rect key="frame" x="130" y="275" width="223" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lokasi" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0J-zk-9v1">
-                                <rect key="frame" x="130" y="324" width="223" height="98"/>
+                                <rect key="frame" x="136" y="270" width="217" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -649,7 +649,7 @@ fitur ini secepat mungkin.</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="garispetahome.png" translatesAutoresizingMaskIntoConstraints="NO" id="zfs-hZ-wX6">
-                                <rect key="frame" x="34" y="306" width="346" height="10"/>
+                                <rect key="frame" x="34" y="301" width="346" height="10"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKg-7u-R2x">
@@ -711,6 +711,13 @@ fitur ini secepat mungkin.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tempat" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0J-zk-9v1">
+                                <rect key="frame" x="136" y="319" width="217" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gQu-za-fdz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -720,12 +727,13 @@ fitur ini secepat mungkin.</string>
                     <connections>
                         <outlet property="absenkeluar" destination="3d1-mO-7A7" id="hq3-Bi-8NL"/>
                         <outlet property="absenmasuk" destination="rKg-7u-R2x" id="ZHS-bt-aBo"/>
+                        <outlet property="lblAlamat" destination="7s8-BY-y0Z" id="7Kr-aJ-pcm"/>
                         <outlet property="lblJam" destination="qO1-uR-R1I" id="6fz-Fd-eHy"/>
                         <outlet property="lblKerjaLibur" destination="Vcm-cR-qff" id="k8W-bY-FUk"/>
-                        <outlet property="lblLokasi" destination="P0J-zk-9v1" id="Fnu-Ml-P3B"/>
                         <outlet property="lblNama" destination="qSU-Xh-u4P" id="LQ3-Vz-e8O"/>
                         <outlet property="lblPosisi" destination="9gj-Bx-09v" id="Ulu-dW-5dE"/>
-                        <outlet property="lblTanggal" destination="7s8-BY-y0Z" id="KfW-Sx-6FA"/>
+                        <outlet property="lblTanggal" destination="qdv-WX-CHc" id="3Xp-Ms-rab"/>
+                        <outlet property="lblTempat" destination="P0J-zk-9v1" id="Glo-Mb-fND"/>
                         <outlet property="selectedImage" destination="dNq-oi-BfC" id="kji-Ep-uPp"/>
                     </connections>
                 </viewController>
@@ -741,10 +749,6 @@ fitur ini secepat mungkin.</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="6i1-ys-qRA">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ABSEN MASUK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HaJ-e7-qI2">
                                 <rect key="frame" x="69" y="72" width="112" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -775,9 +779,6 @@ fitur ini secepat mungkin.</string>
                         <viewLayoutGuide key="safeArea" id="kar-Ss-jFM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <connections>
-                        <outlet property="mapView" destination="6i1-ys-qRA" id="hT0-mh-VWI"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Evf-ek-Uyr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -962,6 +963,7 @@ fitur ini secepat mungkin.</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="ZBS-zH-iU4"/>
         <segue reference="QX9-lz-auP"/>
     </inferredMetricsTieBreakers>
     <resources>
