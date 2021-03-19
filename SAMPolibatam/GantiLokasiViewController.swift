@@ -6,33 +6,67 @@
 //
 
 import UIKit
-import MapKit
 import GoogleMaps
 import GooglePlaces
 
 class GantiLokasiViewController: UIViewController, GMSAutocompleteResultsViewControllerDelegate {
 
-    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet var mapView: GMSMapView!
     
     var resultsViewController: GMSAutocompleteResultsViewController?
     var searchController: UISearchController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        setupSearchController()
-        resultsViewController?.delegate = self
         
+        //MARK: Location Manager
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+
         //MARK: Posisi Camera
-        let camera = GMSCameraPosition.camera(withLatitude: 1.0719559465415636, longitude: 104.01874326930952, zoom: 11.0)
-                let mapView = GMSMapView.map(withFrame: self.view.frame, camera: camera)
-                self.view.addSubview(mapView)
+        mapView.camera =  GMSCameraPosition.camera(withLatitude: 1.0719559465415636, longitude: 104.01874326930952, zoom: 11.0)
         mapView.isMyLocationEnabled = true
         mapView.settings.myLocationButton = true
         mapView.settings.compassButton = true
         // Posisi Camera (End)
+        
+        //MARK: Search
+        setupSearchController()
+        resultsViewController?.delegate = self
+        // Search (End)
     }
+    
+    //MARK: Search
+    func setupSearchController() {
+        resultsViewController = GMSAutocompleteResultsViewController()
+        searchController = UISearchController(searchResultsController: resultsViewController)
+        searchController?.searchResultsUpdater = resultsViewController
 
+        let searchBar = searchController!.searchBar
+        searchBar.sizeToFit()
+        searchBar.placeholder = "Search for places"
+        navigationItem.titleView = searchController?.searchBar
+        definesPresentationContext = true
+        searchController?.hidesNavigationBarDuringPresentation = false
+    }
+    
+    func resultsController(_ resultsController: GMSAutocompleteResultsViewController, didAutocompleteWith place: GMSPlace) {
+        
+        searchController?.isActive = false
+        
+        mapView.animate(toLocation: place.coordinate)
+        let marker = GMSMarker(position: place.coordinate)
+        marker.title = place.name
+        marker.map = mapView
+        mapView.camera = GMSCameraPosition.camera(withTarget: place.coordinate, zoom: 17)
+    }
+       
+       func resultsController(_ resultsController: GMSAutocompleteResultsViewController, didFailAutocompleteWithError error: Error) {
+           print("Error: \(error.localizedDescription)")
+       }
+    // Search (End)
+    
+    private let locationManager = CLLocationManager()
     
     //MARK: Back Button
     @IBAction func backBtn(_ sender: UIButton) {
@@ -62,53 +96,33 @@ class GantiLokasiViewController: UIViewController, GMSAutocompleteResultsViewCon
         // Present Alert to
         self.present(dialogMessage, animated: true, completion: nil)
     }
-    //MARK: Confirm Button
+    // Confirm Button (End)
     
-    func setupSearchController() {
-        resultsViewController = GMSAutocompleteResultsViewController()
-        searchController = UISearchController(searchResultsController: resultsViewController)
-        searchController?.searchResultsUpdater = resultsViewController
-
-        let searchBar = searchController!.searchBar
-        searchBar.sizeToFit()
-        searchBar.placeholder = "Search for places"
-        navigationItem.titleView = searchController?.searchBar
-        definesPresentationContext = true
-        searchController?.hidesNavigationBarDuringPresentation = false
-    }
-    
-    func resultsController(_ resultsController: GMSAutocompleteResultsViewController, didAutocompleteWith place: GMSPlace) {
-        // 1
-        searchController?.isActive = false
-
-        // 2
-        mapView.removeAnnotations(mapView.annotations)
-
-        // 3
-        let span = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
-        let region = MKCoordinateRegion(center: place.coordinate, span: span)
-        mapView.setRegion(region, animated: true)
-
-        // 4
-        let annotation = MKPointAnnotation()
-        annotation.coordinate = place.coordinate
-        annotation.title = place.name
-        annotation.subtitle = place.formattedAddress
-        mapView.addAnnotation(annotation)
-    }
-    
-    func resultsController(_ resultsController: GMSAutocompleteResultsViewController, didFailAutocompleteWithError error: Error) {
-        print("Error: \(error.localizedDescription)")
-    }
-
 }
 
-extension ViewController: GMSAutocompleteResultsViewControllerDelegate {
-    func resultsController(_ resultsController: GMSAutocompleteResultsViewController, didAutocompleteWith place: GMSPlace) {
-        
+//MARK: Zoom To Current Location
+extension GantiLokasiViewController: CLLocationManagerDelegate {
+  func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+
+    guard status == .authorizedWhenInUse else {
+      return
     }
-    
-    func resultsController(_ resultsController: GMSAutocompleteResultsViewController, didFailAutocompleteWithError error: Error) {
-        
+
+    locationManager.startUpdatingLocation()
+
+    mapView.isMyLocationEnabled = true
+    mapView.settings.myLocationButton = true
+  }
+
+  func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    guard let location = locations.first else {
+      return
     }
+
+    mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 17, bearing: 0, viewingAngle: 0)
+      
+    locationManager.stopUpdatingLocation()
+  }
 }
+// Zoom To Current Location (End)
+

@@ -11,16 +11,16 @@ import GooglePlaces
 
 class MapViewController: UIViewController {
 
+    @IBOutlet var mapView: GMSMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //locationManager.requestAlwaysAuthorization()
-        
         //MARK: Posisi Camera
-        let camera = GMSCameraPosition.camera(withLatitude: 1.11881, longitude: 104.04844, zoom: 16.5)
-                let mapView = GMSMapView.map(withFrame: self.view.frame, camera: camera)
-                self.view.addSubview(mapView)
+        mapView.camera = GMSCameraPosition.camera(withLatitude: 1.11881, longitude: 104.04844, zoom: 16.5)
         mapView.isMyLocationEnabled = true
+        mapView.settings.myLocationButton = true
+        mapView.settings.compassButton = true
         // Posisi Camera (End)
         
         //MARK: Circle Area Map
@@ -31,9 +31,6 @@ class MapViewController: UIViewController {
         circle.strokeColor = .lightGray
         circle.strokeWidth = 3
         // Circle Area Map (End)
-        
-        mapView.settings.compassButton = true
-        mapView.settings.myLocationButton = true
     }
     
     @IBAction func backBtn(_ sender: UIButton) {
