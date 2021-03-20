@@ -33,8 +33,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passField: UITextField!
     
+    var activityIndicator:UIActivityIndicatorView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //MARK: Activity Indicator
+        activityIndicator =  UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
+        activityIndicator.center = view.center
+        activityIndicator.isHidden = true
+        activityIndicator.style = .large
+        activityIndicator.backgroundColor = UIColor.gray.withAlphaComponent(0.5)
+        self.view.addSubview(activityIndicator)
+        // Activity Indicator (End)
         
         //MARK: Text Field Naik saat Muncul Keyboard (1)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
@@ -122,6 +134,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 // Alert Field Kosong (End)
             }
             else {
+                self.activityIndicator.startAnimating()
                 let configuration = URLSessionConfiguration.default
                     configuration.requestCachePolicy = .reloadIgnoringLocalCacheData
                 let parameters: Parameters = ["request":"login",
@@ -149,16 +162,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
                             userDefaultStore.set(myStringDict?["jabatan"], forKey: "jabatan")
                             userDefaultStore.set(myStringDict?["nim_nik_unit"], forKey: "nim")
                             // User Default (End)
-                            
+                            self.activityIndicator.stopAnimating()
                             let storyBoard:UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
                             let newViewController = storyBoard.instantiateViewController(withIdentifier: "TabbarViewController")
                             newViewController.modalPresentationStyle = .fullScreen
                             self.show(newViewController, sender: self)
                             
                         } else {
+                            self.activityIndicator.startAnimating()
                             //MARK: Alert Salah Username/Pas
                             let dialogMessage = UIAlertController(title: "Login Gagal", message: "\n Username / Password salah! Silahkan coba lagi!", preferredStyle: .alert)
-                            
+                            self.activityIndicator.stopAnimating()
                             // Create OK button with action handler
                             let ok = UIAlertAction(title: "Kembali", style: .default, handler: { (action) -> Void in
                                 print("Password salah Ok button tapped")
