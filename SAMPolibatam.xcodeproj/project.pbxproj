@@ -25,6 +25,11 @@
 		4066783F2600F74500F5E8A9 /* popupcomingsoon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4066783C2600F74500F5E8A9 /* popupcomingsoon.png */; };
 		406F7BA825F8C86600C6D45D /* GantiLokasiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406F7BA725F8C86600C6D45D /* GantiLokasiViewController.swift */; };
 		4070CD2D25F667A800CC9059 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4070CD2C25F667A800CC9059 /* CoreLocation.framework */; };
+		40760DCA2606362B00EF18C8 /* barhistorylist.png in Resources */ = {isa = PBXBuildFile; fileRef = 40760DC62606362A00EF18C8 /* barhistorylist.png */; };
+		40760DCB2606362B00EF18C8 /* boxkethistorylist.png in Resources */ = {isa = PBXBuildFile; fileRef = 40760DC72606362A00EF18C8 /* boxkethistorylist.png */; };
+		40760DCC2606362B00EF18C8 /* boxhistorylist.png in Resources */ = {isa = PBXBuildFile; fileRef = 40760DC82606362B00EF18C8 /* boxhistorylist.png */; };
+		40760DCD2606362B00EF18C8 /* pinlokasihistorylist.png in Resources */ = {isa = PBXBuildFile; fileRef = 40760DC92606362B00EF18C8 /* pinlokasihistorylist.png */; };
+		40760DD026063EE700EF18C8 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40760DCF26063EE700EF18C8 /* HistoryTableViewCell.swift */; };
 		408DD7C625F912CC00ACEDFA /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408DD7C525F912CC00ACEDFA /* ConfirmViewController.swift */; };
 		40929BE525F3AE32009533D7 /* tabbarHistoryBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 40929BE425F3AE32009533D7 /* tabbarHistoryBG.png */; };
 		40944ECB25DEC35900447BA3 /* fotoblank.png in Resources */ = {isa = PBXBuildFile; fileRef = 40944EC425DEC35900447BA3 /* fotoblank.png */; };
@@ -122,6 +127,11 @@
 		4066783C2600F74500F5E8A9 /* popupcomingsoon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = popupcomingsoon.png; path = ../../../../../Export/popupcomingsoon.png; sourceTree = "<group>"; };
 		406F7BA725F8C86600C6D45D /* GantiLokasiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GantiLokasiViewController.swift; sourceTree = "<group>"; };
 		4070CD2C25F667A800CC9059 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		40760DC62606362A00EF18C8 /* barhistorylist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = barhistorylist.png; path = ../../../../../Export/barhistorylist.png; sourceTree = "<group>"; };
+		40760DC72606362A00EF18C8 /* boxkethistorylist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = boxkethistorylist.png; path = ../../../../../Export/boxkethistorylist.png; sourceTree = "<group>"; };
+		40760DC82606362B00EF18C8 /* boxhistorylist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = boxhistorylist.png; path = ../../../../../Export/boxhistorylist.png; sourceTree = "<group>"; };
+		40760DC92606362B00EF18C8 /* pinlokasihistorylist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinlokasihistorylist.png; path = ../../../../../Export/pinlokasihistorylist.png; sourceTree = "<group>"; };
+		40760DCF26063EE700EF18C8 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		408DD7C525F912CC00ACEDFA /* ConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
 		40929BE425F3AE32009533D7 /* tabbarHistoryBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbarHistoryBG.png; path = ../../../Export/tabbarHistoryBG.png; sourceTree = "<group>"; };
 		40944EC425DEC35900447BA3 /* fotoblank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fotoblank.png; path = ../../../../Export/fotoblank.png; sourceTree = "<group>"; };
@@ -236,6 +246,17 @@
 			path = "Coming Soon";
 			sourceTree = "<group>";
 		};
+		40760DC52606361B00EF18C8 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				40760DC62606362A00EF18C8 /* barhistorylist.png */,
+				40760DC82606362B00EF18C8 /* boxhistorylist.png */,
+				40760DC72606362A00EF18C8 /* boxkethistorylist.png */,
+				40760DC92606362B00EF18C8 /* pinlokasihistorylist.png */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
 		40944EC325DEC34100447BA3 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,6 +277,7 @@
 		40BECB7525DF738500DBA655 /* History */ = {
 			isa = PBXGroup;
 			children = (
+				40760DC52606361B00EF18C8 /* List */,
 				406678392600F70000F5E8A9 /* Coming Soon */,
 				40BECBA125DFB0A400DBA655 /* history.png */,
 				40BECBA325DFB0A400DBA655 /* history1.png */,
@@ -327,6 +349,7 @@
 				408DD7C525F912CC00ACEDFA /* ConfirmViewController.swift */,
 				40469DC825E40809000BFF22 /* IzinViewController.swift */,
 				40BECBAC25DFB2EE00DBA655 /* HistoryViewController.swift */,
+				40760DCF26063EE700EF18C8 /* HistoryTableViewCell.swift */,
 				40BECB9825DF93A400DBA655 /* ProfileViewController.swift */,
 				406F7BA725F8C86600C6D45D /* GantiLokasiViewController.swift */,
 				4041924B25E4D8A30079461E /* AboutUsViewController.swift */,
@@ -470,6 +493,7 @@
 				40F4E84625DE7B7700BAC0D2 /* LaunchScreen.storyboard in Resources */,
 				40EA5DDF25E6428700B11B28 /* onboarding3.png in Resources */,
 				40F4E86E25DE841C00BAC0D2 /* Logo-Polibatam.png in Resources */,
+				40760DCD2606362B00EF18C8 /* pinlokasihistorylist.png in Resources */,
 				4041926125E4E3AB0079461E /* Agus.png in Resources */,
 				4041926825E4EE760079461E /* Rizky.png in Resources */,
 				4066783E2600F74500F5E8A9 /* coming-soon.png in Resources */,
@@ -493,11 +517,13 @@
 				4055D42025FA716600CB48C6 /* back-white.png in Resources */,
 				40EA5DF125E654FD00B11B28 /* backgroundNew.png in Resources */,
 				40BECB8025DF749000DBA655 /* notif.png in Resources */,
+				40760DCC2606362B00EF18C8 /* boxhistorylist.png in Resources */,
 				40F4E87F25DE8E8500BAC0D2 /* history.png in Resources */,
 				40F4E87425DE88CD00BAC0D2 /* home1.png in Resources */,
 				40BECBA525DFB0A400DBA655 /* history.png in Resources */,
 				40EA5DEB25E64DBE00B11B28 /* logo.png in Resources */,
 				40F4E86B25DE7EAA00BAC0D2 /* textarea.png in Resources */,
+				40760DCB2606362B00EF18C8 /* boxkethistorylist.png in Resources */,
 				4041926025E4E3AB0079461E /* Tasya.png in Resources */,
 				40944ED725DEC4C500447BA3 /* garispetahome.png in Resources */,
 				4041925F25E4E3AB0079461E /* Kevin.png in Resources */,
@@ -517,6 +543,7 @@
 				40BECB8B25DF772900DBA655 /* kotakprofarrow.png in Resources */,
 				40F4E87625DE88CD00BAC0D2 /* history1.png in Resources */,
 				40F4E88025DE8E8500BAC0D2 /* profile.png in Resources */,
+				40760DCA2606362B00EF18C8 /* barhistorylist.png in Resources */,
 				40EA5DDD25E6428700B11B28 /* onboarding4.png in Resources */,
 				40BECBA625DFB0A400DBA655 /* kalender.png in Resources */,
 				40F4E83E25DE7B7600BAC0D2 /* Main.storyboard in Resources */,
@@ -603,6 +630,7 @@
 				40F4E83725DE7B7600BAC0D2 /* AppDelegate.swift in Sources */,
 				40BECB9425DF80C300DBA655 /* LupaPassViewController.swift in Sources */,
 				40BECB9925DF93A400DBA655 /* ProfileViewController.swift in Sources */,
+				40760DD026063EE700EF18C8 /* HistoryTableViewCell.swift in Sources */,
 				40EA5DCC25E63A1600B11B28 /* Onboarding.swift in Sources */,
 				40F4E83925DE7B7600BAC0D2 /* SceneDelegate.swift in Sources */,
 				40BECBAD25DFB2EE00DBA655 /* HistoryViewController.swift in Sources */,
@@ -759,6 +787,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SAMPolibatam/SAMPolibatam.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 5GZXGAQ3YM;
 				INFOPLIST_FILE = SAMPolibatam/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -766,6 +795,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AgusRiady.SAMPolibatam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -781,6 +811,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SAMPolibatam/SAMPolibatam.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 5GZXGAQ3YM;
 				INFOPLIST_FILE = SAMPolibatam/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -788,6 +819,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.AgusRiady.SAMPolibatam;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

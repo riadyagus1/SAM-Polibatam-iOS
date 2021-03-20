@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="svS-ts-jY6">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -251,48 +251,97 @@ di SAM Polibatam</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tabBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kuU-EY-Xnv">
-                                <rect key="frame" x="36" y="200" width="343" height="49"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <tabBarItem title="History" image="history.png" selectedImage="history1.png" id="gQn-gy-Q8e"/>
-                                    <tabBarItem title="Kalender" image="kalender.png" selectedImage="kalender1.png" id="hPo-aP-qHt"/>
-                                </items>
-                            </tabBar>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dark BG- History.png" translatesAutoresizingMaskIntoConstraints="NO" id="ABO-f5-K7z">
-                                <rect key="frame" x="-6" y="-44" width="426" height="868"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2Sp-8N-tz8">
+                                <rect key="frame" x="36" y="199" width="343" height="614"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="popupcomingsoon.png" translatesAutoresizingMaskIntoConstraints="NO" id="MQ1-wh-mpf">
-                                <rect key="frame" x="36" y="215" width="343" height="467"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coming-soon.png" translatesAutoresizingMaskIntoConstraints="NO" id="tzV-8q-mfg">
-                                <rect key="frame" x="87" y="239" width="240" height="212"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZQ-JU-zXM">
-                                <rect key="frame" x="81" y="548" width="252" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Fitur ini belum tersedia saat ini.
-Kami akan segera menghadirkan 
-fitur ini secepat mungkin.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Segera Hadir" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="psf-GM-8Yo">
-                                <rect key="frame" x="125" y="476" width="165" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="150" id="aqk-rP-ysm" customClass="HistoryTableViewCell" customModule="SAMPolibatam" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aqk-rP-ysm" id="OOV-yy-A5E">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boxhistorylist.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ycn-cX-gzZ" customClass="ta">
+                                                    <rect key="frame" x="22" y="7" width="299" height="132"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lokasi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FLP-AZ-CUb">
+                                                    <rect key="frame" x="74" y="103" width="98" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="15"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="??:??" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVN-yE-Y13">
+                                                    <rect key="frame" x="249" y="65" width="61" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RkD-tv-eMs">
+                                                    <rect key="frame" x="45" y="24" width="142" height="61"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <string key="text">Hari, 
+Tanggal</string>
+                                                    <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="19"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pinlokasihistorylist.png" translatesAutoresizingMaskIntoConstraints="NO" id="raw-Uh-29F">
+                                                    <rect key="frame" x="45" y="102" width="12" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ytw-sr-GzQ">
+                                                    <rect key="frame" x="185" y="101" width="125" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="barhistorylist.png" translatesAutoresizingMaskIntoConstraints="NO" id="VXm-A2-kKF">
+                                                    <rect key="frame" x="223" y="21" width="21" height="68"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="??:??" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oy1-sO-LnR">
+                                                    <rect key="frame" x="249" y="17" width="61" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Keterangan" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vjg-Uq-WCG">
+                                                    <rect key="frame" x="200" y="103" width="95" height="19"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="kotakKeterangan" destination="Ytw-sr-GzQ" id="qQ4-t9-0d4"/>
+                                            <outlet property="lblKeluar" destination="KVN-yE-Y13" id="Iar-xT-mH1"/>
+                                            <outlet property="lblKeterangan" destination="Vjg-Uq-WCG" id="w5J-Kx-NsY"/>
+                                            <outlet property="lblLokasi" destination="FLP-AZ-CUb" id="4zX-T2-Xos"/>
+                                            <outlet property="lblMasuk" destination="Oy1-sO-LnR" id="mDb-VF-ayh"/>
+                                            <outlet property="lblTanggal" destination="RkD-tv-eMs" id="E9z-dG-441"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="2QY-go-rrO" id="wtS-Lq-7Oh"/>
+                                    <outlet property="delegate" destination="2QY-go-rrO" id="36a-w6-HmL"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Aw5-T7-Nlc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" tag="2" title="History" image="history.png" selectedImage="history1.png" id="Y0x-5X-7l2"/>
+                    <connections>
+                        <outlet property="tableView" destination="2Sp-8N-tz8" id="GC1-r4-fnO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uKx-Rd-Bne" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -979,7 +1028,6 @@ fitur ini secepat mungkin.</string>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="BGFotoAbsen.png" width="1200" height="1600"/>
-        <image name="Dark BG- History.png" width="434" height="866"/>
         <image name="Kampus-Polibatam1.jpg" width="432" height="288"/>
         <image name="Logo-Polibatam.png" width="2432.25" height="2214.75"/>
         <image name="Rectangle 11.png" width="750" height="1000"/>
@@ -988,18 +1036,18 @@ fitur ini secepat mungkin.</string>
         <image name="back-white.png" width="18" height="14"/>
         <image name="backarrow.png" width="18" height="14"/>
         <image name="background.png" width="375" height="771"/>
+        <image name="barhistorylist.png" width="44" height="136"/>
         <image name="bg izin.png" width="346" height="153"/>
         <image name="boxhistory.png" width="343" height="646"/>
+        <image name="boxhistorylist.png" width="598" height="264"/>
         <image name="bt_bg_primary.png" width="328" height="48"/>
         <image name="camlogo.png" width="32" height="32"/>
-        <image name="coming-soon.png" width="491.51998901367188" height="491.51998901367188"/>
         <image name="gantipassword.png" width="26" height="27"/>
         <image name="garispetahome.png" width="346" height="2"/>
         <image name="history.png" width="20" height="24"/>
         <image name="history1.png" width="20" height="24"/>
         <image name="home.png" width="26" height="24"/>
         <image name="home1.png" width="26" height="24"/>
-        <image name="kalender.png" width="29" height="29"/>
         <image name="kalender1.png" width="29" height="29"/>
         <image name="kotak izin.png" width="133" height="34"/>
         <image name="kotakabsen.png" width="346" height="342"/>
@@ -1007,7 +1055,7 @@ fitur ini secepat mungkin.</string>
         <image name="kotakprofpolos.png" width="335" height="64"/>
         <image name="map pin.png" width="18" height="31"/>
         <image name="notif.png" width="23" height="24"/>
-        <image name="popupcomingsoon.png" width="343" height="467"/>
+        <image name="pinlokasihistorylist.png" width="26" height="42"/>
         <image name="profile-red.png" width="475" height="473"/>
         <image name="profile.png" width="26" height="26"/>
         <image name="profile1.png" width="26" height="26"/>
