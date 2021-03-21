@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="svS-ts-jY6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -961,6 +961,14 @@ Tanggal</string>
                                     <action selector="backBtn:" destination="hVI-ym-URD" eventType="touchUpInside" id="rPl-2I-nll"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNs-y8-Tcd">
+                                <rect key="frame" x="350" y="127" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="button-1905943_1280.png"/>
+                                <connections>
+                                    <action selector="infoButton:" destination="hVI-ym-URD" eventType="touchUpInside" id="3HX-9G-5xP"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wvx-G5-JdA">
                                 <rect key="frame" x="43" y="803" width="273" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1041,6 +1049,7 @@ Tanggal</string>
         <image name="boxhistory.png" width="343" height="646"/>
         <image name="boxhistorylist.png" width="598" height="264"/>
         <image name="bt_bg_primary.png" width="328" height="48"/>
+        <image name="button-1905943_1280.png" width="1280" height="1280"/>
         <image name="camlogo.png" width="32" height="32"/>
         <image name="gantipassword.png" width="26" height="27"/>
         <image name="garispetahome.png" width="346" height="2"/>

@@ -20,6 +20,7 @@
 		40469DC925E40809000BFF22 /* IzinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40469DC825E40809000BFF22 /* IzinViewController.swift */; };
 		4055D41A25FA6FC800CB48C6 /* BGFotoAbsen.png in Resources */ = {isa = PBXBuildFile; fileRef = 4055D41925FA6FC800CB48C6 /* BGFotoAbsen.png */; };
 		4055D42025FA716600CB48C6 /* back-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 4055D41F25FA716600CB48C6 /* back-white.png */; };
+		405DC54926077DEB00AA8050 /* button-1905943_1280.png in Resources */ = {isa = PBXBuildFile; fileRef = 405DC54826077DEB00AA8050 /* button-1905943_1280.png */; };
 		4066783D2600F74500F5E8A9 /* Dark BG- History.png in Resources */ = {isa = PBXBuildFile; fileRef = 4066783A2600F74500F5E8A9 /* Dark BG- History.png */; };
 		4066783E2600F74500F5E8A9 /* coming-soon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4066783B2600F74500F5E8A9 /* coming-soon.png */; };
 		4066783F2600F74500F5E8A9 /* popupcomingsoon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4066783C2600F74500F5E8A9 /* popupcomingsoon.png */; };
@@ -122,6 +123,7 @@
 		4055D41925FA6FC800CB48C6 /* BGFotoAbsen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BGFotoAbsen.png; path = ../../../Export/BGFotoAbsen.png; sourceTree = "<group>"; };
 		4055D41F25FA716600CB48C6 /* back-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "back-white.png"; path = "../../../Export/back-white.png"; sourceTree = "<group>"; };
 		4055D42325FA792400CB48C6 /* SAMPolibatam.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SAMPolibatam.entitlements; sourceTree = "<group>"; };
+		405DC54826077DEB00AA8050 /* button-1905943_1280.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-1905943_1280.png"; path = "../../../Export/button-1905943_1280.png"; sourceTree = "<group>"; };
 		4066783A2600F74500F5E8A9 /* Dark BG- History.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dark BG- History.png"; path = "../../../../../Export/Dark BG- History.png"; sourceTree = "<group>"; };
 		4066783B2600F74500F5E8A9 /* coming-soon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "coming-soon.png"; path = "../../../../../Export/coming-soon.png"; sourceTree = "<group>"; };
 		4066783C2600F74500F5E8A9 /* popupcomingsoon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = popupcomingsoon.png; path = ../../../../../Export/popupcomingsoon.png; sourceTree = "<group>"; };
@@ -370,6 +372,7 @@
 		40F4E85225DE7C3300BAC0D2 /* Gambar */ = {
 			isa = PBXGroup;
 			children = (
+				405DC54826077DEB00AA8050 /* button-1905943_1280.png */,
 				4055D41925FA6FC800CB48C6 /* BGFotoAbsen.png */,
 				40A663EF25F4B14600E33083 /* profile-red.png */,
 				40929BE425F3AE32009533D7 /* tabbarHistoryBG.png */,
@@ -541,6 +544,7 @@
 				40944ECF25DEC35900447BA3 /* map pin.png in Resources */,
 				40BECB8425DF749000DBA655 /* boxjumlahhadir.png in Resources */,
 				40BECB8B25DF772900DBA655 /* kotakprofarrow.png in Resources */,
+				405DC54926077DEB00AA8050 /* button-1905943_1280.png in Resources */,
 				40F4E87625DE88CD00BAC0D2 /* history1.png in Resources */,
 				40F4E88025DE8E8500BAC0D2 /* profile.png in Resources */,
 				40760DCA2606362B00EF18C8 /* barhistorylist.png in Resources */,
