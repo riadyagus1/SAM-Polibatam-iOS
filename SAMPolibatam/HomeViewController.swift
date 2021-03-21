@@ -26,6 +26,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var lblKerjaLibur: UILabel!
     
     var image = UIImage()
+    var tanggal:String?
     
     //MARK: Current Location Declare
     private var placesClient: GMSPlacesClient!
@@ -84,6 +85,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
             formatter.dateStyle = .full
             let stringDate = formatter.string(from: Date())
             lblTanggal.text = stringDate
+            self.tanggal = stringDate
             return "\(stringDate)"
         }
         

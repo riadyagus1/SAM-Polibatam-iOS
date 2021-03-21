@@ -818,7 +818,7 @@ Tanggal</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="zcG-mu-cZc" kind="presentation" modalPresentationStyle="fullScreen" id="qVh-Sg-WV8"/>
+                                    <action selector="verificationButton:" destination="CPW-Oe-9Pe" eventType="touchUpInside" id="QNT-fh-ksx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JoC-PM-2rh">
