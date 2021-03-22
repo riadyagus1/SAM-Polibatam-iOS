@@ -25,7 +25,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var lblJam: UILabel!
     @IBOutlet weak var lblKerjaLibur: UILabel!
     
-    var image = UIImage()
+    var imageFotoPic = UIImage()
     var tanggal:String?
     
     //MARK: Current Location Declare
@@ -63,7 +63,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         selectedImage.makePhotoRounded()
        
         //MARK: Pass Foto Profile
-        selectedImage.image = image
+        self.selectedImage.image = imageFotoPic
         //Pass Foto Profile (End)
         
         //MARK: Call Data Label Jam Kerja

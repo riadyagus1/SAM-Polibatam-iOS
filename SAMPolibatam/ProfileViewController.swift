@@ -29,6 +29,8 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate &
     @IBOutlet weak var kotakAlpha: UIImageView!
     @IBOutlet weak var notifSwitch: UISwitch!
     
+    var fotoProfilNow: UIImage?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -139,10 +141,13 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate &
         picker .dismiss(animated: true, completion: nil)
         let fotoProfil = info[.editedImage] as! UIImage
         imageViewPic.image = fotoProfil
-        
-        let vc = storyboard?.instantiateViewController(identifier: "HomeScreen") as? HomeViewController
-        vc?.image = fotoProfil
+        self.fotoProfilNow = fotoProfil
     }
-    
     // Ganti Foto Profil (end)
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let barViewControllers = segue.destination as! UITabBarController
+        let destinationViewController = barViewControllers.viewControllers?[0] as! HomeViewController
+        destinationViewController.imageFotoPic = fotoProfilNow!
+    }
 }

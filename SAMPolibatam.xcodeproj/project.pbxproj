@@ -31,6 +31,8 @@
 		40760DCC2606362B00EF18C8 /* boxhistorylist.png in Resources */ = {isa = PBXBuildFile; fileRef = 40760DC82606362B00EF18C8 /* boxhistorylist.png */; };
 		40760DCD2606362B00EF18C8 /* pinlokasihistorylist.png in Resources */ = {isa = PBXBuildFile; fileRef = 40760DC92606362B00EF18C8 /* pinlokasihistorylist.png */; };
 		40760DD026063EE700EF18C8 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40760DCF26063EE700EF18C8 /* HistoryTableViewCell.swift */; };
+		408ADCBA260899B500AB5E57 /* uncheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 408ADCB8260899B500AB5E57 /* uncheck.png */; };
+		408ADCBB260899B500AB5E57 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = 408ADCB9260899B500AB5E57 /* check.png */; };
 		408DD7C625F912CC00ACEDFA /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408DD7C525F912CC00ACEDFA /* ConfirmViewController.swift */; };
 		40929BE525F3AE32009533D7 /* tabbarHistoryBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 40929BE425F3AE32009533D7 /* tabbarHistoryBG.png */; };
 		40944ECB25DEC35900447BA3 /* fotoblank.png in Resources */ = {isa = PBXBuildFile; fileRef = 40944EC425DEC35900447BA3 /* fotoblank.png */; };
@@ -44,6 +46,7 @@
 		40944ED725DEC4C500447BA3 /* garispetahome.png in Resources */ = {isa = PBXBuildFile; fileRef = 40944ED625DEC4C500447BA3 /* garispetahome.png */; };
 		40944EDA25DEC71800447BA3 /* latarizin.png in Resources */ = {isa = PBXBuildFile; fileRef = 40944ED925DEC71800447BA3 /* latarizin.png */; };
 		40A663F025F4B14600E33083 /* profile-red.png in Resources */ = {isa = PBXBuildFile; fileRef = 40A663EF25F4B14600E33083 /* profile-red.png */; };
+		40B3A05226086217004718C0 /* AbsenLuarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B3A05126086217004718C0 /* AbsenLuarViewController.swift */; };
 		40BECB7E25DF749000DBA655 /* boxjumlahizin.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BECB7725DF748F00DBA655 /* boxjumlahizin.png */; };
 		40BECB7F25DF749000DBA655 /* gantipassword.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BECB7825DF748F00DBA655 /* gantipassword.png */; };
 		40BECB8025DF749000DBA655 /* notif.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BECB7925DF748F00DBA655 /* notif.png */; };
@@ -134,6 +137,8 @@
 		40760DC82606362B00EF18C8 /* boxhistorylist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = boxhistorylist.png; path = ../../../../../Export/boxhistorylist.png; sourceTree = "<group>"; };
 		40760DC92606362B00EF18C8 /* pinlokasihistorylist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pinlokasihistorylist.png; path = ../../../../../Export/pinlokasihistorylist.png; sourceTree = "<group>"; };
 		40760DCF26063EE700EF18C8 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		408ADCB8260899B500AB5E57 /* uncheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = uncheck.png; path = ../../../Export/uncheck.png; sourceTree = "<group>"; };
+		408ADCB9260899B500AB5E57 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = check.png; path = ../../../Export/check.png; sourceTree = "<group>"; };
 		408DD7C525F912CC00ACEDFA /* ConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
 		40929BE425F3AE32009533D7 /* tabbarHistoryBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbarHistoryBG.png; path = ../../../Export/tabbarHistoryBG.png; sourceTree = "<group>"; };
 		40944EC425DEC35900447BA3 /* fotoblank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fotoblank.png; path = ../../../../Export/fotoblank.png; sourceTree = "<group>"; };
@@ -147,6 +152,7 @@
 		40944ED625DEC4C500447BA3 /* garispetahome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = garispetahome.png; path = ../../../../Export/garispetahome.png; sourceTree = "<group>"; };
 		40944ED925DEC71800447BA3 /* latarizin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = latarizin.png; path = ../../../../Export/latarizin.png; sourceTree = "<group>"; };
 		40A663EF25F4B14600E33083 /* profile-red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "profile-red.png"; path = "../../../../Downloads/colorful-pack-silhouette-avatars/profile-red.png"; sourceTree = "<group>"; };
+		40B3A05126086217004718C0 /* AbsenLuarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsenLuarViewController.swift; sourceTree = "<group>"; };
 		40BECB7725DF748F00DBA655 /* boxjumlahizin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = boxjumlahizin.png; path = ../../../../Export/boxjumlahizin.png; sourceTree = "<group>"; };
 		40BECB7825DF748F00DBA655 /* gantipassword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gantipassword.png; path = ../../../../Export/gantipassword.png; sourceTree = "<group>"; };
 		40BECB7925DF748F00DBA655 /* notif.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = notif.png; path = ../../../../Export/notif.png; sourceTree = "<group>"; };
@@ -348,6 +354,7 @@
 				40BECB9325DF80C300DBA655 /* LupaPassViewController.swift */,
 				40104A4C25DEE5FF003489DC /* HomeViewController.swift */,
 				4031125F25E387AE004DCFCF /* MapViewController.swift */,
+				40B3A05126086217004718C0 /* AbsenLuarViewController.swift */,
 				408DD7C525F912CC00ACEDFA /* ConfirmViewController.swift */,
 				40469DC825E40809000BFF22 /* IzinViewController.swift */,
 				40BECBAC25DFB2EE00DBA655 /* HistoryViewController.swift */,
@@ -372,6 +379,8 @@
 		40F4E85225DE7C3300BAC0D2 /* Gambar */ = {
 			isa = PBXGroup;
 			children = (
+				408ADCB9260899B500AB5E57 /* check.png */,
+				408ADCB8260899B500AB5E57 /* uncheck.png */,
 				405DC54826077DEB00AA8050 /* button-1905943_1280.png */,
 				4055D41925FA6FC800CB48C6 /* BGFotoAbsen.png */,
 				40A663EF25F4B14600E33083 /* profile-red.png */,
@@ -512,6 +521,7 @@
 				40BECB8C25DF772900DBA655 /* kotakprofpolos.png in Resources */,
 				4066783F2600F74500F5E8A9 /* popupcomingsoon.png in Resources */,
 				4041925E25E4E3AB0079461E /* Pak Hamdani.png in Resources */,
+				408ADCBA260899B500AB5E57 /* uncheck.png in Resources */,
 				40BECB8725DF75D800DBA655 /* lokasiprof.png in Resources */,
 				40944ECE25DEC35900447BA3 /* kotak izin.png in Resources */,
 				40BECB7E25DF749000DBA655 /* boxjumlahizin.png in Resources */,
@@ -551,6 +561,7 @@
 				40EA5DDD25E6428700B11B28 /* onboarding4.png in Resources */,
 				40BECBA625DFB0A400DBA655 /* kalender.png in Resources */,
 				40F4E83E25DE7B7600BAC0D2 /* Main.storyboard in Resources */,
+				408ADCBB260899B500AB5E57 /* check.png in Resources */,
 				40BECB8225DF749000DBA655 /* boxjumlahaplha.png in Resources */,
 				40944ECC25DEC35900447BA3 /* kotak absen masuk.png in Resources */,
 				40BECB8125DF749000DBA655 /* aboutus.png in Resources */,
@@ -629,6 +640,7 @@
 				40104A4D25DEE5FF003489DC /* HomeViewController.swift in Sources */,
 				40F4E83B25DE7B7600BAC0D2 /* ViewController.swift in Sources */,
 				408DD7C625F912CC00ACEDFA /* ConfirmViewController.swift in Sources */,
+				40B3A05226086217004718C0 /* AbsenLuarViewController.swift in Sources */,
 				4041925025E4DA6A0079461E /* Slide.swift in Sources */,
 				4031126025E387AE004DCFCF /* MapViewController.swift in Sources */,
 				40F4E83725DE7B7600BAC0D2 /* AppDelegate.swift in Sources */,

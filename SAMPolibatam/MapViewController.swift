@@ -15,21 +15,21 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     let locationManager = CLLocationManager()
     var coordinateNow:CLLocation?
-    let coordinatePoltek = CLLocation(latitude: 1.11881, longitude: 104.04844)
+    let coordinatePoltek = CLLocation(latitude: 1.118383, longitude: 104.04846)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //MARK: Posisi Camera
-        mapView.camera = GMSCameraPosition.camera(withLatitude: 1.11881, longitude: 104.04844, zoom: 16.5)
+        mapView.camera = GMSCameraPosition.camera(withLatitude: 1.118383, longitude: 104.04846, zoom: 16.5)
         mapView.isMyLocationEnabled = true
         mapView.settings.myLocationButton = true
         mapView.settings.compassButton = true
         // Posisi Camera (End)
         
         //MARK: Circle Area Map
-        let circleCenter = CLLocationCoordinate2D(latitude: 1.11881, longitude: 104.04844)
-        let circle = GMSCircle(position: circleCenter, radius: 150)
+        let circleCenter = CLLocationCoordinate2D(latitude: 1.118383, longitude: 104.04846)
+        let circle = GMSCircle(position: circleCenter, radius: 200)
         circle.map = mapView
         circle.fillColor = UIColor.green.withAlphaComponent(0.3)
         circle.strokeColor = .lightGray
@@ -63,23 +63,16 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     @IBAction func verificationButton(_ sender: UIButton) {
         let distanceInMeters = coordinateNow?.distance(from: coordinatePoltek)
         
-        if distanceInMeters! <= 150{
+        if distanceInMeters! <= 200{
             let storyBoard:UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
             let newViewController = storyBoard.instantiateViewController(withIdentifier: "ConfirmScreen")
             newViewController.modalPresentationStyle = .fullScreen
             self.show(newViewController, sender: self)
         } else {
-            let dialogMessage = UIAlertController(title: "Absen Gagal", message: "\n Anda berada di area yang ditentukan! Silahkan absen didalam area yang telah ditentukan!", preferredStyle: .alert)
-            
-            // Create OK button with action handler
-            let ok = UIAlertAction(title: "Kembali", style: .default, handler: { (action) -> Void in
-                print("Kembali tapped")
-             })
-            
-            //Add OK button to a dialog message
-            dialogMessage.addAction(ok)
-            // Present Alert to
-            self.present(dialogMessage, animated: true, completion: nil)
+            let storyBoard:UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            let newViewController = storyBoard.instantiateViewController(withIdentifier: "KerjaDiluarScreen")
+            newViewController.modalPresentationStyle = .fullScreen
+            self.show(newViewController, sender: self)
         }
     }
     // Verifikasi Jarak (End)
