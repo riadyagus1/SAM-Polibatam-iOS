@@ -63,7 +63,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         selectedImage.makePhotoRounded()
        
         //MARK: Pass Foto Profile
-        self.selectedImage.image = imageFotoPic
+        //self.selectedImage.image = imageFotoPic
         //Pass Foto Profile (End)
         
         //MARK: Call Data Label Jam Kerja

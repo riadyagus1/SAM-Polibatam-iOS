@@ -51,7 +51,7 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate{
             let Onboarding3:Onboarding = Bundle.main.loadNibNamed("Onboarding", owner: self, options: nil)?.first as! Onboarding
             Onboarding3.ImageOnboarding.image = UIImage(named: "onboarding2.png")
             Onboarding3.lblJudul.text = "Lakukan absensi melalui ponsel anda"
-            Onboarding3.lblDes.text = "Klik Absen Masuk. \n \n Jika anda berada di areaPolibatam anda dapat langsung melakukan absensi. \n \n Selanjutnya ambil foto untuk verifikasi. \n \n Selesai."
+            Onboarding3.lblDes.text = "Klik Absen Masuk. \n \n Jika anda berada di area Polibatam anda dapat langsung melakukan absensi. \n \n Selanjutnya ambil foto untuk verifikasi. \n \n Selesai."
             
             let Onboarding4:Onboarding = Bundle.main.loadNibNamed("Onboarding", owner: self, options: nil)?.first as! Onboarding
             Onboarding4.ImageOnboarding.image = UIImage(named: "onboarding3.png")
@@ -60,7 +60,7 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate{
             
             let Onboarding5:Onboarding = Bundle.main.loadNibNamed("Onboarding", owner: self, options: nil)?.first as! Onboarding
             Onboarding5.ImageOnboarding.image = UIImage(named: "onboarding4.png")
-            Onboarding5.lblJudul.text = "Melihat riwayat absensinya"
+            Onboarding5.lblJudul.text = "Melihat riwayat absensi"
             Onboarding5.lblDes.text = "Terdapat fitur riwayat yang berisi tentang catatan kehadiran yang berhasil di catat sebelumnya. \n \n Anda dapat mengakses fitur ini melalui tab History."
             
         return [Onboarding1, Onboarding2, Onboarding3, Onboarding4, Onboarding5]

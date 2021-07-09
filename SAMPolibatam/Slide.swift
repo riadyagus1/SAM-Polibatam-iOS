@@ -30,9 +30,6 @@ class Slide: UIView {
     @IBOutlet weak var lblNama4: UILabel!
     @IBOutlet weak var lblRole4: UILabel!
     
-    @IBOutlet weak var imageRizky: UIImageView!
-    @IBOutlet weak var lblNama5: UILabel!
-    @IBOutlet weak var lblRole5: UILabel!
     
     
     

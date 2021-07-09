@@ -70,10 +70,6 @@ class AboutUsViewController: UIViewController, UIScrollViewDelegate{
             slide2.lblNama4.text = "Kevin Timoteus Sirait"
             slide2.lblRole4.text = "Anggota"
         
-            slide2.imageRizky.image = UIImage(named: "Rizky.png")
-            slide2.lblNama5.text = "Rizky Setiawan"
-            slide2.lblRole5.text = "Anggota"
-            
             return [slide1, slide2]
         }
     

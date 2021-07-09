@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -81,36 +81,18 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k6i-gI-qdL">
-                    <rect key="frame" x="48" y="544" width="122" height="162"/>
+                    <rect key="frame" x="141" y="544" width="122" height="162"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yD8-Yy-jUl">
-                    <rect key="frame" x="-11" y="710" width="240" height="21"/>
+                    <rect key="frame" x="82" y="710" width="240" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9V-e7-TCG">
-                    <rect key="frame" x="-11" y="733" width="240" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JtQ-ja-qgj">
-                    <rect key="frame" x="237" y="535" width="132" height="170"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POG-9t-tjY">
-                    <rect key="frame" x="178" y="713" width="240" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6b-p8-Rt1">
-                    <rect key="frame" x="178" y="736" width="240" height="21"/>
+                    <rect key="frame" x="82" y="733" width="240" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <nil key="textColor"/>
@@ -134,7 +116,6 @@
                 <outlet property="imageAgus" destination="ktA-W8-0Od" id="8Qd-gO-khl"/>
                 <outlet property="imageHamdani" destination="JAQ-82-wk7" id="v8f-bM-LmC"/>
                 <outlet property="imageKevin" destination="k6i-gI-qdL" id="dCT-ay-0iC"/>
-                <outlet property="imageRizky" destination="JtQ-ja-qgj" id="C5D-OI-xhI"/>
                 <outlet property="imageTasya" destination="JYe-8b-gqD" id="ekf-ny-jNd"/>
                 <outlet property="imageView" destination="D7d-Of-6vR" id="ryd-ND-F99"/>
                 <outlet property="imageViewApp" destination="Z9y-Ps-Pj9" id="AGa-fW-I3N"/>
@@ -143,12 +124,10 @@
                 <outlet property="lblNama2" destination="gyG-uV-76t" id="4sX-s0-Xls"/>
                 <outlet property="lblNama3" destination="5Ur-8O-NRO" id="IVK-Gq-EDc"/>
                 <outlet property="lblNama4" destination="yD8-Yy-jUl" id="Tee-Zp-Dez"/>
-                <outlet property="lblNama5" destination="POG-9t-tjY" id="72c-1Z-vS6"/>
                 <outlet property="lblRole" destination="JaU-Gc-km7" id="tXo-Kx-NPD"/>
                 <outlet property="lblRole2" destination="6gK-Zs-7LG" id="esb-3l-WaO"/>
                 <outlet property="lblRole3" destination="Mgf-Hc-axP" id="srI-GG-HXv"/>
                 <outlet property="lblRole4" destination="w9V-e7-TCG" id="SyV-nU-gBz"/>
-                <outlet property="lblRole5" destination="f6b-p8-Rt1" id="Vkz-8k-Gh7"/>
                 <outlet property="lblTitle" destination="E0t-Kp-c73" id="vnx-3F-ZwW"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="92.410714285714278"/>

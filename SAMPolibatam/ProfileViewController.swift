@@ -143,11 +143,4 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate &
         imageViewPic.image = fotoProfil
         self.fotoProfilNow = fotoProfil
     }
-    // Ganti Foto Profil (end)
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let barViewControllers = segue.destination as! UITabBarController
-        let destinationViewController = barViewControllers.viewControllers?[0] as! HomeViewController
-        destinationViewController.imageFotoPic = fotoProfilNow!
-    }
 }

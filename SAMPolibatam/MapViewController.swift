@@ -69,10 +69,17 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             newViewController.modalPresentationStyle = .fullScreen
             self.show(newViewController, sender: self)
         } else {
-            let storyBoard:UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-            let newViewController = storyBoard.instantiateViewController(withIdentifier: "KerjaDiluarScreen")
-            newViewController.modalPresentationStyle = .fullScreen
-            self.show(newViewController, sender: self)
+            //MARK: Alert Absen Gagal Diluar Lokasi
+            let dialogMessage = UIAlertController(title: "Absen Gagal", message: "\n Saat ini anda tidak berada di Area Polibatam maupun Lokasi WFH! \n Silahkan Absen diarea yang telah ditentukan!", preferredStyle: .alert)
+            // Create OK button with action handler
+            let ok = UIAlertAction(title: "Kembali", style: .default, handler: { (action) -> Void in
+                print("Absen Gagal Diluar Lokasi button tapped")
+             })
+            
+            //Add OK button to a dialog message
+            dialogMessage.addAction(ok)
+            // Present Alert to
+            self.present(dialogMessage, animated: true, completion: nil)
         }
     }
     // Verifikasi Jarak (End)
